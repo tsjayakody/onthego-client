@@ -24,7 +24,7 @@ function Home() {
                     <div className='pb-6'>
                         <HomeRowContainerTitle rowTitle='Latest Episodes' />
                         {/* dynmic list here */}
-                        <div className='flex'>
+                        <div className='flex space-x-[31px]'>
                             <HomeContainerEpisodes bannerImage={episodeBannerSample} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                             <HomeContainerEpisodes bannerImage={episodeBannerSample} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                         </div>
@@ -33,7 +33,7 @@ function Home() {
                     <div className='pb-6'>
                         <HomeRowContainerTitle rowTitle='Featured Episodes' />
                         {/* dynmic list here */}
-                        <div className='flex'>
+                        <div className='flex space-x-[31px]'>
                             <HomeContainerEpisodes bannerImage={episodeBannerSample2} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                             <HomeContainerEpisodes bannerImage={episodeBannerSample2} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                         </div>
@@ -41,7 +41,7 @@ function Home() {
                     {/* meet the hosts */}
                     <div className='pb-6'>
                         <HomeRowContainerTitle rowTitle='Meet The Hosts' />
-                        <div className='flex'>
+                        <div className='flex space-x-[55px]'>
                             <HomeContainerHostCard bannerImage={hostBannerSample} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
                             <HomeContainerHostCard bannerImage={hostBannerSample} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
                         </div>

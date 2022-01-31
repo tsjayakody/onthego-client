@@ -7,11 +7,11 @@ import hostInstagramIcon from '../assets/host-instagram.svg';
 function HomeContainerHostCard({bannerImage, bannerTitle, bannerType}) {
     return (
         <div >
-            <div className='bg-transparent h-179 w-120 pb-6 pr-[55px]'>
-                <img src={bannerImage} height='120' width='120' alt="" className='rounded-full' />
+            <div className='bg-transparent pb-6 h-179 w-120 md:h-166 md:w-120'>
+                <img src={bannerImage} alt="" className='object-cover rounded-full h-120 w-120' />
                 <div className='flex flex-col items-center'>
-                <p className='text-#FFFFFF text-[14px]'>{bannerTitle}</p>
-                <p className='text-#666666 text-[10px]'>{bannerType}</p>
+                <p className='text-#FFFFFF text-[14px] truncate'>{bannerTitle}</p>
+                <p className='text-#666666 text-[10px] truncate'>{bannerType}</p>
                 </div>
                 <div className='flex justify-around'>
                     {/* twitter button */}
