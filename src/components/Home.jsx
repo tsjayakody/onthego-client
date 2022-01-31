@@ -14,6 +14,7 @@ function Home() {
   return (
     <div className='bg-#110E1F flex-grow'>
       {/* top bar */}
+      <div className='bg-transparent'></div>
       {/* main content */}
       <div className='flex'>
                 {/* music shows */}
