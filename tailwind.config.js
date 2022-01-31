@@ -98,14 +98,8 @@ module.exports = {
       '12px': ['12px', {
         lineHeight: '10px',
       },],
-      '12px': ['12px', {
-        lineHeight: '15px',
-      },],
       '14px': ['14px', {
         lineHeight: '15px',
-      },],
-      '14px': ['14px', {
-        lineHeight: '16.41px',
       },],
       '18px': ['18px', {
         lineHeight: '15px',
