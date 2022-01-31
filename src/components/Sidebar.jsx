@@ -14,6 +14,7 @@ import ContentRights from './sidebar/ContentRights';
 import NavButtons from './sidebar/NavButtons';
 import SocialButton from './sidebar/SocialButton';
 
+
 function Sidebar() {
   return(
     <div className='bg-#1B1730 w-48 relative'>
@@ -24,20 +25,20 @@ function Sidebar() {
     <div className='flex flex-col items-center'>
         {/* sidebar buttons */}
         <div className='pt-[53px]'>
-            {/* Home Button */}
-            <NavButtons icon={<AiFillHome/>} name={'Home'} path={'#'}/>
+                {/* Home Button */}
+            <NavButtons icon={<AiFillHome/>} name={'Home'} path={'/'}/>
             {/* episode button */}
-            <NavButtons icon={<FaMicrophone/>} name={'Episodes'} path={'#'}/>
+            <NavButtons icon={<FaMicrophone/>} name={'Episodes'} path={'/episodes'}/>
             {/* shows button */}
-            <NavButtons icon={<AiFillPlayCircle/>} name={'Shows'} path={'#'}/>
+            <NavButtons icon={<AiFillPlayCircle/>} name={'Shows'} path={'/shows'}/>
             {/* about button */}
-            <NavButtons icon={<AiFillInfoCircle/>} name={'About'} path={'#'}/>
+            <NavButtons icon={<AiFillInfoCircle/>} name={'About'} path={'about'}/>
             {/* contact us button */}
-            <NavButtons icon={<MdPhoneInTalk/>} name={'Contact Us'} path={'#'}/>
+            <NavButtons icon={<MdPhoneInTalk/>} name={'Contact Us'} path={'contactus'}/>
             {/* register button */}
-            <NavButtons icon={<BsCheck2Square/>} name={'Register'} path={'#'}/>
+            <NavButtons icon={<BsCheck2Square/>} name={'Register'} path={'/register'}/>
             {/* send episode button */}
-            <NavButtons icon={<IoIosSend/>} name={'Send Episodes'} path={'#'}/>
+            <NavButtons icon={<IoIosSend/>} name={'Send Episodes'} path={'/sendepisodes'}/>
         </div>
         <div className='flex flex-col justify-between item-center absolute bottom-10 w-fit px-[27px] '>
             {/* social buttons */}
