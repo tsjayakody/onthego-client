@@ -12,7 +12,7 @@ function Episodes() {
           {/* category title here */}
           <p className='text-#FFFFFF text-18px mb-[15px]'>Categories</p>
           {/* grid here */}
-          <div className='grid grid-flow-col auto-cols-max md:auto-cols-min mt-[10px]'>
+          <div className='grid sm:grid-cols-1 grid-cols-2 md:grid-cols-6 md:pt-[15px] pt-[30px] '>
               <EpisodeCategoryContainer />
               <EpisodeCategoryContainer />
               <EpisodeCategoryContainer />

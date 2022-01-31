@@ -53,7 +53,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='basis-1/4 flex flex-col items-end pt-[32px] md:pt-[59px] md:pr-[22px] relative'>
+                <div className='basis-1/4 flex-col items-end pt-[32px] md:pt-[59px] md:pr-[22px] relative md:inline hidden'>
                     {/* popular episodes */}
                     <div>
                         <HomeRowContainerTitle rowTitle='Popular Episodes' />
