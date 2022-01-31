@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       padding: {
+        '7px': '7px',
         '8px': '8px',
         '9px': '9px',
         '11px': '11px',
@@ -27,6 +28,7 @@ module.exports = {
         '34px': '34px',
         '36.58px': '36.58px',
         '38px': '38px',
+        '42px': '42px',
         '53px': '53px',
         '57.5px': '57.5px',
         '59px': '59px',
@@ -81,6 +83,7 @@ module.exports = {
         '149': '9.313rem',
         '150': '9.375rem',
         '203': '12.688rem',
+        '260': '16.25rem',
         '854': '53.375rem',
       },
       space: {

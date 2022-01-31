@@ -1,4 +1,5 @@
 import React from 'react';
+import {MdArrowForwardIos} from 'react-icons/md';
 
 //! assets >>>temp<<<
 import episodeBannerSample from './assets/episodes-banner-sample.svg';
@@ -40,25 +41,32 @@ function Home() {
                     </div>
                     {/* meet the hosts */}
                     <div className='pb-6'>
-                        <HomeRowContainerTitle rowTitle='Meet The Hosts' />
+                        <div className='flex justify-between'>
+                            <HomeRowContainerTitle rowTitle='Meet The Hosts' />
+                                <div className='flex items-center text-#666666 text-[11px] pt-[7px]'>
+                                    <p>Browse All{'>'}{'>'}</p>
+                                </div>
+                            </div>
                         <div className='flex space-x-[55px]'>
                             <HomeContainerHostCard bannerImage={hostBannerSample} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
                             <HomeContainerHostCard bannerImage={hostBannerSample} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
                         </div>
                     </div>
                 </div>
-                <div className='basis-1/4 flex flex-col'>
+                <div className='basis-1/4 flex flex-col p-[59px] relative'>
                     {/* popular episodes */}
                     <div>
                         <HomeRowContainerTitle rowTitle='Popular Episodes' />
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col space-y-[25px]'>
                             <PopularEpisode episodeImage={popularEpisodeBannerSample} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
                             <PopularEpisode episodeImage={popularEpisodeBannerSample} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
                         </div>
                         {/* view all sample button */}
-                        <button className='bg-#282246 h-[1.563rem] w-[16.25rem]' >
+                        <div className='pt-[42px] absolute bottom-[44px] right-[22px]'>
+                        <button className='bg-#282246 h-[1.563rem] w-[16.25rem] ' >
                             <p className='text-#FFFFFF text-[10px]'>View All</p>
                         </button>
+                        </div>
                     </div>
                 </div>
             </div>
