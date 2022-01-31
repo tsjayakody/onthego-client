@@ -20,27 +20,27 @@ function Home() {
       <div className='flex'>
                 {/* music shows */}
                 {/* shows carousel */}
-                <div className='basis-3/4 flex flex-col p-[59px]'>
+                <div className='basis-3/4 flex flex-col pt-[32px] pl-[26px] md:pt-[59px] md:pl-[59px]'>
                     {/* latest episodes */}
-                    <div className='pb-6'>
+                    <div className='pb-[19px] md:pb-[30px]'>
                         <HomeRowContainerTitle rowTitle='Latest Episodes' />
                         {/* dynmic list here */}
-                        <div className='flex space-x-[31px]'>
+                        <div className='flex space-x-[16px] md:space-x-[31px]'>
                             <HomeContainerEpisodes bannerImage={episodeBannerSample} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                             <HomeContainerEpisodes bannerImage={episodeBannerSample} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                         </div>
                     </div>
                     {/* featured episodes */}
-                    <div className='pb-6'>
+                    <div className='pb-[27px] md:pb-[30px]'>
                         <HomeRowContainerTitle rowTitle='Featured Episodes' />
                         {/* dynmic list here */}
-                        <div className='flex space-x-[31px]'>
+                        <div className='flex space-x-[16px] md:space-x-[31px]'>
                             <HomeContainerEpisodes bannerImage={episodeBannerSample2} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                             <HomeContainerEpisodes bannerImage={episodeBannerSample2} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                         </div>
                     </div>
                     {/* meet the hosts */}
-                    <div className='pb-6'>
+                    <div className=''>
                         <div className='flex justify-between'>
                             <HomeRowContainerTitle rowTitle='Meet The Hosts' />
                                 <div className='flex items-center text-#666666 text-[11px] pt-[7px]'>
@@ -53,7 +53,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='basis-1/4 flex flex-col p-[59px] relative'>
+                <div className='basis-1/4 flex flex-col items-end pt-[32px] md:pt-[59px] md:pr-[22px] relative'>
                     {/* popular episodes */}
                     <div>
                         <HomeRowContainerTitle rowTitle='Popular Episodes' />

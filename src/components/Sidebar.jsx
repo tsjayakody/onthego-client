@@ -17,14 +17,14 @@ import SocialButton from './sidebar/SocialButton';
 
 function Sidebar() {
   return(
-    <div className='bg-#1B1730 w-48 relative'>
+    <div className='bg-#1B1730 w-203 relative'>
     {/* logo */}
     <div className='pt-[25px] px-[18px]'>
         <img src={logo} alt="Logo" />
     </div>
     <div className='flex flex-col items-center'>
         {/* sidebar buttons */}
-        <div className='pt-[53px]'>
+        <div className='flex flex-col space-y-[16px] pt-[45px] md:pt-[53px]'>
                 {/* Home Button */}
             <NavButtons icon={<AiFillHome/>} name={'Home'} path={'/'}/>
             {/* episode button */}
