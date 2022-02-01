@@ -11,10 +11,10 @@ import SendEpisodes from "./components/SendEpisodes";
 
 function App() {
   return (
-    <div className='flex flex-col h-screen'>
+    <div className='flex flex-col h-screen w-screen'>
       <div className='flex flex-grow'>
                 <Router>
-                  <Sidebar/>
+                    <Sidebar/>
                   <Routes>
                     <Route exact path='/' element={<Home/>}/>
                     <Route path='/episodes' element={<Episodes/>}/>
@@ -26,7 +26,9 @@ function App() {
                   </Routes>
                 </Router>
             </div>
+            <div className="fixed bottom-0 left-0 right-0">
             <MusicPlayer/>
+            </div>
     </div>
   );
 }

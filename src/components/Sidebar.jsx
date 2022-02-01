@@ -17,7 +17,7 @@ import SocialButton from './sidebar/SocialButton';
 
 function Sidebar() {
   return(
-    <div className='bg-#1B1730 w-203 relative hidden md:inline'>
+    <div className='bg-#1B1730 w-203 hidden md:inline fixed top-0 left-0 bottom-20'>
     {/* logo */}
     <div className='pt-[25px] px-[18px]'>
         <img src={logo} alt="Logo" />

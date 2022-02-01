@@ -77,6 +77,7 @@ module.exports = {
         '183': '11.438rem',
         '192': '12rem',
         '198': '12.375rem',
+        '204': '12.75rem',
         '260': '16.25rem',
       },
       width: {
@@ -129,7 +130,10 @@ module.exports = {
       '20px': ['20px', {
         lineHeight: '23.44px',
       },],
-    }
+    },
+    borderRadius: {
+      '60': '60px',
+   },
   },
   variants: {
     fill: ['hover', 'focus'], // this line does the trick
