@@ -1,19 +1,15 @@
 import React from 'react';
-import {MdArrowForwardIos} from 'react-icons/md';
 
 //! assets >>>temp<<<
-import episodeBannerSample from './assets/episodes-banner-sample.svg';
-import episodeBannerSample2 from './assets/episode-banner-sample-2.svg';
-import hostBannerSample from './assets/host-banner-sample.svg';
-import popularEpisodeBannerSample from './assets/popular-episode-banner-sample.svg'; 
 import HomeRowContainerTitle from './home/HomeRowContainerTitle';
 import HomeContainerEpisodes from './home/HomeContainerEpisodes';
 import HomeContainerHostCard from './home/HomeContainerHostCard';
 import PopularEpisode from './home/PopularEpisode';
+import commonImage from './assets/common-sample-image.png';
 
 function Home() {
   return (
-    <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto'>
+    <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto md:pl-[203px] pb-[150px]'>
       {/* top bar */}
       <div className='bg-transparent'></div>
       {/* main content */}
@@ -26,10 +22,10 @@ function Home() {
                         <HomeRowContainerTitle rowTitle='Latest Episodes' />
                         {/* dynmic list here */}
                         <div className='flex space-x-[16px] md:space-x-[31px] w-screen overflow-x-auto'>
-                            <HomeContainerEpisodes bannerImage={episodeBannerSample} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
-                            <HomeContainerEpisodes bannerImage={episodeBannerSample} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
-                            <HomeContainerEpisodes bannerImage={episodeBannerSample} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
-                            <HomeContainerEpisodes bannerImage={episodeBannerSample} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
+                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
+                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
+                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
+                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                         </div>
                     </div>
                     {/* featured episodes */}
@@ -37,8 +33,8 @@ function Home() {
                         <HomeRowContainerTitle rowTitle='Featured Episodes' />
                         {/* dynmic list here */}
                         <div className='flex space-x-[16px] md:space-x-[31px] w-screen overflow-x-auto'>
-                            <HomeContainerEpisodes bannerImage={episodeBannerSample2} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
-                            <HomeContainerEpisodes bannerImage={episodeBannerSample2} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
+                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
+                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
                         </div>
                     </div>
                     {/* meet the hosts */}
@@ -50,8 +46,8 @@ function Home() {
                                 </div>
                             </div>
                         <div className='flex space-x-[55px]'>
-                            <HomeContainerHostCard bannerImage={hostBannerSample} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
-                            <HomeContainerHostCard bannerImage={hostBannerSample} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
+                            <HomeContainerHostCard bannerImage={commonImage} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
+                            <HomeContainerHostCard bannerImage={commonImage} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
                         </div>
                     </div>
                 </div>
@@ -60,8 +56,8 @@ function Home() {
                     <div>
                         <HomeRowContainerTitle rowTitle='Popular Episodes' />
                         <div className='flex flex-col space-y-[25px]'>
-                            <PopularEpisode episodeImage={popularEpisodeBannerSample} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
-                            <PopularEpisode episodeImage={popularEpisodeBannerSample} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
+                            <PopularEpisode episodeImage={commonImage} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
+                            <PopularEpisode episodeImage={commonImage} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
                         </div>
                         {/* view all sample button */}
                         <div className='pt-[42px] absolute bottom-[44px] right-[22px]'>

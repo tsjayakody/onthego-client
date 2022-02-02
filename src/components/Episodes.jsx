@@ -3,7 +3,7 @@ import EpisodeCategoryContainer from './episodes/EpisodeCategoryContainer';
 
 function Episodes() {
     return (
-      <div className='bg-#110E1F flex-grow'>
+      <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto md:pl-[203px] pb-[150px]'>
       {/* top bar */}
       {/* navigation button */}      
       {/* search bar */}
