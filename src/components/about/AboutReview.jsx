@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutReview({userImage, userName, userRole, userReview}) {
   return (
-    <div className='pt-[66px] pl-[32px] w-full overflow-x-auto flex-col'>
+    <div className='pt-[66px] pl-[32px] flex-col'>
     <div className='bg-#282246 h-[186px] w-[173px] flex-col'>
       <p className='text-left text-[14px] text-#FFFFFF pt-[20px] pl-[12px] pr-[21px]'>
       {userReview}
