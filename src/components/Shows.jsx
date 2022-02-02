@@ -1,4 +1,5 @@
 import React from 'react';
+import recentlyupdated from '../data/RecentlyUpdated';
 import ShowsAlphabeticalColumnList from './shows/ShowsAlphabeticalColumnList';
 import ShowsRecentlyUpdatedContainer from './shows/ShowsRecentlyUpdatedContainer';
 
@@ -13,12 +14,14 @@ function Shows() {
             {/* recently updated here */}
             <div className='flex w-screen md:w-9/12 auto-cols-max md:auto-cols-min mt-[10px] overflow-x-auto'>
                 {/* testing purpose */}
-                <ShowsRecentlyUpdatedContainer/>
-                <ShowsRecentlyUpdatedContainer/>
+                {recentlyupdated.map((item)=>(
+                    <ShowsRecentlyUpdatedContainer key={item.id} showsCover={item.showsCover} showsTitle={item.showsTitle} showsDate={item.showsDate}/>
+                ))}
             </div>
             {/* vertical list here */}
             <ShowsAlphabeticalColumnList letter='A'/>
             <ShowsAlphabeticalColumnList letter='B'/>
+            <ShowsAlphabeticalColumnList letter='C'/>
         </div>
     </div>
 );
