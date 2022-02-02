@@ -9,11 +9,11 @@ import commonImage from './assets/common-sample-image.png';
 
 function Home() {
   return (
-    <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto md:pl-[203px] pb-[150px]'>
+    <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto overflow-x-auto md:pl-[203px] pb-[150px]'>
       {/* top bar */}
       <div className='bg-transparent'></div>
       {/* main content */}
-      <div className='flex'>
+      <div className='flex relative'>
                 {/* music shows */}
                 {/* shows carousel */}
                 <div className='basis-3/4 flex flex-col pt-[32px] pl-[26px] md:pt-[59px] md:pl-[59px]'>
@@ -51,7 +51,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='basis-1/4 flex-col items-end pt-[32px] md:pt-[59px] md:pr-[22px] relative md:inline hidden'>
+                <div className='basis-1/4 flex-col md:inline hidden sm:hidden absolute top-[59px] right-[22px] bottom-0'>
                     {/* popular episodes */}
                     <div>
                         <HomeRowContainerTitle rowTitle='Popular Episodes' />
@@ -60,7 +60,7 @@ function Home() {
                             <PopularEpisode episodeImage={commonImage} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
                         </div>
                         {/* view all sample button */}
-                        <div className='pt-[42px] absolute bottom-[44px] right-[22px]'>
+                        <div className='pt-[42px]'>
                         <button className='bg-#282246 h-[1.563rem] w-[16.25rem] ' >
                             <p className='text-#FFFFFF text-[10px]'>View All</p>
                         </button>
