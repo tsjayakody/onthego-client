@@ -13,7 +13,7 @@ function ContactUs() {
   const onSendEpisodeClick = ()=>{console.log('send episode buttton pressed');}
 
   return (
-    <div className='bg-#110E1F flex-col flex-grow h-full w-full overflow-y-auto md:pl-[256px] md:pt-[164px]'>
+    <div className='bg-#110E1F flex-col flex-nowrap h-full w-full overflow-y-auto overflow-x-auto md:pl-[256px] md:pt-[164px]'>
       <div className='flex-auto h-2/5'>
         <div className='flex'>
         <div className='flex-col pl-[26px] pr-[31px] pt-[67px]'>

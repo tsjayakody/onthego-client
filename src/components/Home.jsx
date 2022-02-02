@@ -51,9 +51,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='basis-1/4 flex-col md:inline hidden sm:hidden absolute top-[59px] right-[22px] bottom-0'>
+                <div className='basis-1/4 flex-col md:inline hidden sm:hidden absolute top-[59px] right-[22px] bottom-[150px]'>
                     {/* popular episodes */}
-                    <div>
+                    <div className=''>
                         <HomeRowContainerTitle rowTitle='Popular Episodes' />
                         <div className='flex flex-col space-y-[25px]'>
                             <PopularEpisode episodeImage={commonImage} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
