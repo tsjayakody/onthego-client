@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin')
+// const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
@@ -144,22 +144,22 @@ module.exports = {
     fill: ['hover', 'focus'], // this line does the trick
   },
   plugins: [
-    plugin(function ({ addUtilities }) {
-      addUtilities({
-        '.scrollbar-hide': {
-          /* IE and Edge */
-          '-ms-overflow-style': 'none',
+    // plugin(function ({ addUtilities }) {
+    //   addUtilities({
+    //     '.scrollbar-hide': {
+    //       /* IE and Edge */
+    //       '-ms-overflow-style': 'none',
 
-          /* Firefox */
-          'scrollbar-width': 'none',
+    //       /* Firefox */
+    //       'scrollbar-width': 'none',
 
-          /* Safari and Chrome */
-          '&::-webkit-scrollbar': {
-            display: 'none'
-          }
-        }
-      }
-      )
-    })
+    //       /* Safari and Chrome */
+    //       '&::-webkit-scrollbar': {
+    //         display: 'none'
+    //       }
+    //     }
+    //   }
+    //   )
+    // })
   ],
 }
