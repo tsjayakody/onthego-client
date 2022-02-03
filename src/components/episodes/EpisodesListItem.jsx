@@ -1,12 +1,15 @@
 import React from 'react';
 import {FaPlay} from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
 function EpisodesListItem({episodeCover, episodeTitle, episodeCategory, noofepisodes, episodeDate}) {
 
     const onClick = ()=>(console.log('play button pressed'));
 
   return (
+    
     <div className='w-full h-[90px] bg-gradient-to-b from-#2F2566 to-[#110E1F]/0'>
+        <Link to='/episodes/episodeslist/episodedetail' className=''>
     <div className='flex'>
       <img src={episodeCover} alt="" className='h-[90px] w-[80px] object-fill'/>
       <div className='flex-grow flex-col'>
@@ -26,7 +29,10 @@ function EpisodesListItem({episodeCover, episodeTitle, episodeCategory, noofepis
         </div>
       </div>
     </div>
+    </Link>
   </div>
+    
+
   );
 }
 

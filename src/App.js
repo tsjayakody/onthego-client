@@ -9,6 +9,7 @@ import ContactUs from "./components/ContactUs";
 import Register from "./components/Register";
 import SendEpisodes from "./components/SendEpisodes";
 import EpisodesList from "./components/EpisodesList";
+import EpisodeDetailScreen from "./components/EpisodeDetailScreen";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                     <Route path='/register' element={<Register/>}/>
                     <Route path='/sendepisodes' element={<SendEpisodes/>}/>
                     <Route path='/episodes/episodeslist' element={<EpisodesList/>}/>
+                    <Route path='/episodes/episodeslist/episodedetail' element={<EpisodeDetailScreen/>}/>
                   </Routes>
                 </Router>
             </div>
