@@ -10,7 +10,14 @@ function EpisodesList() {
         {/* episode list -- column scrolling*/}
         <div className='pr-[31px] flex-col md:h-[650px] space-y-[23px] overflow-y-auto overflow-x-auto'>
         {episodeslist.map((item)=>(
-          <EpisodesListItem key={item.id} episodeCover={item.episodeCover} episodeCategory={item.epsiodeCategory} episodeTitle={item.episodeTitle} episodeDate={item.episodeDate} noofepisodes={item.noofepisodes}/>
+          <EpisodesListItem 
+            key={item.id} 
+            episodeCover={item.episodeCover} 
+            episodeCategory={item.epsiodeCategory} 
+            episodeTitle={item.episodeTitle} 
+            episodeDate={item.episodeDate} 
+            noofepisodes={item.noofepisodes}
+          />
         ))}
         </div>
     </div>
