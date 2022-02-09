@@ -6,12 +6,17 @@ import HomeContainerEpisodes from './home/HomeContainerEpisodes';
 import HomeContainerHostCard from './home/HomeContainerHostCard';
 import PopularEpisode from './home/PopularEpisode';
 import commonImage from './assets/common-sample-image.png';
+import BackgroundContainer from './shared/BackgroundContainer';
+import Topbar from './shared/Topbar';
+import latestepisodes from '../data/LatestEpisodes';
+import featuredepisodes from '../data/FeaturedEpisodes';
+import hosts from '../data/Hosts';
 
 function Home() {
   return (
-    <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto overflow-x-auto md:pl-[203px] pb-[150px]'>
-      {/* top bar */}
-      <div className='bg-transparent'></div>
+    <BackgroundContainer>
+        {/* top bar */}
+      <Topbar><p className='text-#FFFFFF text-[10px]'>This is search bar container</p></Topbar>
       {/* main content */}
       <div className='flex relative'>
                 {/* music shows */}
@@ -22,10 +27,14 @@ function Home() {
                         <HomeRowContainerTitle rowTitle='Latest Episodes' />
                         {/* dynmic list here */}
                         <div className='flex space-x-[16px] md:space-x-[31px] w-screen overflow-x-auto'>
-                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
-                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
-                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
-                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
+                            {latestepisodes.map((item)=>(
+                                <HomeContainerEpisodes 
+                                    key={item.id} 
+                                    bannerImage={item.episodeCover} 
+                                    bannerTitle={item.episodeName} 
+                                    bannerCreator={item.episodeOwner}
+                                 />
+                            ))}
                         </div>
                     </div>
                     {/* featured episodes */}
@@ -33,8 +42,14 @@ function Home() {
                         <HomeRowContainerTitle rowTitle='Featured Episodes' />
                         {/* dynmic list here */}
                         <div className='flex space-x-[16px] md:space-x-[31px] w-screen overflow-x-auto'>
-                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
-                            <HomeContainerEpisodes bannerImage={commonImage} bannerTitle='142nd ‘Battle of the Blues” Ends In A Watery Draw' bannerCreator='The Moring Sports' />
+                            {featuredepisodes.map((item)=>(
+                                <HomeContainerEpisodes 
+                                    key={item.id} 
+                                    bannerImage={item.episodeCover} 
+                                    bannerTitle={item.episodeName} 
+                                    bannerCreator={item.episodeOwner}
+                                />
+                            ))}
                         </div>
                     </div>
                     {/* meet the hosts */}
@@ -46,8 +61,9 @@ function Home() {
                                 </div>
                             </div>
                         <div className='flex space-x-[55px]'>
-                            <HomeContainerHostCard bannerImage={commonImage} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
-                            <HomeContainerHostCard bannerImage={commonImage} bannerTitle='Travel With Wife' bannerType='CONTENT CREATOR' />
+                            {hosts.map((item)=>(
+                                <HomeContainerHostCard key={item.id} bannerImage={item.hostCover} bannerTitle={item.hostName} bannerType={item.hostType} />
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -68,7 +84,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-    </div>
+    </BackgroundContainer>
   );
 }
 

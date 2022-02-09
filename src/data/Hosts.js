@@ -1,10 +1,10 @@
-import sampleImage from '../components/assets/common-sample-image.png';
+import hostImage from '../components/assets/sample-host-image.png';
 
 //! sample hosts list 
 let hosts = [
     {   
         'id': 1,
-        'hostCover': sampleImage,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -14,7 +14,7 @@ let hosts = [
     },
     {   
         'id': 2,
-        'hostCover': sampleImage,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -24,7 +24,7 @@ let hosts = [
     },
     {   
         'id': 3,
-        'hostCover': sampleImage,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -34,7 +34,7 @@ let hosts = [
     },
     {   
         'id': 4,
-        'hostCover': sampleImage,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -44,7 +44,7 @@ let hosts = [
     },
     {   
         'id': 5,
-        'hostCover': sampleImage,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
