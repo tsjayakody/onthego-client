@@ -3,6 +3,7 @@ import hostFacebookIcon from '../assets/host-facebook.svg';
 import hostTwitterIcon from '../assets/host-twitter.svg';
 import hostPinterestIcon from '../assets/host-pinterest.svg';
 import hostInstagramIcon from '../assets/host-instagram.svg';
+import HostSocialButton from './HostSocialButton';
 
 function HomeContainerHostCard({bannerImage, bannerTitle, bannerType}) {
     return (
@@ -15,26 +16,17 @@ function HomeContainerHostCard({bannerImage, bannerTitle, bannerType}) {
                 <p className='text-#666666 text-[10px] truncate'>{bannerType}</p>
                 </div>
                 <div className='flex justify-around'>
-                    
                     {/* twitter button */}
-                    <a href={"https://www.twitter.com"} target="_blank" rel="noopener noreferrer">
-                        <img src={hostTwitterIcon} height='10'width='13' alt="" />
-                    </a>
+                    <HostSocialButton icon={hostTwitterIcon} link={"https://www.twitter.com"} />
 
                     {/* facebook button */}
-                    <a href={"https://www.twitter.com"} target="_blank" rel="noopener noreferrer">
-                        <img src={hostFacebookIcon} height='10'width='13' alt="" />
-                    </a>
+                    <HostSocialButton icon={hostFacebookIcon} link={"https://www.facebook.com"}/>
                     
                     {/* pinterest button */}
-                    <a href={"https://www.twitter.com"} target="_blank" rel="noopener noreferrer">
-                        <img src={hostPinterestIcon} height='10'width='13' alt="" />
-                    </a>
+                    <HostSocialButton icon={hostPinterestIcon} link={"https://www.pinterest.com"} />
                     
                     {/* instagram button */}
-                    <a href={"https://www.twitter.com"} target="_blank" rel="noopener noreferrer">
-                        <img src={hostInstagramIcon} height='10'width='13' alt="" />
-                    </a>
+                    <HostSocialButton icon={hostInstagramIcon} link={"https://www.instagram.com"} />
                     
                 </div>
             </div>

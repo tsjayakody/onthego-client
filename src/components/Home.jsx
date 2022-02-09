@@ -5,18 +5,20 @@ import HomeRowContainerTitle from './home/HomeRowContainerTitle';
 import HomeContainerEpisodes from './home/HomeContainerEpisodes';
 import HomeContainerHostCard from './home/HomeContainerHostCard';
 import PopularEpisode from './home/PopularEpisode';
-import commonImage from './assets/common-sample-image.png';
 import BackgroundContainer from './shared/BackgroundContainer';
 import Topbar from './shared/Topbar';
 import latestepisodes from '../data/LatestEpisodes';
 import featuredepisodes from '../data/FeaturedEpisodes';
 import hosts from '../data/Hosts';
+import popularepisodes from '../data/PopularEpisodes';
 
 function Home() {
   return (
     <BackgroundContainer>
         {/* top bar */}
-      <Topbar><p className='text-#FFFFFF text-[10px]'>This is search bar container</p></Topbar>
+      <Topbar>
+          <p className='text-#FFFFFF text-[10px]'>This is search bar container</p>
+        </Topbar>
       {/* main content */}
       <div className='flex relative'>
                 {/* music shows */}
@@ -62,7 +64,12 @@ function Home() {
                             </div>
                         <div className='flex space-x-[55px]'>
                             {hosts.map((item)=>(
-                                <HomeContainerHostCard key={item.id} bannerImage={item.hostCover} bannerTitle={item.hostName} bannerType={item.hostType} />
+                                <HomeContainerHostCard 
+                                    key={item.id} 
+                                    bannerImage={item.hostCover} 
+                                    bannerTitle={item.hostName} 
+                                    bannerType={item.host} 
+                                />
                             ))}
                         </div>
                     </div>
@@ -72,8 +79,15 @@ function Home() {
                     <div className=''>
                         <HomeRowContainerTitle rowTitle='Popular Episodes' />
                         <div className='flex flex-col space-y-[25px]'>
-                            <PopularEpisode episodeImage={commonImage} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
-                            <PopularEpisode episodeImage={commonImage} episodeTitle='popular One' episodeCategory='Travel' episodeDuration='03.00' />
+                            {popularepisodes.map((item)=>(
+                                <PopularEpisode 
+                                    key={item.id} 
+                                    episodeImage={item.episodeCover} 
+                                    episodeTitle={item.episodeTitle} 
+                                    episodeCategory={item.episodeCategory} 
+                                    episodeDuration={item.episodeTime} 
+                                />
+                            ))}
                         </div>
                         {/* view all sample button */}
                         <div className='pt-[42px]'>
