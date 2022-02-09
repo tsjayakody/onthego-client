@@ -8,7 +8,7 @@ function EpisodesList() {
         {/* title */}
         <h1 className='mx-auto text-#FFFFFF text-[21px] font-semibold pb-[29px]'>Sports</h1>
         {/* episode list -- column scrolling*/}
-        <div className='pr-[31px] flex-col space-y-[23px]'>
+        <div className='pr-[31px] flex-col md:h-[650px] space-y-[23px] overflow-y-auto overflow-x-auto'>
         {episodeslist.map((item)=>(
           <EpisodesListItem key={item.id} episodeCover={item.episodeCover} episodeCategory={item.epsiodeCategory} episodeTitle={item.episodeTitle} episodeDate={item.episodeDate} noofepisodes={item.noofepisodes}/>
         ))}
