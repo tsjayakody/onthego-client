@@ -13,6 +13,7 @@ import ContentRights from './ContentRights';
 import NavButtons from './NavButtons';
 import SocialButton from './SocialButton';
 
+//TODO 1 : implement mobile responsive sidebar (minimize on touch gesture)
 
 function SidebarMenu({ isopen }) {
     return (
@@ -36,9 +37,9 @@ function SidebarMenu({ isopen }) {
                         {/* contact us button */}
                         <NavButtons icon={<MdPhoneInTalk />} name={'Contact Us'} path={'contactus'} />
                         {/* register button */}
-                        <NavButtons icon={<BsCheck2Square />} name={'Register'} path={'/register'} />
+                        <NavButtons icon={<BsCheck2Square />} name={'Register'} path={'/register'}/>
                         {/* send episode button */}
-                        <NavButtons icon={<IoIosSend />} name={'Send Episodes'} path={'/sendepisodes'} />
+                        <NavButtons icon={<IoIosSend />} name={'Send Episodes'} path={'/sendepisodes'}/>
                     </div>
                     <div className='flex flex-col justify-between item-center absolute bottom-10 w-fit px-[27px] '>
                         {/* social buttons */}

@@ -9,6 +9,7 @@ function Sidebar() {
     const [isopen, setisopen] = useState(false);
 
     return (
+        //TODO : implement conditional style to show and hide navbar here
         <>
             {!isopen ?
                 (

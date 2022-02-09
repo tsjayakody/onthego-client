@@ -20,8 +20,6 @@ function Shows() {
             </div>
             {/* vertical list here */}
             <ShowsAlphabeticalColumnList letter='A'/>
-            <ShowsAlphabeticalColumnList letter='B'/>
-            <ShowsAlphabeticalColumnList letter='C'/>
         </div>
     </div>
 );
