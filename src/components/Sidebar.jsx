@@ -12,18 +12,16 @@ function Sidebar() {
         <>
             {!isopen ?
                 (
-                    <button className='fixed top-[53px] left-[26px]' onClick={() => (setisopen(!isopen))} >
+                    <button className='fixed top-[26px] md:top-[53px] left-[26px] md:hidden inline' onClick={() => (setisopen(!isopen))} >
                         <img src={sidebarmenuicon} alt="" className='h-[12px] w-[36px] object-fill' />
-                        {/* <sidebarmenuicon className='h-[12px] w-[36px] object-fill hover:bg-#00D2CB'/> */}
                     </button>
                 ) :
                 (
                     <>
-                        <button className='fixed top-[53px] left-[226px]' onClick={() => (setisopen(!isopen))} >
+                        <button className='fixed top-[26px] md:top-[53px] left-[226px] md:hidden inline' onClick={() => (setisopen(!isopen))} >
                             <img src={sidebarmenuicon} alt="" className='h-[12px] w-[36px] object-fill' />
-                            {/* <sidebarmenuicon className='h-[12px] w-[36px] object-fill hover:bg-#00D2CB'/> */}
                         </button>
-                        <SidebarMenu isopen={isopen}/>
+                        <SidebarMenu isopen={isopen} className="md:hidden inline"/>
                     </>
                 )
             }

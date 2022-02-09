@@ -17,7 +17,7 @@ import SocialButton from './SocialButton';
 function SidebarMenu({ isopen }) {
     return (
         <>
-            <div className={`bg-#1B1730 w-203 fixed top-0 left-0 bottom-20 ${isopen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`bg-#1B1730 w-203 fixed top-0 left-0 bottom-[56px] md:bottom-[90px] ${isopen ? 'translate-x-0' : 'translate-x-full'}`}>
                 {/* logo */}
                 <div className='pt-[25px] px-[18px]'>
                     <img src={logo} alt="Logo" />
