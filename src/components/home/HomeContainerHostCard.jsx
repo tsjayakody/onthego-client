@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 
 function HomeContainerHostCard({bannerImage, bannerTitle, bannerType}) {
     return (
-        <Link to="/hosts">
+        <Link to="/meetthehosts">
             <div className='bg-transparent md:h-179 md:w-120 h-166 w-120'>
                 {/* needds to implement circular background here */}
                 <img src={bannerImage} alt="" className='rounded-full border border-gray-100 shadow-sm'/>
