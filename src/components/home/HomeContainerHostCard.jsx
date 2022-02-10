@@ -4,10 +4,11 @@ import hostTwitterIcon from '../assets/host-twitter.svg';
 import hostPinterestIcon from '../assets/host-pinterest.svg';
 import hostInstagramIcon from '../assets/host-instagram.svg';
 import HostSocialButton from './HostSocialButton';
+import {Link} from 'react-router-dom';
 
 function HomeContainerHostCard({bannerImage, bannerTitle, bannerType}) {
     return (
-        <div >
+        <Link to="/hosts">
             <div className='bg-transparent md:h-179 md:w-120 h-166 w-120'>
                 {/* needds to implement circular background here */}
                 <img src={bannerImage} alt="" className='rounded-full border border-gray-100 shadow-sm'/>
@@ -30,7 +31,7 @@ function HomeContainerHostCard({bannerImage, bannerTitle, bannerType}) {
                     
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
 

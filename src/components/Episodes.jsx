@@ -15,7 +15,12 @@ function Episodes() {
                 {/* grid here */}
                 <div className='grid sm:grid-cols-1 grid-cols-2 md:grid-cols-6 md:pt-[15px] pt-[30px] '>
                     {episodes.map((episode) => (
-                        <EpisodeCategoryContainer key={episode.id} episodeNumber={episode.episodeList} episodeCover={episode.episodeCover} episodeCategory={episode.episodeCategory} />
+                        <EpisodeCategoryContainer 
+                            key={episode.id} 
+                            episodeNumber={episode.episodeList} 
+                            episodeCover={episode.episodeCover} 
+                            episodeCategory={episode.episodeCategory} 
+                        />
                     ))}
                 </div>
             </div>

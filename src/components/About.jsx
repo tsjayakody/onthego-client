@@ -14,8 +14,7 @@ function About() {
         <p className='text-#FFFFFF text-[17px] absolute top-[98px] text-center h-[286px] w-[282px]'>{sampleAboutText}</p>
       </div>
       <div className='flex w-full overflow-x-auto md:pl-[190px]'>
-        <AboutReview userImage={aboutReviewSample} userName={'Client One'} userRole={'Podcaster'} userReview={sampleReview} />
-        <AboutReview userImage={aboutReviewSample} userName={'Client One'} userRole={'Podcaster'} userReview={sampleReview} />
+        {/* implement a map function here to loop about us reviews from data model */}
         <AboutReview userImage={aboutReviewSample} userName={'Client One'} userRole={'Podcaster'} userReview={sampleReview} />
       </div>
     </div>

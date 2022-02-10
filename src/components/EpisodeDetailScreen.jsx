@@ -12,7 +12,6 @@ import twitterDarkIcon from '../components/assets/twitter-dark-icon.svg';
 import facebookDarkIcon from '../components/assets/facebook-dark-icon.svg';
 import instagramDarkIcon from '../components/assets/instagram-dark-icon.svg';
 import HomeContainerEpisodes from './home/HomeContainerEpisodes';
-import commonImage from '../components/assets/common-sample-image.png';
 import relatedPodcasts from '../data/RelatedPodcasts';
 
 function EpisodeDetailScreen() {

@@ -7,9 +7,6 @@ import Topbar from './shared/Topbar';
 
 function ContactUs() {
 
-
-  
-
   return (
     <BackgroundContainer>
       <Topbar>
@@ -19,9 +16,7 @@ function ContactUs() {
       <div className='bg-#2F2566 md:bg-#110E1F flex-auto h-3/5 rounded-t-60 md:w-[1100px]'>
         <div className='bg-#2F2566 md:bg-#110E1F pt-[63px] px-[26px] pb-[100px] flex-col rounded-t-60'>
           <h4 className='text-#FFFFFF text-[14px] uppercase'>get in touch</h4>
-          {/* testing contact us form here */}
           <ContactUsForm />
-          {/* newsletter component here */}
           <NewsLetter />
         </div>
       </div>

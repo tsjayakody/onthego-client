@@ -1,6 +1,4 @@
 import React from 'react';
-
-//! assets >>>temp<<<
 import HomeRowContainerTitle from './home/HomeRowContainerTitle';
 import HomeContainerEpisodes from './home/HomeContainerEpisodes';
 import HomeContainerHostCard from './home/HomeContainerHostCard';
@@ -12,7 +10,8 @@ import featuredepisodes from '../data/FeaturedEpisodes';
 import hosts from '../data/Hosts';
 import popularepisodes from '../data/PopularEpisodes';
 
-function Home() {
+function Home({isopen}) {
+    console.log({isopen});
   return (
     <BackgroundContainer>
         {/* top bar */}

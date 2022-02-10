@@ -10,13 +10,18 @@ import Register from "./components/Register";
 import SendEpisodes from "./components/SendEpisodes";
 import EpisodesList from "./components/EpisodesList";
 import EpisodeDetailScreen from "./components/EpisodeDetailScreen";
+import ShowsDetail from "./components/ShowsDetail";
+import HostDetailPage from "./components/HostDetailPage";
+import ErrorPage from "./components/ErrorPage";
+import MeetTheHosts from "./components/MeetTheHosts";
 
 function App() {
+
   return (
     <div className='flex flex-col h-screen w-screen'>
       <div className='flex flex-grow'>
                 <Router>
-                    <Sidebar/>
+                    <Sidebar className="z-10"/>
                   <Routes>
                     <Route exact path='/' element={<Home/>}/>
                     <Route path='/episodes' element={<Episodes/>}/>
@@ -27,6 +32,10 @@ function App() {
                     <Route path='/sendepisodes' element={<SendEpisodes/>}/>
                     <Route path='/episodes/episodeslist' element={<EpisodesList/>}/>
                     <Route path='/episodes/episodeslist/episodedetail' element={<EpisodeDetailScreen/>}/>
+                    <Route path='/shows/showsdetails' element={<ShowsDetail/>}/>
+                    <Route path='/hosts' element={<HostDetailPage/>} />
+                    <Route path='/404' element={<ErrorPage/>}/>
+                    <Route path='/meetthehosts' element={<MeetTheHosts/>}/>
                   </Routes>
                 </Router>
             </div>

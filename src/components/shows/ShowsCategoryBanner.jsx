@@ -3,7 +3,6 @@ import categoryBannerSample from '../assets/episode-banner-sample-3.svg';
 
 function ShowsCategoryBanner() {
     return (
-        //! needs to implement click functionality   
         <div className='bg-transparent h-[11.188rem] w-[9.375rem] mr-[38px]'>
           {/* number stac here */}
   
