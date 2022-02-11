@@ -2,6 +2,8 @@ import React from 'react'
 import showsDetailList from '../data/ShowsDetailsList';
 import showsSampleBanner from './assets/shows-sample-banner.png';
 import ShowsDetailContainer from './shows/ShowsDetailContainer';
+import ShowsDetailLeftContainer from './shows/ShowsDetailLeftContainer';
+import ShowsDetailRightContainer from './shows/ShowsDetailRightContainer';
 
 function ShowsDetail() {
 
@@ -12,26 +14,35 @@ function ShowsDetail() {
 
     return (
         <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto md:pl-[203px] pb-[150px]'>
-            {/* main container */}
-            <div className='flex-col mt-[126px] ml-[59px] space-y-[136px]'>
-                {/* top container */}
-                <div className="flex space-x-[210px]">
-                    {/* text div col */}
-                    <div className="flex-col max-w-[453px] justify-start space-y-[10px]">
-                        <h1 className='text-#FFFFFF text-26px'>{showsTitle}</h1>
-                        <p className='text-[#FFFFFF] text-[10px]'>{noOfEpisodes}</p>
-                        <p className='text-[#666666] text-[12px]'>{showsDescription}</p>
+            <div className='flex-col mt-[126px] ml-[59px] space-y-[52px] md:space-y-[136px]'>
+                <div className="flex ">
+                    <div className='hidden md:inline-flex'>
+                        <ShowsDetailLeftContainer
+                            showsTitle={showsTitle}
+                            noOfEpisodes={noOfEpisodes}
+                            showsDescription={showsDescription}
+                        />
+                        <ShowsDetailRightContainer
+                            showsSampleBanner={showsSampleBanner}
+                        />
                     </div>
-                    {/* shows banner image */}
-                        <img src={showsSampleBanner} alt="" className='h-[244px] w-[268px] object-fill'/>
+                    <div className='inline-table md:hidden'>
+                        <ShowsDetailRightContainer
+                            showsSampleBanner={showsSampleBanner}
+                        />
+                        <ShowsDetailLeftContainer
+                            showsTitle={showsTitle}
+                            noOfEpisodes={noOfEpisodes}
+                            showsDescription={showsDescription}
+                        />
+                    </div>
                 </div>
-                {/* bottom shows grid */}
-                <div className='w-[990px] grid grid-cols-6 gap-[43px]'>
-                    {showsDetailList.map((item)=>(
-                        <ShowsDetailContainer 
-                            key={item.id} 
-                            showsBanner={item.showCover} 
-                            showsTitle={item.showsTitle} 
+                <div className='md:w-[990px] md:grid md:grid-cols-6 md:gap-[43px] grid grid-cols-2 gap-[20px] mr-[44px] md:mr-[0px]'>
+                    {showsDetailList.map((item) => (
+                        <ShowsDetailContainer
+                            key={item.id}
+                            showsBanner={item.showCover}
+                            showsTitle={item.showsTitle}
                             showsAuthor={item.showAuthor}
                         />
                     ))}
