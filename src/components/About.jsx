@@ -14,7 +14,7 @@ function About() {
         <img src={aboutSampleImage} alt="AboutImage" className='object-fill relative md:w-[432px]' />
         <p className='text-#FFFFFF text-[17px] absolute top-[98px] text-center h-[286px] w-[282px]'>{sampleAboutText}</p>
       </div>
-      <div className='flex w-full overflow-x-auto md:pl-[190px]'>
+      <div className='flex w-full overflow-x-auto md:pl-[190px] pr-[32px]'>
         {/* implement a map function here to loop about us reviews from data model */}
         {reviewList.map((item)=>(
           <AboutReview 
