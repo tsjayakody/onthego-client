@@ -2,6 +2,7 @@ import React from 'react';
 import aboutSampleImage from './assets/mobile-about-sample.png';
 import aboutReviewSample from './assets/mobile-about-review-sample.png';
 import AboutReview from './about/AboutReview';
+import reviewList from '../data/Reviews';
 
 
 function About() {
@@ -15,7 +16,15 @@ function About() {
       </div>
       <div className='flex w-full overflow-x-auto md:pl-[190px]'>
         {/* implement a map function here to loop about us reviews from data model */}
-        <AboutReview userImage={aboutReviewSample} userName={'Client One'} userRole={'Podcaster'} userReview={sampleReview} />
+        {reviewList.map((item)=>(
+          <AboutReview 
+            key={item.key} 
+            userImage={item.userImage} 
+            userName={item.userName} 
+            userRole={item.userType} 
+            userReview={item.userReview} 
+          />
+        ))}
       </div>
     </div>
   );
