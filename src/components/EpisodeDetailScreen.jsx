@@ -52,7 +52,7 @@ function EpisodeDetailScreen() {
       </div>
       <div className='pt-[30px] pr-[26px] flex-col relative'>
         <p className='text-#FFFFFF text-[14px text-justify]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-        <div className='flex pt-[4px] items-center space-x-[9px]'>
+        <div className='flex pt-[4px] mb-[18px] items-center space-x-[9px] absolute right-[31px]'>
           <p className='text-#666666 text-[12px] pr-[20px] w-[50px]'>Share:</p>
           <button onClick={twitterButtonPressed}>
             <img src={twitterIcon} alt=""className='w-[18px] h-[18px] object-fill'/>
