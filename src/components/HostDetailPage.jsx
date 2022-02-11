@@ -7,6 +7,8 @@ import facebookDarkIcon from '../components/assets/facebook-dark-icon.svg';
 import instagramDarkIcon from '../components/assets/instagram-dark-icon.svg';
 import DarkSocialMediaButton from '../components/shared/DarkSocialMediaButton';
 import youtubeDarkIcon from '../components/assets/youtube-dark-icon.svg';
+import HostDetailLeftContainer from './hosts/HostDetailLeftContainer';
+import HostDetailRightContainer from './hosts/HostDetailRightContainer';
 
 function HostDetailPage() {
 
@@ -17,33 +19,44 @@ function HostDetailPage() {
     return (
         <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto md:pl-[203px] pb-[150px]'>
             {/* main container */}
-            <div className='flex-col mt-[126px] ml-[59px] space-y-[136px]'>
+            <div className='flex-col mt-[126px] ml-[59px] space-y-[79px] md:space-y-[136px]'>
                 {/* top container */}
                 <div className="flex space-x-[210px]">
-                    {/* text div col */}
-                    <div className="flex-col max-w-[453px] justify-start space-y-[10px]">
-                        <h1 className='text-#FFFFFF text-[26px]'>{hostName}</h1>
-                        <p className='text-[#FFFFFF] text-[12px]'>{hostType}</p>
-                        <p className='text-[#666666] text-[15px]'>{hostDetails}</p>
+                    <div className='inline-table md:hidden '>
+                        {/* shows banner image */}
+                        <HostDetailRightContainer
+                            hostdetialSampleBanner={hostdetialSampleBanner}
+                            twitterDarkIcon={twitterDarkIcon}
+                            facebookDarkIcon={facebookDarkIcon}
+                            instagramDarkIcon={instagramDarkIcon}
+                            youtubeDarkIcon={youtubeDarkIcon}
+                        />
+                        {/* text div col */}
+                        <HostDetailLeftContainer
+                            hostName={hostName}
+                            hostType={hostType}
+                            hostDetails={hostDetails}
+                        />
                     </div>
-                    {/* shows banner image */}
-                    <div className='flex-col space-y-[4px]'>
-                        <img src={hostdetialSampleBanner} alt="" className='h-[244px] w-[268px] object-fill' />
-                        {/* social media button here */}
-                        <div className='flex'>
-                            <p className='text-[#666666] text-[11px]'>Follow Us On:</p>
-                            <div className='flex space-x-[7px] ml-[18px]'>
-                                {/* social buttons here */}
-                                <DarkSocialMediaButton icon={twitterDarkIcon} onclick={()=>(console.log("Twitter Button Pressed"))}/>
-                                <DarkSocialMediaButton icon={facebookDarkIcon} onclick={()=>(console.log("Twitter Button Pressed"))}/>
-                                <DarkSocialMediaButton icon={instagramDarkIcon} onclick={()=>(console.log("Twitter Button Pressed"))}/>
-                                <DarkSocialMediaButton icon={youtubeDarkIcon} onclick={()=>(console.log("Twitter Button Pressed"))}/>
-                            </div>
-                        </div>
+                    <div className='hidden md:inline-flex space-x-[206px]'>
+                        {/* text div col */}
+                        <HostDetailLeftContainer
+                            hostName={hostName}
+                            hostType={hostType}
+                            hostDetails={hostDetails}
+                        />
+                        {/* shows banner image */}
+                        <HostDetailRightContainer
+                            hostdetialSampleBanner={hostdetialSampleBanner}
+                            twitterDarkIcon={twitterDarkIcon}
+                            facebookDarkIcon={facebookDarkIcon}
+                            instagramDarkIcon={instagramDarkIcon}
+                            youtubeDarkIcon={youtubeDarkIcon}
+                        />
                     </div>
                 </div>
                 {/* bottom shows grid */}
-                <div className='ml-[150px] w-[750px] grid grid-cols-5 gap-[43px]'>
+                <div className='md:ml-[150px] md:w-[750px] grid grid-cols-2 gap-[29px] md:grid md:grid-cols-5 md:gap-[43px] mr-[44px] md:mr-[0px]'>
                     {hostDetailList.map((item) => (
                         <ShowsDetailContainer
                             key={item.id}
