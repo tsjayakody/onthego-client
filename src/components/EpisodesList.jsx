@@ -12,6 +12,7 @@ function EpisodesList() {
         {episodeslist.map((item)=>(
           <EpisodesListItem 
             key={item.id} 
+            index={item.id}
             episodeCover={item.episodeCover} 
             episodeCategory={item.epsiodeCategory} 
             episodeTitle={item.episodeTitle} 
