@@ -2,6 +2,8 @@ import React from 'react'
 import twitterDarkIcon from '../assets/twitter-dark-icon.svg';
 import facebookDarkIcon from '../assets/facebook-dark-icon.svg';
 import instagramDarkIcon from '../assets/instagram-dark-icon.svg';
+import sampleImage from '../assets/common-sample-image.png';
+import PropTypes from 'prop-types'
 
 function EpisodeDetailUserProfileContainer({
     personSample
@@ -36,6 +38,14 @@ function EpisodeDetailUserProfileContainer({
             </div>
         </div>
     )
+}
+
+EpisodeDetailUserProfileContainer.defaultProps = {
+    personSample: sampleImage,
+}
+
+EpisodeDetailUserProfileContainer.propTypes = {
+    personSample: PropTypes.any
 }
 
 export default EpisodeDetailUserProfileContainer

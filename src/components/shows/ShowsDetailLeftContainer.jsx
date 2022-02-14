@@ -1,6 +1,10 @@
 import React from 'react'
 
-function ShowsDetailLeftContainer({ showsTitle, noOfEpisodes, showsDescription }) {
+function ShowsDetailLeftContainer({
+    showsTitle,
+    noOfEpisodes,
+    showsDescription
+}) {
     return (
         <div className="flex-col max-w-[453px] justify-start space-y-[10px]">
             <h1 className='text-#FFFFFF text-[20px] md:text-[26px] mr-[44px] md:mr-[0px] text-center md:text-left'>

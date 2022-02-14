@@ -1,8 +1,17 @@
 import React from 'react';
 import { FaPlay } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import sampleImage from '../assets/common-sample-image.png';
+import PropTypes from 'prop-types'
 
-function EpisodesListItem({ index, episodeCover, episodeTitle, episodeCategory, noofepisodes, episodeDate }) {
+function EpisodesListItem({
+  index,
+  episodeCover,
+  episodeTitle,
+  episodeCategory,
+  noofepisodes,
+  episodeDate
+}) {
 
   const onClick = () => (console.log('play button pressed'));
 
@@ -39,6 +48,24 @@ function EpisodesListItem({ index, episodeCover, episodeTitle, episodeCategory, 
       </div>
     </div>
   );
+}
+
+EpisodesListItem.defaultProps = {
+  index: 0,
+  episodeCover: sampleImage,
+  episodeTitle: '_',
+  episodeCategory: '_',
+  noofepisodes: 0,
+  episodeDate: '_'
+}
+
+EpisodesListItem.propTypes = {
+  index: PropTypes.number,
+  episodeCover: PropTypes.any,
+  episodeTitle: PropTypes.string,
+  episodeCategory: PropTypes.string,
+  noofepisodes: PropTypes.string,
+  episodeDate: PropTypes.string,
 }
 
 export default EpisodesListItem;

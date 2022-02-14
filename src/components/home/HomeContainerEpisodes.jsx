@@ -1,6 +1,12 @@
 import React from 'react';
+import sampleImage from '../assets/common-sample-image.png';
+import PropTypes from 'prop-types'
 
-function HomeContainerEpisodes({ bannerImage, bannerTitle, bannerCreator }) {
+function HomeContainerEpisodes({
+    bannerImage,
+    bannerTitle,
+    bannerCreator,
+}) {
     return (
         <div className='flex flex-col justify-start md:h-164 md:w-119 md:bg-#282246 bg-transparent h-183 w-138'>
             <img src={bannerImage} className='object-cover md:h-119 md:w-119 md:pt-0 h-138 w-138' alt="" />
@@ -9,5 +15,17 @@ function HomeContainerEpisodes({ bannerImage, bannerTitle, bannerCreator }) {
         </div>
     );
 }
+
+HomeContainerEpisodes.defaultProps = {
+    bannerImage: sampleImage,
+    bannerTitle: '_',
+    bannerCreator: '_',
+}
+HomeContainerEpisodes.propTypes = {
+    bannerImage: PropTypes.any,
+    bannerTitle: PropTypes.string,
+    bannerCreator: PropTypes.string,
+}
+
 
 export default HomeContainerEpisodes;

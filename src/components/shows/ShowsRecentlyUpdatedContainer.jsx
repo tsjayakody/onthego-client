@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ShowsRecentlyUpdatedContainer({ showsCover, showsTitle, showsDate }) {
+function ShowsRecentlyUpdatedContainer({
+    showsCover,
+    showsTitle,
+    showsDate
+}) {
     return (
         <Link to='/shows/showsdetails'>
             <div className='bg-transparent md:bg-#282246 h-204 w-138 md:h-198 md:w-150 mr-[38px] mb-[41px] md:mb-[34px] '>

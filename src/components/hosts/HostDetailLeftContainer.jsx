@@ -1,6 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-function HostDetailLeftContainer({hostName, hostType, hostDetails}) {
+function HostDetailLeftContainer({
+    hostName,
+    hostType,
+    hostDetails
+}) {
     return (
         <div className=''>
             <div className="flex-col max-w-[453px] justify-center md:justify-start space-y-[10px] mr-[44px] md:mr-[0px]">
@@ -10,6 +15,18 @@ function HostDetailLeftContainer({hostName, hostType, hostDetails}) {
             </div>
         </div>
     )
+}
+
+HostDetailLeftContainer.defaultProps = {
+    hostName: '_',
+    hostType: '_',
+    hostDetails: '_',
+}
+
+HostDetailLeftContainer.propTypes = {
+    hostName: PropTypes.string,
+    hostType: PropTypes.string,
+    hostDetails: PropTypes.string,
 }
 
 export default HostDetailLeftContainer

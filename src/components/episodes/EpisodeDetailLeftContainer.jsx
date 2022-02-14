@@ -1,5 +1,6 @@
 import React from 'react'
 import EpisodeDetailPodcastButtonContainer from './EpisodeDetailPodcastButtonContainer'
+import PropTypes from 'prop-types'
 
 function EpisodeDetailLeftContainer({
   episodeCategory,
@@ -21,6 +22,20 @@ function EpisodeDetailLeftContainer({
       <EpisodeDetailPodcastButtonContainer />
     </div>
   )
+}
+
+EpisodeDetailLeftContainer.defaultProps = {
+  episodeCategory: '_',
+  episodeTitle: '_',
+  episodeDate: '_',
+  noOfEpisodes: 0,
+}
+
+EpisodeDetailLeftContainer.propTypes = {
+  episodeCategory: PropTypes.string,
+  episodeTitle: PropTypes.string,
+  episodeDate: PropTypes.string,
+  noOfEpisodes: PropTypes.number,
 }
 
 export default EpisodeDetailLeftContainer

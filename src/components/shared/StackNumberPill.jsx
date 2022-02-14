@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function StackNumberPill({episodeNumber}) {
     return (
@@ -6,6 +7,14 @@ function StackNumberPill({episodeNumber}) {
             <p className='text-#FFFFFF text-[12px] z-10'>{episodeNumber} Ep</p>
         </div>
     )
+}
+
+StackNumberPill.defaultProps = {
+    episodeNumber : 0,
+}
+
+StackNumberPill.propTypes = {
+    episodeNumber: PropTypes.number,
 }
 
 export default StackNumberPill
