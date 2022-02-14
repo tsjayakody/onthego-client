@@ -6,7 +6,7 @@ function ShowsAlphabeticalColumnList({ letter, list }) {
     return (
             <div className='pb-[37px]'>
                 <ShowsAlphabeticalBannerLetter letter={letter} />
-                <div className='flex pt-[14px] w-screen auto-cols-max md:auto-cols-min'>
+                <div className='flex pt-[14px] w-full overflow-x-auto overflow-y-hidden'>
                     {list.map((item) => (
                         <ShowsCategoryBanner 
                             key={item.id} 

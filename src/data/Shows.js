@@ -75,7 +75,7 @@ let shows = [
     {
         'letter': 'C',
         'showsList': [
-                {   
+            {   
                 'id': 1,
                 'showCover': sampleImage,
                 'showName': 'The Morning Sports',
@@ -104,7 +104,37 @@ let shows = [
                 'showCover': sampleImage,
                 'showName': 'The Morning Sports',
                 'episodeList': 12,
+            },
+            {   
+                'id': 6,
+                'showCover': sampleImage,
+                'showName': 'The Morning Sports',
+                'episodeList': 12,
             }, 
+            {   
+                'id': 7,
+                'showCover': sampleImage,
+                'showName': 'The Morning Sports',
+                'episodeList': 12,
+            }, 
+            {   
+                'id': 8,
+                'showCover': sampleImage,
+                'showName': 'The Morning Sports',
+                'episodeList': 12,
+            }, 
+            {   
+                'id': 9,
+                'showCover': sampleImage,
+                'showName': 'The Morning Sports',
+                'episodeList': 12,
+            }, 
+            {   
+                'id': 10,
+                'showCover': sampleImage,
+                'showName': 'The Morning Sports',
+                'episodeList': 12,
+            },  
         ],
     },
 ]
