@@ -1,10 +1,12 @@
 import React from 'react'
 
-function DarkSocialMediaButton({icon, onclick}) {
+function DarkSocialMediaButton({ icon, link }) {
   return (
-        <button className='h-[18px] w-[13px]' onclick={onclick}>
-            <img src={icon} alt="" />
-        </button>
+    <div className='h-[18px] w-[18px]'>
+      <a href={link} target="_blank" rel="noopener noreferrer" >
+        <img src={icon} alt="" className='object-fill'/>
+      </a>
+    </div>
   )
 }
 

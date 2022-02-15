@@ -4,9 +4,9 @@ import EpisodeDetailTextContainer from './EpisodeDetailTextContainer'
 
 function EpisodeDetailDescriptionContainer() {
     return (
-        <div className='md:max-w-[650px] pt-[30px] md:pt-[62px] pr-[26px] flex-col relative'>
+        <div className='md:max-w-[650px] pt-[30px] md:pt-[62px] pr-[26px] flex-col'>
             <EpisodeDetailTextContainer />
-            <EpisodeDetailSocialMediaButtonContainer />
+            <EpisodeDetailSocialMediaButtonContainer /> 
         </div>
     )
 }

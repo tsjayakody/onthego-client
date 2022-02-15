@@ -12,30 +12,34 @@ function HomeContainerHostCard({
     bannerType
 }) {
     return (
-        <Link to="/meetthehosts">
-            <div className='bg-transparent md:h-179 md:w-120 h-166 w-120'>
-                {/* needds to implement circular background here */}
-                <img src={bannerImage} alt="" className='rounded-full border border-gray-100 shadow-sm' />
-                <div className='flex flex-col items-center'>
-                    <p className='text-#FFFFFF text-[13px] md:text-[13px] truncate'>{bannerTitle}</p>
-                    <p className='text-#666666 text-[10px] truncate'>{bannerType}</p>
+
+        <div className='bg-transparent md:h-179 md:w-120 h-166 w-120'>
+            <Link to="/meetthehosts">
+                <div>
+                    {/* needds to implement circular background here */}
+                    <img src={bannerImage} alt="" className='rounded-full border border-gray-100 shadow-sm' />
+                    <div className='flex flex-col items-center'>
+                        <p className='text-#FFFFFF text-[13px] md:text-[13px] truncate'>{bannerTitle}</p>
+                        <p className='text-#666666 text-[10px] truncate'>{bannerType}</p>
+                    </div>
                 </div>
-                <div className='flex justify-around'>
-                    {/* twitter button */}
-                    <HostSocialButton icon={hostTwitterIcon} link={"https://www.twitter.com"} />
+            </Link>
+            <div className='flex justify-around'>
+                {/* twitter button */}
+                <HostSocialButton icon={hostTwitterIcon} link={"https://www.twitter.com"} />
 
-                    {/* facebook button */}
-                    <HostSocialButton icon={hostFacebookIcon} link={"https://www.facebook.com"} />
+                {/* facebook button */}
+                <HostSocialButton icon={hostFacebookIcon} link={"https://www.facebook.com"} />
 
-                    {/* pinterest button */}
-                    <HostSocialButton icon={hostPinterestIcon} link={"https://www.pinterest.com"} />
+                {/* pinterest button */}
+                <HostSocialButton icon={hostPinterestIcon} link={"https://www.pinterest.com"} />
 
-                    {/* instagram button */}
-                    <HostSocialButton icon={hostInstagramIcon} link={"https://www.instagram.com"} />
+                {/* instagram button */}
+                <HostSocialButton icon={hostInstagramIcon} link={"https://www.instagram.com"} />
 
-                </div>
             </div>
-        </Link>
+        </div>
+
     );
 }
 

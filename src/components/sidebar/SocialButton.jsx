@@ -2,9 +2,8 @@ import React from 'react';
 import SocialButtonContainer from '../shared/SocialButtonContainer';
 import useRipple from "use-ripple-hook";
 
-function SocialButton({ icon, name }) {
+function SocialButton({ icon, name, link }) {
 
-  let onClick = () => { console.log('social button pressed'); };
   const [ripple, event] = useRipple();
 
   return (
@@ -12,12 +11,13 @@ function SocialButton({ icon, name }) {
       <button
         ref={ripple}
         onMouseDown={event}
-        className='w-full h-full text-#666666 text-[12px] md:text-#C4C4C4 '
-        onClick={onClick}>
+        className='w-full h-full text-#666666 text-[12px] md:text-#C4C4C4 '>
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <div className='pl-[10px] flex items-center'>
             {icon}
             <p className=' md:pl-[21px]'>{name}</p>
           </div>
+        </a>
       </button>
     </SocialButtonContainer>
   );

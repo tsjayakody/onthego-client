@@ -18,14 +18,14 @@ function MeetTheHostCardLeft() {
                     <img src={leftrectangle} alt="" className='w-[50px] h-[35px] absolute left-[-35px] top-[45px]' />
                     <p className='text-[#00D2CB] text-[15px] md:text-[20px] mb-[19px]'>Marlon Dale Ferreira</p>
                     <p className='text-[#FFFFFF] text-[10px] md:text-[12px] max-w-[208px] mb-[27px] text-center'>JOURNALIST - PODCASTER (SPORTS/NEWS)</p>
-                    <div className='flex'>
+                    <div className='flex items-center'>
                         <p className='text-[#666666] text-[10px] md:text-[11px]'>Follow Us On:</p>
                         <div className='flex space-x-[7px] ml-[18px]'>
                             {/* social buttons here */}
-                            <DarkSocialMediaButton icon={twitterDarkIcon} onclick={() => (console.log("Twitter Button Pressed"))} />
-                            <DarkSocialMediaButton icon={facebookDarkIcon} onclick={() => (console.log("Twitter Button Pressed"))} />
-                            <DarkSocialMediaButton icon={instagramDarkIcon} onclick={() => (console.log("Twitter Button Pressed"))} />
-                            <DarkSocialMediaButton icon={youtubeDarkIcon} onclick={() => (console.log("Twitter Button Pressed"))} />
+                            <DarkSocialMediaButton icon={twitterDarkIcon} link={'https://www.twitter.com'} />
+                            <DarkSocialMediaButton icon={facebookDarkIcon} link={'https://www.facebook.com'}  />
+                            <DarkSocialMediaButton icon={instagramDarkIcon} link={'https://www.instagram.com'}  />
+                            <DarkSocialMediaButton icon={youtubeDarkIcon} link={'https://www.youtube.com'}  />
                         </div>
                     </div>
                 </div>

@@ -4,24 +4,20 @@ import facebookIcon from '../assets/facebook-icon.svg';
 import instagramIcon from '../assets/instagram-icon.svg';
 
 function EpisodeDetailSocialMediaButtonContainer() {
-
-
-  const twitterButtonPressed = () => (console.log('Twitter Button Pressed'));
-  const facebookButtonPressed = () => (console.log('Facebook Button Pressed'));
-  const instagramButtonPressed = () => (console.log('Instagram Button Pressed'));
-
   return (
-    <div className='flex pt-[4px] md:pt-[20px] mb-[18px] items-center space-x-[9px] absolute right-[0px]'>
+    <div className='w-full flex justify-end'>
+      <div className='flex pt-[4px] md:pt-[20px] mb-[18px] items-center space-x-[9px]'>
       <p className='text-#666666 text-[12px] pr-[20px] w-[50px]'>Share:</p>
-      <button onClick={twitterButtonPressed}>
+      <a href={'https://www.twitter.com'} target="_blank" rel="noopener noreferrer">
         <img src={twitterIcon} alt="" className='w-[18px] h-[18px] object-fill' />
-      </button>]
-      <button onClick={facebookButtonPressed}>
+      </a>
+      <a href={'https://www.facebook.com'} target="_blank" rel="noopener noreferrer">
         <img src={facebookIcon} alt="" className='w-[18px] h-[18px] object-fill' />
-      </button>
-      <button onClick={instagramButtonPressed}>
+      </a>
+      <a href={'https://www.instagram.com'} target="_blank" rel="noopener noreferrer">
         <img src={instagramIcon} alt="" className='w-[18px] h-[18px] object-fill' />
-      </button>
+      </a>
+    </div>
     </div>
   )
 }

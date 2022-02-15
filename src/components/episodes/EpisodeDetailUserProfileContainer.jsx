@@ -8,27 +8,21 @@ import PropTypes from 'prop-types'
 function EpisodeDetailUserProfileContainer({
     personSample
 }) {
-
-    //TODO: need to implement social button links as props
-    const twitterButtonPressed = () => (console.log('Twitter Button Pressed'));
-    const facebookButtonPressed = () => (console.log('Facebook Button Pressed'));
-    const instagramButtonPressed = () => (console.log('Instagram Button Pressed'));
-
     return (
         <div className='flex items-center md:items-start mr-[31px] space-x-[46px] mt-[25px] md:mt-[40px]'>
             <div className='flex-col'>
                 <img src={personSample} alt="" className='object-fill w-[80px] h-[80px] md:w-[146px] md:h-[146px] md:ml-[15px]' />
                 <div className='flex mt-[4px] md:mt-[24px] items-center space-x-[4px]'>
                     <p className='text-#666666 text-[12px] pr-[20px] w-[50px]'>Follow:</p>
-                    <button onClick={twitterButtonPressed}>
+                    <a href={'https://www.twitter.com'} target="_blank" rel="noopener noreferrer">
                         <img src={twitterDarkIcon} alt="" className='w-[13px] h-[18px] object-fill' />
-                    </button>]
-                    <button onClick={facebookButtonPressed}>
+                    </a>
+                    <a href={'https://www.facebook.com'} target="_blank" rel="noopener noreferrer">
                         <img src={facebookDarkIcon} alt="" className='w-[13px] h-[18px] object-fill' />
-                    </button>
-                    <button onClick={instagramButtonPressed}>
+                    </a>
+                    <a href={'https://www.instagram.com'} target="_blank" rel="noopener noreferrer">
                         <img src={instagramDarkIcon} alt="" className='w-[13px] h-[18px] object-fill' />
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className='flex-col space-y-[5px] md:max-w-[631px] md:pl-[117px]'>

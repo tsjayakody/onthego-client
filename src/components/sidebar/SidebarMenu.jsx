@@ -37,17 +37,25 @@ function SidebarMenu({ isopen }) {
                         {/* contact us button */}
                         <NavButtons icon={<MdPhoneInTalk />} name={'Contact Us'} path={'contactus'} />
                         {/* register button */}
-                        <NavButtons icon={<BsCheck2Square />} name={'Register'} path={'/register'}/>
+                        <NavButtons icon={<BsCheck2Square />} name={'Register'} path={'/register'} />
                         {/* send episode button */}
-                        <NavButtons icon={<IoIosSend />} name={'Send Episodes'} path={'/sendepisodes'}/>
+                        <NavButtons icon={<IoIosSend />} name={'Send Episodes'} path={'/sendepisodes'} />
                     </div>
                     <div className='flex flex-col justify-between item-center absolute bottom-10 w-fit px-[27px] '>
                         {/* social buttons */}
                         {/* facebook button */}
                         <div className='flex justify-around items-center w-203 md:space-y-[15.84px] md:flex-col'>
-                            <SocialButton icon={<MdFacebook className='text-[#BFDBFE] h-21 w-23 md:text-[#1E40AF] md:h-30 md:w-30' />} name={'Facebook'} />
+                            <SocialButton
+                                icon={<MdFacebook className='text-[#BFDBFE] h-21 w-23 md:text-[#1E40AF] md:h-30 md:w-30' />}
+                                name={'Facebook'}
+                                link={'https://www.facebook.com'}
+                            />
                             {/* twitter button */}
-                            <SocialButton icon={<SiTwitter className='text-[#BFDBFE] h-21 w-23 md:text-[#1E40AF] md:h-30 md:w-30' />} name={'Twitter'} />
+                            <SocialButton 
+                                icon={<SiTwitter className='text-[#BFDBFE] h-21 w-23 md:text-[#1E40AF] md:h-30 md:w-30' />} 
+                                name={'Twitter'} 
+                                link={'https://www.twitter.com'}
+                            />
                         </div>
                         {/* content-rights */}
                         <div className=''>
