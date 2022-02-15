@@ -4,7 +4,7 @@ import AboutReview from './AboutReview'
 
 function AboutUsReviewListContainer() {
   return (
-    <div className='flex w-full overflow-x-auto md:pl-[190px] pr-[32px]'>
+    <div className='flex w-full overflow-x-auto md:ml-[50px]'>
         {reviewList.map((item) => (
           <AboutReview
             key={item.key}
