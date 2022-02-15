@@ -5,8 +5,8 @@ import sampleImage from '../assets/mobile-about-review-sample.png';
 
 function AboutReview({ userImage, userName, userRole, userReview }) {
   return (
-    <div className='pt-[66px] pl-[32px] flex-col'>
-      <div className='bg-#282246 h-[186px] w-[173px] flex-col'>
+    <div className='mr-[32px] md:mr-[77px]'>
+      <div className='bg-#282246 h-[186px] w-[173px] md:w-[310px] md:h-[186px] flex-col'>
         <p className='text-left text-[14px] text-#FFFFFF pt-[20px] pl-[12px] pr-[21px]'>
           {userReview}
         </p>
