@@ -48,7 +48,7 @@ function HomeLeftContainer() {
                             <p>Browse All{'>'}{'>'}</p>
                         </div>
                     </div>
-                    <div className='flex space-x-[55px]'>
+                    <div className='flex space-x-[55px] md:space-x-[36px] w-full overflow-x-auto'>
                         {hosts.map((item) => (
                             <HomeContainerHostCard
                                 key={item.id}

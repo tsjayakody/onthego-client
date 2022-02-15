@@ -8,7 +8,7 @@ function ShowsRecentlyUpdatedTopContainer() {
       {/* category title here */}
       <p className='text-#FFFFFF text-[21px] md:text-[18px] mb-[41px] md:mb-[27px]'>Recently Updated</p>
       {/* recently updated here */}
-      <div className='flex w-screen auto-cols-max md:auto-cols-min mt-[10px] overflow-x-auto'>
+      <div className='flex w-full auto-cols-max md:auto-cols-min mt-[10px] overflow-x-auto'>
         {/* testing purpose */}
         {recentlyupdated.map((item) => (
           <ShowsRecentlyUpdatedContainer

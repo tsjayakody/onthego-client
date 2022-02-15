@@ -2,12 +2,17 @@ import React from 'react'
 import popularepisodes from '../../data/PopularEpisodes'
 import HomeRowContainerTitle from './HomeRowContainerTitle'
 import PopularEpisode from './PopularEpisode'
+import useRipple from "use-ripple-hook";
+
 
 // absolute top-[59px] right-[22px] bottom-[150px]
 
 function HomeRightContainer() {
+    
+    const [ripple, event] = useRipple();
+
     return (
-        <div className='w-full flex-col hidden md:inline'>
+        <div className='w-full h-full  flex-col hidden md:inline'>
             {/* popular episodes */}
             <div className='md:pt-[117px]'>
                 <HomeRowContainerTitle rowTitle='Popular Episodes' />
@@ -24,7 +29,7 @@ function HomeRightContainer() {
                 </div>
                 {/* view all sample button */}
                 <div className='pt-[42px]'>
-                    <button className='bg-#282246 h-[1.563rem] w-[16.25rem] ' >
+                    <button ref={ripple} onMouseDown={event} className='bg-#282246 h-[25px] w-[260px] ' >
                         <p className='text-#FFFFFF text-[10px]'>View All</p>
                     </button>
                 </div>

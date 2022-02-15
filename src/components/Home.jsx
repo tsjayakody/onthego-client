@@ -13,7 +13,7 @@ function Home({ isopen }) {
                 <p className='text-#FFFFFF text-[10px]'>This is search bar container</p>
             </Topbar>
             <div className='w-full h-full flex'>
-                <div className='flex-auto w-4/6 h-full '>
+                <div className='flex-auto w-4/6 h-full'>
                     <HomeLeftContainer/>
                 </div>
                 <div className='flex-auto w-1/6 h-full md:inline hidden'>
