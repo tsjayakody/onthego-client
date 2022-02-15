@@ -1,6 +1,7 @@
 import React from 'react';
 import registerImage from '../assets/contactus-register-image.png';
 import sendepisodeImage from '../assets/contactus-sendepisode-image.png';
+import useRipple from "use-ripple-hook";
 
 function ContactUsDetails() {
 
@@ -9,6 +10,8 @@ function ContactUsDetails() {
   const onRegisterClick = () => { console.log('register button pressed'); }
   const onSendEpisodeClick = () => { console.log('send episode buttton pressed'); }
 
+  const [ripple1, event1] = useRipple();
+  const [ripple2, event2] = useRipple();
 
   return (
     <div className='flex-auto h-2/5'>
@@ -41,11 +44,11 @@ function ContactUsDetails() {
         <div className='hidden md:w-[388px] md:h-[179px] bg-transparent md:mt-[90px] md:flex md:justify-between'>
           <div className='md:h-[179px] md:w-[150px]'>
             <img src={registerImage} alt="registerImage" className='h-[141px] w-[150px] object-fill' />
-            <button className='text-#FFFFFF text-[14px] text-center w-[150px] h-[38px] m-auto bg-#282246' onClick={onRegisterClick}>Register</button>
+            <button ref={ripple1} onMouseDown={event1} className='text-#FFFFFF text-[14px] text-center w-[150px] h-[38px] m-auto bg-#282246' onClick={onRegisterClick}>Register</button>
           </div>
           <div className='md:h-[179px] md:w-[150px]'>
             <img src={sendepisodeImage} alt="registerImage" className='h-[141px] w-[150px] object-fill' />
-            <button className='text-#FFFFFF text-[14px] text-center w-[150px] h-[38px] m-auto bg-#282246' onClick={onSendEpisodeClick}>Send Episodes</button>
+            <button ref={ripple2} onMouseDown={event2} className='text-#FFFFFF text-[14px] text-center w-[150px] h-[38px] m-auto bg-#282246' onClick={onSendEpisodeClick}>Send Episodes</button>
           </div>
         </div>
       </div>
