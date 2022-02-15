@@ -1,7 +1,7 @@
 import React from 'react'
 import meetTheHosts from '../data/MeetTheHostsList'
 import MeetTheHostCardLeft from './hosts/MeetTheHostCardLeft'
-import MeetTheHostCardRight from './hosts/MeetTheHostCardRight'
+// import MeetTheHostCardRight from './hosts/MeetTheHostCardRight'
 
 function MeetTheHosts() {
     return (
