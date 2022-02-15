@@ -10,7 +10,7 @@ function ContactUsForm() {
 
     return (
         <div className='pb-[80px] md:w-[838px]'>
-            <form className='pt-[12px] pb-[50px] relative'>
+            <form className='pt-[12px] pb-[50px]'>
                 {/* name */}
                 <div className='md:flex z-0'>
                     <div className="mb-[13px] md:mr-[20px]">
@@ -24,8 +24,10 @@ function ContactUsForm() {
                 <div className='mb-[6px] md:mb-[17px] md:w-[792px]'>
                     <textarea name="message" id="message" cols="10" rows="4" className='bg-#2F2566 md:bg-#110E1F border border-#453598 text-gray-900 text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5' placeholder={messagePlaceHolder}></textarea>
                 </div>
-                <div className='absolute right-0 md:mr-[46px]'>
-                    <button ref={ripple} onMouseDown={event} type="submit" className="h-[45px] w-[180px] px-[34px] py-[9px] text-#FFFFFF bg-#282246 text-[14px] text-center">Send Episodes</button>
+                <div className='w-full relative'>
+                    <div className='absolute right-0 md:mr-[46px]'>
+                        <button ref={ripple} onMouseDown={event} type="submit" className="h-[45px] w-[180px] px-[34px] py-[9px] text-#FFFFFF bg-#282246 text-[14px] text-center">Send Episodes</button>
+                    </div>
                 </div>
             </form>
         </div>
