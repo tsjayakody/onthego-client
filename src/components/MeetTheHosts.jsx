@@ -9,11 +9,11 @@ function MeetTheHosts() {
     return (
         <BackgroundContainer>
             <Topbar/>
-            <div className='pt-[86px] md:pt-[80px] mx-[20px] md:pl-[60px] w-[1100px]'>
+            <div className='mt-[86px] md:mt-[80px] mx-[20px] md:pl-[60px] md:w-[1100px] w-full'>
                 <div className='flex'>
                     <h1 className='text-[#FFFFFF] text-[24px] capitalize inline md:hidden mx-auto text-center justify-center'>Meet Hosts</h1>
                 </div>
-                <div className='grid grid-cols-1 gap-[0px] md:grid md:grid-cols-2 md:gap-[0px]'>
+                <div className='grid grid-cols-1 gap-[0px] md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:gap-[0px] '>
                     {
                         meetTheHosts.map((item) => (
                             <MeetTheHostCardLeft key={item.key} />

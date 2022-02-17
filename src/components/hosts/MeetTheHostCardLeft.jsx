@@ -12,7 +12,7 @@ function MeetTheHostCardLeft() {
     return (
         <Link to={'/hostdetail'}>
             {/* left card */}
-            <div className='h-[174px] w-[371px] md:h-[244px] md:w-[550px] flex items-center bg-[#282246] pr-[29px] md:pr-[0px]'>
+            <div className='h-[174px] w-full md:h-[244px] md:w-[550px] flex items-center bg-[#282246] pr-[29px] md:pr-[0px]'>
                 {/* image here */}
                 <img src={meetTheHostSample} alt="" className='w-[186px] h-[174px] md:w-[275px] md:h-[244px] object-fill' />
                 <div className='flex-col items-center justify-center w-max h-max pl-[32px] relative'>
