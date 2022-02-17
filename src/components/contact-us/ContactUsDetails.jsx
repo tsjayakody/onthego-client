@@ -14,9 +14,9 @@ function ContactUsDetails() {
   const [ripple2, event2] = useRipple();
 
   return (
-    <div className='flex-auto h-2/5'>
+    <div className='flex-auto h-2/5 md:mt-[50px]'>
       <div className='flex'>
-        <div className='flex-col pl-[26px] pr-[31px] pt-[67px]'>
+        <div className='flex-col pr-[31px] pt-[67px]'>
           <h5 className='text-[14px] text-#FFFFFF uppercase pb-[17px]'>GET IN TOUCH</h5>
           <h3 className='text-#FFFFFF text-[24px] capitalize pb-[20px]'>Contact Us</h3>
           <p className='text-#FFFFFF text-[15px] text-justify pb-[32px] md:w-[398px] md:text-justify'>{contactUsContent}</p>

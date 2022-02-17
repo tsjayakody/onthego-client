@@ -1,13 +1,15 @@
 import React from 'react';
 import episodeslist from '../data/EpisodesList';
 import EpisodesListItem from './episodes/EpisodesListItem';
+import BackgroundContainer from './shared/BackgroundContainer';
+import Topbar from './shared/Topbar';
 
 function EpisodesList() {
   return (
-    <div className='bg-#110E1F flex-col h-full w-full overflow-y-auto pt-[117px] pl-[26px] pr:[31px] md:pl-[256px] md:pt-[164px]'>
-        {/* title */}
+    <BackgroundContainer>
+      <Topbar/>
+        <div className='md:ml-[61px] ml-[26px] mt-[70px]'>
         <h1 className='mx-auto text-#FFFFFF text-[21px] font-semibold pb-[29px]'>Sports</h1>
-        {/* episode list -- column scrolling*/}
         <div className='pr-[31px] flex-col md:h-[650px] space-y-[23px] overflow-y-auto overflow-x-auto'>
         {episodeslist.map((item)=>(
           <EpisodesListItem 
@@ -21,7 +23,8 @@ function EpisodesList() {
           />
         ))}
         </div>
-    </div>
+        </div>
+    </BackgroundContainer>
   );
 }
 

@@ -33,7 +33,7 @@ function App() {
                     <Route path='/episodes/episodeslist' element={<EpisodesList/>}/>
                     <Route path='/episodes/episodeslist/episodedetail' element={<EpisodeDetailScreen/>}/>
                     <Route path='/shows/showsdetails' element={<ShowsDetail/>}/>
-                    <Route path='/hosts' element={<HostDetailPage/>} />
+                    <Route path='/hostdetail' element={<HostDetailPage/>} />
                     <Route path='/404' element={<ErrorPage/>}/>
                     <Route path='/meetthehosts' element={<MeetTheHosts/>}/>
                   </Routes>

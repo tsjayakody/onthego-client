@@ -12,14 +12,18 @@ function ShowsRecentlyUpdatedContainer({
                 {/* image banner here */}
                 <img src={showsCover} alt="" className='h-138 w-138 md:h-140 md:w-150 object-fill' />
                 <div className='w-138 md:w-150'>
-                    {/* title here */}
-                    <p className='text-#FFFFFF text-[12px] text-center '>
-                        {showsTitle}
-                    </p>
-                    {/* date here */}
-                    <p className='text-#666666 text-[11px] md:text-[10px] text-right pr-[3px]'>
-                        {showsDate}
-                    </p>
+                    <div className='w-full h-full flex-col'>
+                        <div className='mx-auto max-w-[87px]'>
+                            <p className='text-#FFFFFF text-[12px] text-center '>
+                                {showsTitle}
+                            </p>
+                        </div>
+                        <div className='max-full flex justify-end'>
+                            <p className='text-#666666 text-[11px] md:text-[10px] text-right pr-[3px]'>
+                                {showsDate}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Link>

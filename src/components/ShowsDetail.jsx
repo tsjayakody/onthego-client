@@ -1,6 +1,8 @@
 import React from 'react'
 import showsDetailList from '../data/ShowsDetailsList';
 import showsSampleBanner from './assets/shows-sample-banner.png';
+import BackgroundContainer from './shared/BackgroundContainer';
+import Topbar from './shared/Topbar';
 import ShowsDetailContainer from './shows/ShowsDetailContainer';
 import ShowsDetailLeftContainer from './shows/ShowsDetailLeftContainer';
 import ShowsDetailRightContainer from './shows/ShowsDetailRightContainer';
@@ -13,8 +15,9 @@ function ShowsDetail() {
 
 
     return (
-        <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto md:pl-[203px] pb-[150px]'>
-            <div className='flex-col mt-[126px] ml-[59px] space-y-[52px] md:space-y-[136px]'>
+        <BackgroundContainer>
+            <Topbar/>
+            <div className='flex-col mt-[76px] ml-[59px] space-y-[52px] md:space-y-[136px]'>
                 <div className="flex ">
                     <div className='hidden md:inline-flex'>
                         <ShowsDetailLeftContainer
@@ -37,7 +40,7 @@ function ShowsDetail() {
                         />
                     </div>
                 </div>
-                <div className='md:w-[990px] md:grid md:grid-cols-6 md:gap-[43px] grid grid-cols-2 gap-[20px] mr-[44px] md:mr-[0px]'>
+                <div className='md:w-[990px] grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6 md:gap-[43px] gap-[20px] mr-[44px] md:mr-[0px] '>
                     {showsDetailList.map((item) => (
                         <ShowsDetailContainer
                             key={item.id}
@@ -48,7 +51,7 @@ function ShowsDetail() {
                     ))}
                 </div>
             </div>
-        </div>
+        </BackgroundContainer>
     )
 }
 

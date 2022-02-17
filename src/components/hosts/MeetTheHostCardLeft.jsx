@@ -6,10 +6,11 @@ import facebookDarkIcon from '../assets/facebook-dark-icon.svg';
 import instagramDarkIcon from '../assets/instagram-dark-icon.svg';
 import youtubeDarkIcon from '../assets/youtube-dark-icon.svg';
 import leftrectangle from '../assets/rectangle-left.svg';
+import {Link} from 'react-router-dom';
 
 function MeetTheHostCardLeft() {
     return (
-        <>
+        <Link to={'/hostdetail'}>
             {/* left card */}
             <div className='h-[174px] w-[371px] md:h-[244px] md:w-[550px] flex items-center bg-[#282246] pr-[29px] md:pr-[0px]'>
                 {/* image here */}
@@ -30,7 +31,7 @@ function MeetTheHostCardLeft() {
                     </div>
                 </div>
             </div>
-        </>
+        </Link>
     )
 }
 

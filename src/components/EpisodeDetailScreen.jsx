@@ -7,38 +7,43 @@ import EpisodeDetailFeaturingContainer from './episodes/EpisodeDetailFeaturingCo
 import EpisodeDetailRightContainer from './episodes/EpisodeDetailRightContainer';
 import EpisodeDetailLeftContainer from './episodes/EpisodeDetailLeftContainer';
 import EpisodeDetailDescriptionContainer from './episodes/EpisodeDetailDescriptionContainer';
+import BackgroundContainer from './shared/BackgroundContainer';
+import Topbar from './shared/Topbar';
 
 function EpisodeDetailScreen() {
 
   return (
-    <div className='bg-#110E1F flex-col h-full w-full overflow-y-auto overflow-x-auto pt-[117px] pl-[26px] pr:[31px] pb-[100px] md:pl-[256px] md:pt-[164px]'>
-      {/* desktop-view */}
-      <div className='hidden md:inline-flex'>
-        <EpisodeDetailLeftContainer
-          episodeCategory={"SPORTS - BATTLE OF THE BLUES - ROYAL THOMIAN CRICKET ENCOUNTER"}
-          episodeTitle={"142nd “Battle of the Blues” Ends In A Watery Draw"}
-          episodeDate={"OCTOBER 18,2021"}
-          noOfEpisodes={"EPISODE 70"}
+    <BackgroundContainer>
+      <Topbar/>
+      <div className='mt-[90px] md:ml-[61px] ml-[26px]'>
+        {/* desktop-view */}
+        <div className='hidden md:inline-flex'>
+          <EpisodeDetailLeftContainer
+            episodeCategory={"SPORTS - BATTLE OF THE BLUES - ROYAL THOMIAN CRICKET ENCOUNTER"}
+            episodeTitle={"142nd “Battle of the Blues” Ends In A Watery Draw"}
+            episodeDate={"OCTOBER 18,2021"}
+            noOfEpisodes={"EPISODE 70"}
+          />
+          <EpisodeDetailRightContainer sampleImage={sampleImage} />
+        </div>
+        {/* mobile-view */}
+        <div className='inline-table md:hidden'>
+          <EpisodeDetailRightContainer sampleImage={sampleImage} />
+          <EpisodeDetailLeftContainer
+            episodeCategory={"SPORTS - BATTLE OF THE BLUES - ROYAL THOMIAN CRICKET ENCOUNTER"}
+            episodeTitle={"142nd “Battle of the Blues” Ends In A Watery Draw"}
+            episodeDate={"OCTOBER 18,2021"}
+            noOfEpisodes={"EPISODE 70"}
+          />
+        </div>
+        <EpisodeDetailDescriptionContainer />
+        <EpisodeDetailFeaturingContainer />
+        <EpisodeDetailUserProfileContainer
+          personSample={personSample}
         />
-        <EpisodeDetailRightContainer sampleImage={sampleImage} />
+        <EpisodeDetailRelatedProductsList />
       </div>
-      {/* mobile-view */}
-      <div className='inline-table md:hidden'>
-        <EpisodeDetailRightContainer sampleImage={sampleImage} />
-        <EpisodeDetailLeftContainer
-          episodeCategory={"SPORTS - BATTLE OF THE BLUES - ROYAL THOMIAN CRICKET ENCOUNTER"}
-          episodeTitle={"142nd “Battle of the Blues” Ends In A Watery Draw"}
-          episodeDate={"OCTOBER 18,2021"}
-          noOfEpisodes={"EPISODE 70"}
-        />
-      </div>
-      <EpisodeDetailDescriptionContainer />
-      <EpisodeDetailFeaturingContainer />
-      <EpisodeDetailUserProfileContainer
-        personSample={personSample}
-      />
-      <EpisodeDetailRelatedProductsList />
-    </div>
+    </BackgroundContainer>
   );
 }
 

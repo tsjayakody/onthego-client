@@ -7,6 +7,7 @@ function AboutUsMainTopContainer() {
 
     return (
         <div className=' items-center'>
+            {/* desktop view here */}
             <div className='hidden md:inline mx-auto flex-col space-y-[62px]'>
                 <div className='mx-auto max-h-[269px] max-w-[432px]'>
                     <img src={sampleImgeSlider} alt="" className='object-fill' />
@@ -17,11 +18,10 @@ function AboutUsMainTopContainer() {
                     </p>
                 </div>
             </div>
-            <div>
-                <div className='md:hidden mx-auto inline-flex h-[464px] w-full'>
-                    <img src={sampleImgeSlider} alt="AboutImage" className='z-0 object-fill' />
-                    <p className='z-1 text-#FFFFFF text-[17px] text-center h-[286px] w-[282px]'>{sampleAboutText}</p>
-                </div>
+            {/* mobile view here */}
+            <div className='md:hidden mx-auto inline-flex h-[464px] w-full'>
+                <img src={sampleImgeSlider} alt="AboutImage" className='object-fill realtive md:w-[423px] md-h-[269px] w-full h-full' />
+                <p className='absolute top-0 left-0 right-0 text-#FFFFFF text-[17px] text-center h-[286px] w-[282px]'>{sampleAboutText}</p>
             </div>
         </div>
     )

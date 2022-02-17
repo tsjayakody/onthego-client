@@ -9,9 +9,7 @@ function Home({ isopen }) {
     return (
         <BackgroundContainer>
             {/* top bar */}
-            <Topbar>
-                <p className='text-#FFFFFF text-[10px]'>This is search bar container</p>
-            </Topbar>
+            <Topbar/>
             <div className='w-full h-full flex'>
                 <div className='flex-auto w-4/6 h-full'>
                     <HomeLeftContainer/>
