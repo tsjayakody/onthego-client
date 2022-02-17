@@ -14,7 +14,7 @@ function ContactUsDetails() {
   const [ripple2, event2] = useRipple();
 
   return (
-    <div className='flex-auto h-2/5 md:mt-[50px]'>
+    <div className='flex-auto h-2/5 md:mt-[50px] ml-[26px] md:ml-[0px]'>
       <div className='flex'>
         <div className='flex-col pr-[31px] pt-[67px]'>
           <h5 className='text-[14px] text-#FFFFFF uppercase pb-[17px]'>GET IN TOUCH</h5>

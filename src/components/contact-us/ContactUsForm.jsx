@@ -24,12 +24,12 @@ function ContactUsForm() {
     const [ripple, event] = useRipple();
 
     return (
-        <div className='pb-[80px] md:w-[838px]'>
+        <div className='pb-[80px] md:w-[838px] mx-[26px] md:ml-[0px]'>
             <form className='pt-[12px] pb-[50px]'>
                 {/* name */}
                 <div className='md:flex z-0'>
                     <div className='flex-col'>
-                        <div className="mb-[13px] md:mr-[20px]">
+                        <div className="mb-[13px] md:ml-[20px]">
                             <input
                                 type="email"
                                 id="email"
