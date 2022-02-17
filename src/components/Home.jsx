@@ -14,7 +14,7 @@ function Home({ isopen }) {
                 <div className='flex-auto w-4/6 h-full'>
                     <HomeLeftContainer/>
                 </div>
-                <div className='flex-auto w-1/6 h-full md:inline hidden'>
+                <div className='flex-auto w-1/6 h-full hidden md:hidden lg:inline'>
                     <HomeRightContainer/>
                 </div>
             </div>

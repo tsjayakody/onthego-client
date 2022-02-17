@@ -42,7 +42,7 @@ function HostDetailPage() {
                                 hostDetails={hostDetails}
                             />
                         </div>
-                        <div className='hidden md:inline-flex space-x-[206px]'>
+                        <div className='hidden md:inline-flex lg:space-x-[206px] md:space-x-[10px]'>
                             {/* text div col */}
                             <HostDetailLeftContainer
                                 hostName={hostName}
@@ -60,7 +60,7 @@ function HostDetailPage() {
                         </div>
                     </div>
                     {/* bottom shows grid */}
-                    <div className='md:w-[750px] grid grid-cols-2 gap-[29px] md:ml-[59px] md:grid md:grid-cols-5 md:gap-[43px]'>
+                    <div className='w-full xl:max-w-[1000px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[29px]'>
                         {hostDetailList.map((item) => (
                             <ShowsDetailContainer
                                 key={item.id}

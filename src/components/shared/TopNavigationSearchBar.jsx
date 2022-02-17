@@ -16,7 +16,7 @@ function TopNavigationSearchBar() {
 
     return (
         <>
-            <div className='hidden md:inline'>
+            <div className='hidden md:hidden lg:inline'>
                 <div className='flex bg-[#1B1730] items-center md:max-w-[440px] md:max-h-[35px]  mr-[81px]'>
                     <div className='my-[6px] ml-[9px]'>
                         <input
@@ -34,7 +34,7 @@ function TopNavigationSearchBar() {
                 </div>
             </div>
 
-            <div className='inline md:hidden'>
+            <div className='inline md:inline lg:hidden'>
                 <button
                     disabled={isBtnDisabled}
                     onClick={onSearchButtonPressed}>
