@@ -2,7 +2,8 @@ import React from 'react';
 import { FaPlay } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import sampleImage from '../assets/common-sample-image.png';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import musicPlayButtonCircle from '../assets/music-play-button-circle.svg';
 
 function EpisodesListItem({
   index,
@@ -33,12 +34,16 @@ function EpisodesListItem({
                   <p className='text-[6px] md:text-[8px] text-#FFFFFF text-center md:px[9px] md:py-[2px]'>{episodeDate}- {noofepisodes}</p>
                 </div>
               </div>
-              <div className='h-[57px] w-full bg-#282246 flex justify-between'>
-                <p className='text-#FFFFFF text-[11px] font-medium pt-[8px] pl-[8px] w-[183px] text-left'>{episodeTitle}</p>
+              <div className='h-[57px] w-[200px] md:w-full bg-#282246 flex justify-between'>
+                <p className='text-#FFFFFF text-[11px] font-medium pt-[8px] pl-[8px] md:w-[183px] w-[100px] text-left'>{episodeTitle}</p>
                 <button onClick={onClick} className='md:pr-[27px]'>
-                  <div className='rounded-full bg-[#6654C5] md:bg-[#453598] h-[40px] w-[40px] md:w-[140px] md:h-[40px] flex items-center justify-around'>
+                  <div className='hidden md:inline-flex rounded-full bg-[#6654C5] md:bg-[#453598] h-[40px] w-[40px] md:w-[140px] md:h-[40px] items-center justify-around'>
                     <FaPlay className='text-[#00D2CB] h-[20px] w-[18px] md:h-[14px] md:w-auto ' />
                     <p className='text-[10px] text-[#00D2CB] uppercase '>listen now</p>
+                  </div>
+                  <div className='inline md:hidden relative z-0 h-[40px] w-[40px] mr-[50px]'>
+                      <img src={musicPlayButtonCircle} alt="" className='h-[40px] w-[40px] object-contain z-0'/>
+                      <FaPlay className='text-[#00D2CB] w-[18px] h-[20px] absolute top-[26px] left-[-12px]'/>
                   </div>
                 </button>
               </div>
