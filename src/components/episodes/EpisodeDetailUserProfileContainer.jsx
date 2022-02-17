@@ -11,8 +11,8 @@ function EpisodeDetailUserProfileContainer({
     return (
         <div className='flex items-center md:items-start mr-[31px] space-x-[46px] mt-[25px] md:mt-[40px]'>
             <div className='flex-col'>
-                <img src={personSample} alt="" className='object-fill w-[80px] h-[80px] md:w-[146px] md:h-[146px] md:ml-[15px]' />
-                <div className='flex mt-[4px] md:mt-[24px] items-center space-x-[4px]'>
+                <img src={personSample} alt="" className='object-fill w-[80px] h-[80px] lg:w-[146px] lg:h-[146px] md:ml-[15px]' />
+                <div className='flex mt-[4px] lg:mt-[24px] items-center space-x-[4px]'>
                     <p className='text-#666666 text-[12px] pr-[20px] w-[50px]'>Follow:</p>
                     <a href={'https://www.twitter.com'} target="_blank" rel="noopener noreferrer">
                         <img src={twitterDarkIcon} alt="" className='w-[13px] h-[18px] object-fill' />

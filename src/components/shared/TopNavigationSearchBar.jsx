@@ -38,7 +38,7 @@ function TopNavigationSearchBar() {
                 <button
                     disabled={isBtnDisabled}
                     onClick={onSearchButtonPressed}>
-                    <div className='text-[#FFFFFF] hover:text-[#00D2CB] h-[17.49px] w-[17.49px] ml-[20px] mr-[9.5px]'>
+                    <div className='text-[#FFFFFF] hover:text-[#00D2CB] h-[17.49px] w-[17.49px] ml-[20px] mr-[25px] md:mr-[25px] lg:mr-[9.5px]'>
                         <FaSearch />
                     </div>
                 </button>

@@ -12,7 +12,7 @@ function ContactUs() {
       <Topbar />
       <div className='md:ml-[61px]'>
         <ContactUsDetails />
-        <div className='bg-#2F2566 md:bg-#110E1F flex-auto h-3/5 rounded-t-60 md:w-[1100px]'>
+        <div className='bg-#2F2566 md:bg-#110E1F flex-auto h-3/5 rounded-t-60 lg:w-[1100px]'>
           <div className='bg-#2F2566 md:bg-#110E1F pt-[63px] pb-[100px] flex-col rounded-t-60'>
             <h4 className='text-#FFFFFF text-[14px] uppercase ml-[26px] md:ml-[0px]'>get in touch</h4>
             <ContactUsForm />

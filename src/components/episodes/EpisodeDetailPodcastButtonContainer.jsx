@@ -21,7 +21,7 @@ function EpisodeDetailPodcastButtonContainer() {
     const [ripple4, event4] = useRipple();
 
     return (
-        <div className='flex space-x-[9px] md:space-x-[13px] pr-[31px] pt-[13px]'>
+        <div className='flex space-x-[9px] lg:space-x-[13px] pr-[31px] pt-[13px]'>
             {/* play button here */}
             <button ref={ripple1} onMouseDown={event1} className='h-[30px] w-[86px] md:w-[140px] md:h-[40px] bg-[#453598] flex items-center justify-center p-[3px]' onClick={listenNowButtonPressed}>
                 <FaPlay className='text-[#00D2CB] h-[14px] w-[11px]' />

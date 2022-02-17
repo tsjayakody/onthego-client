@@ -17,7 +17,7 @@ function EpisodeDetailScreen() {
       <Topbar/>
       <div className='mt-[90px] md:ml-[61px] ml-[26px]'>
         {/* desktop-view */}
-        <div className='hidden md:inline-flex'>
+        <div className='hidden md:hidden lg:inline-flex'>
           <EpisodeDetailLeftContainer
             episodeCategory={"SPORTS - BATTLE OF THE BLUES - ROYAL THOMIAN CRICKET ENCOUNTER"}
             episodeTitle={"142nd “Battle of the Blues” Ends In A Watery Draw"}
@@ -27,7 +27,7 @@ function EpisodeDetailScreen() {
           <EpisodeDetailRightContainer sampleImage={sampleImage} />
         </div>
         {/* mobile-view */}
-        <div className='inline-table md:hidden'>
+        <div className='inline-table md:inline-table lg:hidden'>
           <EpisodeDetailRightContainer sampleImage={sampleImage} />
           <EpisodeDetailLeftContainer
             episodeCategory={"SPORTS - BATTLE OF THE BLUES - ROYAL THOMIAN CRICKET ENCOUNTER"}

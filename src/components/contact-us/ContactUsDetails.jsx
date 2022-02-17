@@ -41,7 +41,7 @@ function ContactUsDetails() {
             </div>
           </div>
         </div>
-        <div className='hidden md:w-[388px] md:h-[179px] bg-transparent md:mt-[90px] md:flex md:justify-between'>
+        <div className='hidden md:hidden lg:inline-flex lg:w-[388px] lg:h-[179px] bg-transparent md:mt-[90px] md:justify-between'>
           <div className='md:h-[179px] md:w-[150px]'>
             <img src={registerImage} alt="registerImage" className='h-[141px] w-[150px] object-fill' />
             <button ref={ripple1} onMouseDown={event1} className='text-#FFFFFF text-[14px] text-center w-[150px] h-[38px] m-auto bg-#282246' onClick={onRegisterClick}>Register</button>

@@ -24,16 +24,16 @@ function ContactUsForm() {
     const [ripple, event] = useRipple();
 
     return (
-        <div className='pb-[80px] md:w-[838px] mx-[26px] md:ml-[0px]'>
+        <div className='pb-[80px] lg:w-[838px] mx-[26px] md:ml-[0px]'>
             <form className='pt-[12px] pb-[50px]'>
                 {/* name */}
-                <div className='md:flex z-0'>
+                <div className='lg:flex z-0'>
                     <div className='flex-col'>
-                        <div className="mb-[13px] md:ml-[20px]">
+                        <div className="mb-[13px]">
                             <input
                                 type="email"
                                 id="email"
-                                className=" bg-#2F2566 md:bg-#110E1F border border-#453598 text-#666666 text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full md:w-[386px] md:h-[32.52px] h-[40px] p-2.5 "
+                                className=" bg-#2F2566 md:bg-#110E1F border border-#453598 text-#666666 text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full lg:w-[386px] lg:h-[32.52px] h-[40px] p-2.5 "
                                 placeholder={namePlaceHolder}
                             />
                         </div>
@@ -44,7 +44,7 @@ function ContactUsForm() {
                             <input
                                 type="password"
                                 id="password"
-                                className="bg-#2F2566 md:bg-#110E1F border border-#453598 text-gray-900 text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full md:w-[386px] md:h-[32.52px] h-[40px] p-2.5 "
+                                className="bg-#2F2566 md:bg-#110E1F border border-#453598 text-gray-900 text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full lg:w-[386px] lg:h-[32.52px] h-[40px] p-2.5 "
                                 placeholder={emailPlaceHolder}
                             />
                         </div>
