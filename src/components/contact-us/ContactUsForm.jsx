@@ -29,11 +29,11 @@ function ContactUsForm() {
                 {/* name */}
                 <div className='lg:flex z-0'>
                     <div className='flex-col'>
-                        <div className="mb-[13px]">
+                        <div className="mb-[13px] lg:mr-[20px]">
                             <input
-                                type="email"
-                                id="email"
-                                className=" bg-#2F2566 md:bg-#110E1F border border-#453598 text-#666666 text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full lg:w-[386px] lg:h-[32.52px] h-[40px] p-2.5 "
+                                type="text"
+                                id="name"
+                                className=" bg-#2F2566 md:bg-#110E1F border border-#453598 text-#FFFFFF placeholder-[#666666] text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full lg:w-[386px] lg:h-[32.52px] h-[40px] p-2.5 "
                                 placeholder={namePlaceHolder}
                             />
                         </div>
@@ -42,9 +42,9 @@ function ContactUsForm() {
                     <div className='flex-col'>
                         <div className="mb-[13px]">
                             <input
-                                type="password"
-                                id="password"
-                                className="bg-#2F2566 md:bg-#110E1F border border-#453598 text-gray-900 text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full lg:w-[386px] lg:h-[32.52px] h-[40px] p-2.5 "
+                                type="email"
+                                id="email"
+                                className="bg-#2F2566 md:bg-#110E1F border border-#453598 text-#FFFFFF placeholder-[#666666] text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full lg:w-[386px] lg:h-[32.52px] h-[40px] p-2.5 "
                                 placeholder={emailPlaceHolder}
                             />
                         </div>
@@ -59,7 +59,7 @@ function ContactUsForm() {
                             id="message"
                             cols="10"
                             rows="4"
-                            className='bg-#2F2566 md:bg-#110E1F border border-#453598 text-gray-900 text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5'>
+                            className='bg-#2F2566 md:bg-#110E1F border border-#453598 text-#FFFFFF placeholder-[#666666] text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5'>
                         </textarea>
                     </div>
                     <ContactUsErrorMessage errorMessage={messageErrorMessage} />
