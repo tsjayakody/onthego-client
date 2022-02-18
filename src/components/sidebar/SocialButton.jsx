@@ -1,6 +1,7 @@
 import React from 'react';
 import SocialButtonContainer from '../shared/SocialButtonContainer';
 import useRipple from "use-ripple-hook";
+import PropTypes from 'prop-types'
 
 function SocialButton({ icon, name, link }) {
 
@@ -21,6 +22,12 @@ function SocialButton({ icon, name, link }) {
       </button>
     </SocialButtonContainer>
   );
+}
+
+SocialButton.propTypes = {
+  icon: PropTypes.node,
+  name: PropTypes.string,
+  link: PropTypes.string,
 }
 
 export default SocialButton;

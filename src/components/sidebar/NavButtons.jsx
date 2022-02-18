@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function NavButtons({ icon, name, path }) {
     return (
@@ -12,6 +13,12 @@ function NavButtons({ icon, name, path }) {
             </li>
         </>
     );
+}
+
+NavButtons.propTypes = {
+    icon: PropTypes.node,
+    name: PropTypes.string,
+    path: PropTypes.string,
 }
 
 export default NavButtons;

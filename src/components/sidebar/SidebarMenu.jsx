@@ -12,6 +12,7 @@ import logo from '../assets/logo.svg';
 import ContentRights from './ContentRights';
 import NavButtons from './NavButtons';
 import SocialButton from './SocialButton';
+import PropTypes from 'prop-types'
 
 //TODO 1 : implement mobile responsive sidebar (minimize on touch gesture)
 
@@ -66,6 +67,14 @@ function SidebarMenu({ isopen }) {
             </div>
         </>
     )
+}
+
+SidebarMenu.defaultProps = {
+    isopen: true,
+}
+
+SidebarMenu.propTypes = {
+    isopen: PropTypes.bool,
 }
 
 export default SidebarMenu
