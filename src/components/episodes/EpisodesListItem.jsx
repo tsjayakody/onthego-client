@@ -37,9 +37,9 @@ function EpisodesListItem({
               <div className='h-[57px] w-[200px] md:w-full bg-#282246 flex justify-between'>
                 <p className='text-#FFFFFF text-[11px] font-medium pt-[8px] pl-[8px] md:w-[183px] w-[100px] text-left'>{episodeTitle}</p>
                 <button onClick={onClick} className='md:pr-[27px]'>
-                  <div className='hidden md:inline-flex rounded-full bg-[#6654C5] md:bg-[#453598] h-[40px] w-[40px] md:w-[140px] md:h-[40px] items-center justify-around'>
-                    <FaPlay className='text-[#00D2CB] h-[20px] w-[18px] md:h-[14px] md:w-auto ' />
-                    <p className='text-[10px] text-[#00D2CB] uppercase '>listen now</p>
+                  <div className='hidden md:inline-flex rounded-full bg-[#6654C5] md:bg-[#453598] hover:bg-[#282246]  h-[40px] w-[40px] md:w-[140px] md:h-[40px] items-center justify-around'>
+                    <FaPlay className='text-[#00D2CB] hover:text-[#00D2CB] h-[20px] w-[18px] md:h-[14px] md:w-auto ' />
+                    <p className='text-[10px] text-[#00D2CB] hover:text-[#00D2CB] uppercase '>listen now</p>
                   </div>
                   <div className='inline md:hidden relative z-0 h-[40px] w-[40px] mr-[50px]'>
                       <img src={musicPlayButtonCircle} alt="" className='h-[40px] w-[40px] object-contain z-0'/>
@@ -69,7 +69,7 @@ EpisodesListItem.propTypes = {
   episodeCover: PropTypes.any,
   episodeTitle: PropTypes.string,
   episodeCategory: PropTypes.string,
-  noofepisodes: PropTypes.string,
+  noofepisodes: PropTypes.number,
   episodeDate: PropTypes.string,
 }
 

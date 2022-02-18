@@ -5,11 +5,15 @@ import latestepisodes from '../../data/LatestEpisodes'
 import HomeContainerEpisodes from './HomeContainerEpisodes'
 import HomeRowContainerTitle from './HomeRowContainerTitle'
 import HomeContainerHostCard from './HomeContainerHostCard';
+import homeSampleBanner from '../assets/home-sample-banner.png';
 
 function HomeLeftContainer() {
     return (
-        <div className='flex-col mt-[32px] ml-[26px] md:mt-[59px] md:ml-[59px]'>
-            <div className='pt-[388px] pr-[20px]'>
+        <div className='flex-col ml-[26px] md:ml-[59px]'>
+            <div className='mt-[112px] ml-[26px] mr-[26px] mb-[32px] lg:mt-[34px] lg:ml-[59px] lg:mr-[113px] lg:mb-[40px]'>
+                <img src={homeSampleBanner} alt="" className='w-full h-full object-fill'/>
+            </div>
+            <div className='pr-[20px]'>
                 {/* latest episodes */}
                 <div className='  pb-[19px] md:pb-[30px]'>
                     <HomeRowContainerTitle rowTitle='Latest Episodes' />

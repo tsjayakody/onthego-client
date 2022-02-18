@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'Poppins'],
+    },
       padding: {
         '7px': '7px',
         '8px': '8px',
