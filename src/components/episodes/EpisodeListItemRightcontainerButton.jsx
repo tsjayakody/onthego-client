@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaPlay} from 'react-icons/fa';
 import musicPlayButtonCircle from '../assets/music-play-button-circle.svg';
+import PropTypes from 'prop-types';
 
 function EpisodeListItemRightcontainerButton({onClick}) {
     return (
@@ -15,6 +16,14 @@ function EpisodeListItemRightcontainerButton({onClick}) {
             </div>
         </button>
     )
+}
+
+EpisodeListItemRightcontainerButton.defualtProps = {
+    onClick: ()=>{},
+}
+
+EpisodeListItemRightcontainerButton.propTypes = {
+    onClick: PropTypes.func,
 }
 
 export default EpisodeListItemRightcontainerButton

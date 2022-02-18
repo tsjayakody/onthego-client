@@ -1,5 +1,6 @@
 import React from 'react'
-import EpisodeListItemRightcontainerButton from './EpisodeListItemRightcontainerButton'
+import EpisodeListItemRightcontainerButton from './EpisodeListItemRightcontainerButton';
+import PropTypes from 'prop-types';
 
 function EpisodeListItemRightContainerBottomBar({
     onClick,
@@ -11,6 +12,16 @@ function EpisodeListItemRightContainerBottomBar({
             <EpisodeListItemRightcontainerButton onClick={onClick}/>
         </div>
     )
+}
+
+EpisodeListItemRightContainerBottomBar.defaultProps = {
+    onClick: ()=>{},
+    episodeTitle: '',
+}
+
+EpisodeListItemRightContainerBottomBar.propTypes = {
+    onClick: PropTypes.func,
+    episodeTitle: PropTypes.string,
 }
 
 export default EpisodeListItemRightContainerBottomBar

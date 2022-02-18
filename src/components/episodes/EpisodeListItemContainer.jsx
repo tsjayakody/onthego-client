@@ -1,6 +1,8 @@
 import React from 'react'
-import EpisodeListItemLeftContainer from './EpisodeListItemLeftContainer'
-import EpisodeListItemRightContainer from './EpisodeListItemRightContainer'
+import EpisodeListItemLeftContainer from './EpisodeListItemLeftContainer';
+import EpisodeListItemRightContainer from './EpisodeListItemRightContainer';
+import sampleImage from '../assets/common-sample-image.png';
+import PropTypes from 'prop-types';
 
 function EpisodeListItemContainer({
     episodeCover,
@@ -24,6 +26,24 @@ function EpisodeListItemContainer({
             />
         </div>
     )
+}
+
+EpisodeListItemContainer.defaultProps = {
+    episodeCover: sampleImage,
+    episodeCategory: '',
+    episodeDate: '',
+    noofepisodes: 0,
+    onClick: ()=>{},
+    episodeTitle: '',
+}
+
+EpisodeListItemContainer.propTypes = {
+    episodeCover: PropTypes.string,
+    episodeCategory: PropTypes.string,
+    episodeDate: PropTypes.string,
+    noofepisodes: PropTypes.number,
+    onClick: PropTypes.func,
+    episodeTitle: PropTypes.string,
 }
 
 export default EpisodeListItemContainer

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function EpisodeListItemRightContainerTopBar({
     episodeCategory,
@@ -13,6 +14,18 @@ function EpisodeListItemRightContainerTopBar({
             </div>
         </div>
     )
+}
+
+EpisodeListItemRightContainerTopBar.defaultProps = {
+    episodeCategory: '',
+    episodeDate: '',
+    noofepisodes: 0,
+}
+
+EpisodeListItemRightContainerTopBar.propTypes = {
+    episodeCategory: PropTypes.string,
+    episodeDate: PropTypes.string,
+    noofepisodes: PropTypes.number,
 }
 
 export default EpisodeListItemRightContainerTopBar
