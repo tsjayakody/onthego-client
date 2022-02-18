@@ -1,5 +1,7 @@
-import React from 'react'
-import DarkSocialMediaButton from '../shared/DarkSocialMediaButton'
+import React from 'react';
+import DarkSocialMediaButton from '../shared/DarkSocialMediaButton';
+import PropTypes from 'prop-types';
+import sampleImage from '../assets/common-sample-image.png';
 
 function HostDetailRightContainer({
     hostdetialSampleBanner, 
@@ -36,6 +38,14 @@ function HostDetailRightContainer({
             </div>
         </div>
     )
+}
+
+HostDetailRightContainer.propTypes = {
+    hostdetialSampleBanner: PropTypes.string,
+    twitterDarkIcon: PropTypes.string,
+    facebookDarkIcon: PropTypes.string,
+    instagramDarkIcon: PropTypes.string,
+    youtubeDarkIcon: PropTypes.string,
 }
 
 export default HostDetailRightContainer

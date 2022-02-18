@@ -5,6 +5,7 @@ import hostPinterestIcon from '../assets/host-pinterest.svg';
 import hostInstagramIcon from '../assets/host-instagram.svg';
 import HostSocialButton from './HostSocialButton';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function HomeContainerHostCard({
     bannerImage,
@@ -41,6 +42,12 @@ function HomeContainerHostCard({
         </div>
 
     );
+}
+
+HomeContainerHostCard.propTypes = {
+    bannerImage: PropTypes.string,
+    bannerTitle: PropTypes.string,
+    bannerType: PropTypes.string,
 }
 
 export default HomeContainerHostCard;

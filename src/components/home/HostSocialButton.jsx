@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function HostSocialButton({
   icon,
@@ -9,6 +10,11 @@ function HostSocialButton({
       <img src={icon} height='10' width='13' alt="" />
     </a>
   )
+}
+
+HostSocialButton.propTypes = {
+  icon: PropTypes.string,
+  link: PropTypes.string,
 }
 
 export default HostSocialButton
