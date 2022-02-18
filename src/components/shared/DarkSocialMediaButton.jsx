@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types'
 
 function DarkSocialMediaButton({ icon, link }) {
   return (
@@ -8,6 +9,11 @@ function DarkSocialMediaButton({ icon, link }) {
       </a>
     </div>
   )
+}
+
+DarkSocialMediaButton.propTypes = {
+  icon: PropTypes.string,
+  link: PropTypes.string,
 }
 
 export default DarkSocialMediaButton

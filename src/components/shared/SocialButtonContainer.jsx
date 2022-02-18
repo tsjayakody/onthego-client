@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function SocialButtonContainer({children}) {
   return (
@@ -6,6 +7,10 @@ function SocialButtonContainer({children}) {
         {children}
     </div>
   )
+}
+
+SocialButtonContainer.propTypes = {
+  children: PropTypes.any,
 }
 
 export default SocialButtonContainer

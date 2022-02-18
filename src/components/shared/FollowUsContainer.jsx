@@ -1,5 +1,6 @@
 import React from 'react';
 import DarkSocialMediaButton from './DarkSocialMediaButton';
+import PropTypes from 'prop-types'
 
 function FollowUsContainer({
     twitterIcon,
@@ -35,6 +36,17 @@ function FollowUsContainer({
             </div>
         </div>
     )
+}
+
+FollowUsContainer.propTypes = {
+    twitterIcon: PropTypes.string,
+    twitterOnClick: PropTypes.func,
+    facebookIcon: PropTypes.string,
+    facebookOnClick: PropTypes.func,
+    instagramIcon: PropTypes.string,
+    instagramOnclick: PropTypes.func,
+    youtubeIcon: PropTypes.string,
+    youtubeOnClick: PropTypes.func
 }
 
 export default FollowUsContainer

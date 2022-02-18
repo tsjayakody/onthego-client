@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types'
 
 function BackgroundContainer({children}) {
   return (
@@ -6,6 +7,10 @@ function BackgroundContainer({children}) {
         {children}
     </div>
   );
+}
+
+BackgroundContainer.propTypes = {
+  children: PropTypes.any,
 }
 
 export default BackgroundContainer
