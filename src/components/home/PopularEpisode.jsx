@@ -33,7 +33,7 @@ PopularEpisode.propTypes = {
     episodeImage: PropTypes.any,
     episodeTitl: PropTypes.string,
     episodeCategory: PropTypes.string,
-    episodeDuration: PropTypes.string,
+    episodeDuration: PropTypes.number,
 }
 
 export default PopularEpisode;

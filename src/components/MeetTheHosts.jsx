@@ -16,7 +16,7 @@ function MeetTheHosts() {
                 <div className='grid grid-cols-1 gap-[0px] md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 md:gap-[0px] '>
                     {
                         meetTheHosts.map((item) => (
-                            <MeetTheHostCardLeft key={item.key} />
+                            <MeetTheHostCardLeft key={item.id} />
                         ))
                     }
                 </div>
