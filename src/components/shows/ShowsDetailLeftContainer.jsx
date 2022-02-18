@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 function ShowsDetailLeftContainer({
     showsTitle,
@@ -18,6 +19,18 @@ function ShowsDetailLeftContainer({
             </p>
         </div>
     )
+}
+
+ShowsDetailLeftContainer.defaultProps = {
+    showsTitle: '',
+    noOfEpisodes: 0,
+    showsDescription: '',
+}
+
+ShowsDetailLeftContainer.propTypes = {
+    showsTitle: PropTypes.string,
+    noOfEpisodes: PropTypes.number,
+    showsDescription: PropTypes.string,
 }
 
 export default ShowsDetailLeftContainer

@@ -1,6 +1,7 @@
 import React from 'react';
 import ShowsAlphabeticalBannerLetter from './ShowsAlphabeticalBannerLetter';
 import ShowsCategoryBanner from './ShowsCategoryBanner';
+import PropTypes from 'prop-types';
 
 function ShowsAlphabeticalColumnList({
     letter,
@@ -21,6 +22,16 @@ function ShowsAlphabeticalColumnList({
             </div>
         </div>
     );
+}
+
+ShowsAlphabeticalColumnList.defaultProps = {
+    letter: '',
+    list: [],
+}
+
+ShowsAlphabeticalColumnList.propTypes = {
+    letter: PropTypes.string,
+    list: PropTypes.array,
 }
 
 export default ShowsAlphabeticalColumnList;

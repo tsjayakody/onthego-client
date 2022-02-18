@@ -1,4 +1,6 @@
 import React from 'react'
+import sampleImage from '../assets/common-sample-image.png';
+import PropTypes from 'prop-types';
 
 function ShowsDetailContainer({
   showsBanner,
@@ -16,6 +18,18 @@ function ShowsDetailContainer({
       </p>
     </div>
   )
+}
+
+ShowsDetailContainer.defaultProps = {
+  showsBanner: sampleImage,
+  showsTitle: '',
+  showsAuthor: '',
+}
+
+ShowsDetailContainer.propTypes = {
+  showsBanner: PropTypes.string,
+  showsTitle: PropTypes.string,
+  showsAuthor: PropTypes.string,
 }
 
 export default ShowsDetailContainer

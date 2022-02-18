@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import StackNumberPill from '../shared/StackNumberPill';
+import sampleImage from '../assets/common-sample-image.png';
+import PropTypes from 'prop-types'
 
 function ShowsCategoryBanner({
     showCover,
@@ -24,6 +26,16 @@ function ShowsCategoryBanner({
             </div>
         </Link>
     );
+}
+
+ShowsCategoryBanner.defualtProps = {
+    showCover: sampleImage,
+    showName: '',
+}
+
+ShowsCategoryBanner.propTypes = {
+    showCover: PropTypes.string,
+    showName: PropTypes.string,
 }
 
 export default ShowsCategoryBanner;

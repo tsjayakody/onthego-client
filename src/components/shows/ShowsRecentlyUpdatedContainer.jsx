@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import sampleImage from '../assets/common-sample-image.png';
+import PropTypes from 'prop-types';
 
 function ShowsRecentlyUpdatedContainer({
     showsCover,
@@ -28,6 +30,19 @@ function ShowsRecentlyUpdatedContainer({
             </div>
         </Link>
     );
+}
+
+ShowsRecentlyUpdatedContainer.defaultProps = {
+    showsCover: sampleImage,
+    showsTitle: '',
+    showsDate: '',
+}
+
+
+ShowsRecentlyUpdatedContainer.propTypes = {
+    showsCover: PropTypes.string,
+    showsTitle: PropTypes.string,
+    showsDate: PropTypes.string,
 }
 
 export default ShowsRecentlyUpdatedContainer;
