@@ -16,7 +16,7 @@ function SocialButton({ icon, name, link }) {
         <a href={link} target="_blank" rel="noopener noreferrer">
           <div className='pl-[10px] flex items-center'>
             {icon}
-            <p className=' md:pl-[21px]'>{name}</p>
+            <p className='hover:text-#00D2CB md:pl-[21px]'>{name}</p>
           </div>
         </a>
       </button>
