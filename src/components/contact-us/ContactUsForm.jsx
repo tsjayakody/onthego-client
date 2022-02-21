@@ -40,11 +40,12 @@ function ContactUsForm() {
     }
 
     const handleEmailChange = (e) => {
+        const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
         if (email === '') {
             setBtnDisabled(true);
             setEmailErrorMessage(null);
-        } else if (email !== '' && email.trim().length <= 10) {
+        } else if (email !== '' && regex.test(email) === false) {
             setBtnDisabled(true);
             setEmailErrorMessage("Enter a valid Email address !");
         } else {
