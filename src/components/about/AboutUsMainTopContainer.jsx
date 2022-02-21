@@ -1,5 +1,7 @@
 import React from 'react'
+import bannerList from '../../data/TopBannerList';
 import sampleImgeSlider from '../assets/sample-image-slider.png';
+import ImageSlider from '../shared/ImageSlider';
 
 function AboutUsMainTopContainer() {
 
@@ -9,8 +11,8 @@ function AboutUsMainTopContainer() {
         <div className=' items-center'>
             {/* desktop view here */}
             <div className='hidden md:inline mx-auto flex-col space-y-[62px]'>
-                <div className='mx-auto max-h-[269px] max-w-[432px]'>
-                    <img src={sampleImgeSlider} alt="" className='object-fill' />
+                <div className='mx-auto max-h-[269px] '>
+                <ImageSlider bannerList={bannerList}/>
                 </div>
                 <div className='h-[205px] w-[632px] mx-auto'>
                     <p className='text-#FFFFFF text-[15px] text-justify'>
