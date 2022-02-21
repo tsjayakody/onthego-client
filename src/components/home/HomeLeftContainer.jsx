@@ -5,13 +5,14 @@ import latestepisodes from '../../data/LatestEpisodes'
 import HomeContainerEpisodes from './HomeContainerEpisodes'
 import HomeRowContainerTitle from './HomeRowContainerTitle'
 import HomeContainerHostCard from './HomeContainerHostCard';
-import homeSampleBanner from '../assets/home-sample-banner.png';
+import ImageSlider from '../shared/ImageSlider'
+import bannerList from '../../data/TopBannerList'
 
 function HomeLeftContainer() {
     return (
         <div className='flex-col ml-[26px] md:ml-[59px]'>
             <div className='mt-[112px] ml-[26px] mr-[26px] mb-[32px] lg:mt-[34px] lg:ml-[59px] lg:mr-[113px] lg:mb-[40px]'>
-                <img src={homeSampleBanner} alt="" className='w-full h-full object-fill'/>
+                <ImageSlider bannerList={bannerList}/>
             </div>
             <div className='pr-[20px]'>
                 {/* latest episodes */}
