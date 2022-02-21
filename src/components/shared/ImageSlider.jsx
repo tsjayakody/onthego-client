@@ -1,17 +1,18 @@
 import React from 'react';
-import { EffectCoverflow } from 'swiper';
+import { EffectCoverflow, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import '../custom/sliderstyles.css';
 
-import 'swiper/css';
+import "swiper/css";
 import "swiper/css/effect-coverflow";
+import "swiper/css/autoplay";
 
 function ImageSlider({ bannerList }) {
     return (
         <div className='z-0 w-full h-full'>
-            <Swiper
-                modules={[EffectCoverflow]}
+            <Swiper className='swiper-slide swiper-slide-active'
+                modules={[EffectCoverflow, Autoplay]}
                 effect={"coverflow"}
                 coverflowEffect={{
                     rotate: 0,
@@ -22,6 +23,10 @@ function ImageSlider({ bannerList }) {
                 }}
                 centeredSlides={true}
                 loop={true}
+                // autoplay={{
+                //     delay: 5000,
+                //     disableOnInteraction: false,
+                // }}
                 slidesPerView={3}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
