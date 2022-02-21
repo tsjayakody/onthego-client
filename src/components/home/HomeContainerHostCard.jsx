@@ -15,7 +15,7 @@ function HomeContainerHostCard({
     return (
 
         <div className='bg-transparent md:h-179 md:w-120 h-166 w-120'>
-            <Link to="/meetthehosts">
+            <Link to="/hostdetail">
                 <div>
                     {/* needds to implement circular background here */}
                     <img src={bannerImage} alt="" className='rounded-full border border-gray-100 shadow-sm' />

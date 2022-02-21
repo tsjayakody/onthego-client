@@ -7,6 +7,7 @@ import HomeRowContainerTitle from './HomeRowContainerTitle'
 import HomeContainerHostCard from './HomeContainerHostCard';
 import ImageSlider from '../shared/ImageSlider'
 import bannerList from '../../data/TopBannerList'
+import { Link } from 'react-router-dom';
 
 function HomeLeftContainer() {
     return (
@@ -52,8 +53,10 @@ function HomeLeftContainer() {
                     </div>
                     <div className='flex-col'>
                         <div className='flex justify-end mb-[10px]'>
-                            <div className='flex items-center text-#666666 text-[11px] pt-[7px]'>
-                                <p>Browse All{'>'}{'>'}</p>
+                            <div className='flex items-center text-#666666 hover:text-#00D2CB text-[11px] pt-[7px]'>
+                                <Link to={'/meetthehosts'}>
+                                    <p>Browse All{'>'}{'>'}</p>
+                                </Link>
                             </div>
                         </div>
                         <div className='flex space-x-[55px] md:space-x-[36px] w-full overflow-x-auto'>

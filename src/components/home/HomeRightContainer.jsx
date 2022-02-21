@@ -29,8 +29,8 @@ function HomeRightContainer() {
                 </div>
                 {/* view all sample button */}
                 <div className='pt-[42px]'>
-                    <button ref={ripple} onMouseDown={event} className='bg-#282246 h-[25px] w-[260px] ' >
-                        <p className='text-#FFFFFF text-[10px]'>View All</p>
+                    <button ref={ripple} onMouseDown={event} className='bg-#282246 hover:text-#00D2CB h-[25px] w-[260px] ' >
+                        <p className='text-#FFFFFF hover:text-#00D2CB text-[10px]'>View All</p>
                     </button>
                 </div>
             </div>
