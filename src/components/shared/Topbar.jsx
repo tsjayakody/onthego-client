@@ -1,6 +1,7 @@
 import React from 'react'
 import TopNavigationButton from './TopNavigationButton'
 import TopNavigationSearchBar from './TopNavigationSearchBar'
+import SearchData from '../../data/SearchData.json';
 
 function Topbar() {
   return (
@@ -9,7 +10,7 @@ function Topbar() {
         <div className='flex items-center'>
           <TopNavigationButton />
         </div>
-        <TopNavigationSearchBar />
+        <TopNavigationSearchBar data={SearchData} />
       </div>
     </div>
   )
