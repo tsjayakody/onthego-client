@@ -4,6 +4,7 @@ import spoitifyIcon from '../assets/spotify-icon.svg';
 import googlePodcastIcon from '../assets/google-podcast-icon.svg';
 import applePodcastIcon from '../assets/apple-podcast-icon.svg';
 import useRipple from "use-ripple-hook";
+import EpisodeDetailPodcastButton from './EpisodeDetailPodcastButton';
 
 //TODO: need to pass podcast links as props here 
 
@@ -23,6 +24,7 @@ function EpisodeDetailPodcastButtonContainer() {
     return (
         <div className='flex space-x-[9px] lg:space-x-[13px] pr-[31px] pt-[13px]'>
             {/* play button here */}
+            <EpisodeDetailPodcastButton/>
             <button ref={ripple1} onMouseDown={event1} className='h-[30px] w-[86px] md:w-[140px] md:h-[40px] bg-[#453598] hover:bg-[#1B1730] flex items-center justify-center p-[3px]' onClick={listenNowButtonPressed}>
                 <FaPlay className='text-[#00D2CB] h-[14px] w-[11px]' />
                 <p className='text-[#00D2CB] text-[9px] text-center ml-[5px] md:ml-[10px]'>LISTEN NOW</p>
