@@ -35,7 +35,7 @@ function TopNavigationButton() {
             </div>
             <div className='flex items-center'>
                 <span className='text-[15px] text-[#FFFFFF] flex items-center'>
-                    {routerLocation.replace(/[^a-z0-9-]/g, `-`)}
+                    {routerLocation.replace(/[^a-z0-9-]/g, ` `)}
                 </span>
             </div>
         </div>
