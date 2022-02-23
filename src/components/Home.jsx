@@ -10,17 +10,16 @@ import HomeRightContainer from './home/HomeRightContainer';
 */
 
 function Home({ isopen }) {
-    console.log({ isopen });
     return (
         <BackgroundContainer>
             {/* top bar */}
-            <Topbar/>
+            <Topbar />
             <div className='w-full h-full flex '>
                 <div className='flex-auto w-4/6 h-full'>
-                    <HomeLeftContainer/>
+                    <HomeLeftContainer />
                 </div>
                 <div className='bg-[#110E1F] flex-auto w-1/6 h-full hidden md:hidden lg:inline'>
-                    <HomeRightContainer/>
+                    <HomeRightContainer />
                 </div>
             </div>
         </BackgroundContainer>
