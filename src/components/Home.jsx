@@ -13,10 +13,10 @@ function Home({ isopen }) {
     return (
         <BackgroundContainer>
             <div className='flex flex-col h-screen'>
-                <div className='py-5'>
+                <div className='py-1'>
                     <Topbar />
                 </div>
-                <div className='flex-1 overflow-y-auto p-5'>
+                <div className='flex-1 overflow-y-auto'>
                     <div className='w-full h-full flex '>
                         <div className='flex-auto w-4/6 h-full'>
                             <HomeLeftContainer />

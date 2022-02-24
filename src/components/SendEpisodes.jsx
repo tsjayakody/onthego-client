@@ -1,9 +1,16 @@
 import React from 'react';
+import Topbar from './shared/Topbar';
 
 function SendEpisodes() {
     return (
         <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto md:pl-[203px] pb-[150px]'>
-          <h1 className='mx-auto my-auto text-center text-#FFFFFF'>This is Send Episodes Page</h1>
+           <div className='flex flex-col h-screen'>
+            <div className='py-1'>
+              <Topbar/>
+            </div>
+            <div className='flex-1 overflow-y-auto'>
+            </div>
+          </div>
         </div>
       );
 }

@@ -3,13 +3,12 @@ import DarkSocialMediaButton from '../shared/DarkSocialMediaButton';
 import PropTypes from 'prop-types';
 import sampleImage from '../assets/common-sample-image.png';
 
-function HostDetailRightContainer({
-    hostdetialSampleBanner, 
-    twitterDarkIcon, 
-    facebookDarkIcon, 
-    instagramDarkIcon, 
-    youtubeDarkIcon
-    }) {
+import {FaFacebookF} from 'react-icons/fa';
+import {BsTwitter} from 'react-icons/bs';
+import {AiFillInstagram} from 'react-icons/ai';
+import {FaYoutube} from 'react-icons/fa';
+
+function HostDetailRightContainer({ hostdetialSampleBanner }) {
     return (
         <div className='flex-col space-y-[4px]'>
             <img src={hostdetialSampleBanner} alt="" className='h-[150px] w-[150px] md:h-[244px] md:w-[268px] object-fill mx-auto' />
@@ -19,20 +18,20 @@ function HostDetailRightContainer({
                 <div className='flex space-x-[7px] ml-[18px]'>
                     {/* social buttons here */}
                     <DarkSocialMediaButton 
-                        icon={twitterDarkIcon} 
-                        onclick={() => (console.log("Twitter Button Pressed"))} 
+                        icon={<BsTwitter/>} 
+                        link={"https://www.twitter.com"} 
                     />
                     <DarkSocialMediaButton 
-                        icon={facebookDarkIcon} 
-                        onclick={() => (console.log("Twitter Button Pressed"))}
+                        icon={<FaFacebookF/>} 
+                        link={"https://www.facebook.com"}
+                    />
+                    <DarkSocialMediaButton
+                        icon={<AiFillInstagram/>} 
+                        link={"https://www.instagram.com"} 
                     />
                     <DarkSocialMediaButton 
-                        icon={instagramDarkIcon} 
-                        onclick={() => (console.log("Twitter Button Pressed"))} 
-                    />
-                    <DarkSocialMediaButton 
-                        icon={youtubeDarkIcon} 
-                        onclick={() => (console.log("Twitter Button Pressed"))}
+                        icon={<FaYoutube/>} 
+                        link={"https://www.youtube.com"}
                     />
                 </div>
             </div>

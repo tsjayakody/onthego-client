@@ -53,9 +53,9 @@ function HomeLeftContainer() {
                     </div>
                     <div className='flex-col'>
                         <div className='flex justify-end mb-[10px]'>
-                            <div className='flex items-center text-#666666 hover:text-#00D2CB text-[11px] pt-[7px]'>
+                            <div className='flex items-center'>
                                 <Link to={'/meetthehosts'}>
-                                    <p>Browse All{'>'}{'>'}</p>
+                                    <p className='text-[#666666] hover:text-[#00D2CB] text-[11px] pt-[7px]'>Browse All{'>'}{'>'}</p>
                                 </Link>
                             </div>
                         </div>
