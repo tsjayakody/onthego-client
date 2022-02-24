@@ -28,19 +28,53 @@ function SidebarMenu({ isopen }) {
                     {/* sidebar buttons */}
                     <div className='flex flex-col space-y-[16px] pt-[45px] md:pt-[53px]'>
                         {/* Home Button */}
-                        <NavButtons icon={<AiFillHome />} name={'Home'} path={'/'} />
+                        <NavButtons 
+                            icon={<AiFillHome />} 
+                            name={'Home'} path={'/'} 
+                            isActive={true} 
+                        />
                         {/* episode button */}
-                        <NavButtons icon={<FaMicrophone />} name={'Episodes'} path={'/episodes'} />
+                        <NavButtons 
+                            icon={<FaMicrophone />} 
+                            name={'Episodes'} 
+                            path={'/episodes'} 
+                            isActive={true} 
+                        />
                         {/* shows button */}
-                        <NavButtons icon={<AiFillPlayCircle />} name={'Shows'} path={'/shows'} />
+                        <NavButtons 
+                            icon={<AiFillPlayCircle />} 
+                            name={'Shows'} 
+                            path={'/shows'} 
+                            isActive={true} 
+                        />
                         {/* about button */}
-                        <NavButtons icon={<AiFillInfoCircle />} name={'About'} path={'about'} />
+                        <NavButtons 
+                            icon={<AiFillInfoCircle />} 
+                            name={'About'} 
+                            path={'about'} 
+                            isActive={true} 
+                        />
                         {/* contact us button */}
-                        <NavButtons icon={<MdPhoneInTalk />} name={'Contact Us'} path={'contactus'} />
+                        <NavButtons 
+                            icon={<MdPhoneInTalk />} 
+                            name={'Contact Us'} 
+                            path={'contactus'} 
+                            isActive={true} 
+                        />
                         {/* register button */}
-                        <NavButtons icon={<BsCheck2Square />} name={'Register'} path={'/register'} />
+                        <NavButtons 
+                            icon={<BsCheck2Square />} 
+                            name={'Register'} 
+                            path={'/register'} 
+                            isActive={false} 
+                        />
                         {/* send episode button */}
-                        <NavButtons icon={<IoIosSend />} name={'Send Episodes'} path={'/sendepisodes'} />
+                        <NavButtons 
+                            icon={<IoIosSend />} 
+                            name={'Send Episodes'} 
+                            path={'/sendepisodes'}  
+                            isActive={false} 
+                        />
                     </div>
                     <div className='flex flex-col justify-between item-center absolute bottom-10 w-fit px-[27px] '>
                         {/* social buttons */}

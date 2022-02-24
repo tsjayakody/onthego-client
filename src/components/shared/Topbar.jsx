@@ -3,7 +3,7 @@ import TopNavigationButton from './TopNavigationButton';
 import TopNavigationSearchBar from './TopNavigationSearchBar';
 import SearchData from '../../data/SearchData.json';
 
-function Topbar() {
+function  Topbar() {
   return (
     <div className='bg-transparent ml-[61px] mt-[28px]'>
       <div className='flex justify-between'>

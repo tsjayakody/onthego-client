@@ -11,7 +11,7 @@ function AboutUsMainTopContainer() {
         <div className=' items-center'>
             {/* desktop view here */}
             <div className='hidden md:inline mx-auto flex-col space-y-[62px]'>
-                <div className='mx-auto max-h-[269px] '>
+                <div className='mx-auto max-h-[269px] max-w-[800px]'>
                 <ImageSlider bannerList={bannerList}/>
                 </div>
                 <div className='h-[205px] w-[632px] mx-auto'>
