@@ -37,6 +37,41 @@ let popularepisodes = [
         'episodeCategory': 'Travel',
         'episodeTime': parseFloat('03.00'),
     },
+    {   
+        'id': 6,
+        'episodeCover': sampleImage,
+        'episodeTitle': 'Popular Six',
+        'episodeCategory': 'Travel',
+        'episodeTime': parseFloat('03.00'),
+    },
+    {   
+        'id': 7,
+        'episodeCover': sampleImage,
+        'episodeTitle': 'Popular Seven',
+        'episodeCategory': 'Travel',
+        'episodeTime': parseFloat('03.00'),
+    },
+    {   
+        'id': 8,
+        'episodeCover': sampleImage,
+        'episodeTitle': 'Popular Eight',
+        'episodeCategory': 'Travel',
+        'episodeTime': parseFloat('03.00'),
+    },
+    {   
+        'id': 9,
+        'episodeCover': sampleImage,
+        'episodeTitle': 'Popular Nine',
+        'episodeCategory': 'Travel',
+        'episodeTime': parseFloat('03.00'),
+    },
+    {   
+        'id': 10,
+        'episodeCover': sampleImage,
+        'episodeTitle': 'Popular Ten',
+        'episodeCategory': 'Travel',
+        'episodeTime': parseFloat('03.00'),
+    },
     
 ]
 

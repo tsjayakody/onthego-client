@@ -9,7 +9,7 @@ import HomeRightContainer from './home/HomeRightContainer';
     -. lg:fixed top-[79px] right-0 bottom-0
 */
 
-function Home({ isopen }) {
+function Home() {
     return (
         <BackgroundContainer>
             <div className='flex flex-col h-screen'>
