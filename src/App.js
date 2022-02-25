@@ -38,6 +38,9 @@ function App() {
             <Route path='/404' element={<ErrorPage />} />
             <Route path='/meetthehosts' element={<MeetTheHosts />} />
             <Route path='/popularepisodes' element={<PopularEpisodes />} />
+            <Route path='/latestepisodes' element={<PopularEpisodes />} />
+            <Route path='/featuredepisodes' element={<PopularEpisodes />} />
+            <Route path='/recentlyupdated' element={<PopularEpisodes />} />
           </Routes>
         </Router>
       </div>

@@ -6,11 +6,11 @@ function ShowsRecentlyUpdatedBottomContainer() {
   return (
     <div>
         {shows.map((item)=>(
-            <ShowsAlphabeticalColumnList 
-                key={item.letter} 
-                letter={item.letter} 
-                list={item.showsList}
-            />
+        <ShowsAlphabeticalColumnList 
+            key={item.letter} 
+            letter={item.letter} 
+            list={item.showsList}
+        />
         ))}
     </div>
   )

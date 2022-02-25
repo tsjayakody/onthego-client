@@ -8,6 +8,7 @@ import HomeContainerHostCard from './HomeContainerHostCard';
 import ImageSlider from '../shared/ImageSlider'
 import bannerList from '../../data/TopBannerList'
 import { Link } from 'react-router-dom';
+import HomeContainerBlueEpisodeContainer from './HomeContainerBlueEpisodeContainer'
 
 function HomeLeftContainer() {
     return (
@@ -21,13 +22,17 @@ function HomeLeftContainer() {
                     <HomeRowContainerTitle rowTitle='Latest Episodes' />
                     {/* dynmic list here */}
                     <div className='flex space-x-[16px] md:space-x-[31px] w-full overflow-x-auto'>
-                        {latestepisodes.map((item) => (
-                            <HomeContainerEpisodes
+                        {latestepisodes.slice(0, 6).map((item, index) => (
+                            (index < 5) ? <HomeContainerEpisodes
                                 key={item.id}
                                 bannerImage={item.episodeCover}
                                 bannerTitle={item.episodeName}
                                 bannerCreator={item.episodeOwner}
-                            />
+                            /> : 
+                            <Link to={'/latestepisode'}>
+                                <HomeContainerBlueEpisodeContainer />
+                            </Link> 
+                            
                         ))}
                     </div>
                 </div>
@@ -36,13 +41,16 @@ function HomeLeftContainer() {
                     <HomeRowContainerTitle rowTitle='Featured Episodes' />
                     {/* dynmic list here */}
                     <div className='flex space-x-[16px] md:space-x-[31px] w-full overflow-x-auto'>
-                        {featuredepisodes.map((item) => (
-                            <HomeContainerEpisodes
-                                key={item.id}
-                                bannerImage={item.episodeCover}
-                                bannerTitle={item.episodeName}
-                                bannerCreator={item.episodeOwner}
-                            />
+                        {featuredepisodes.slice(0, 6).map((item, index) => (
+                            (index < 5) ? <HomeContainerEpisodes
+                            key={item.id}
+                            bannerImage={item.episodeCover}
+                            bannerTitle={item.episodeName}
+                            bannerCreator={item.episodeOwner}
+                        /> : 
+                        <Link to={'/featuredepisodes'}>
+                            <HomeContainerBlueEpisodeContainer />
+                        </Link>
                         ))}
                     </div>
                 </div>

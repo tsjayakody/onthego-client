@@ -11,8 +11,13 @@ function ShowsAlphabeticalColumnList({
         <div className='pb-[37px]'>
             <ShowsAlphabeticalBannerLetter letter={letter} />
             <div className='flex pt-[14px] w-full overflow-x-auto overflow-y-hidden'>
-                {list.map((item) => (
-                    <ShowsCategoryBanner
+                {list.slice(0, 5).map((item, index) => (
+                    (index < 5) ? <ShowsCategoryBanner
+                        key={item.id}
+                        showCover={item.showCover}
+                        showName={item.showName}
+                        episodeList={item.episodeList}
+                    /> : <ShowsCategoryBanner
                         key={item.id}
                         showCover={item.showCover}
                         showName={item.showName}
