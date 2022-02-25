@@ -1,6 +1,6 @@
 import React from 'react'
 import popularepisodes from '../../data/PopularEpisodes'
-import PopularEpisode from '../home/PopularEpisode'
+import PopularEpisodeExpanedListItem from '../episodes/PopularEpisodeExpanedListItem';
 import Topbar from '../shared/Topbar'
 
 function PopularEpisodes() {
@@ -13,11 +13,11 @@ function PopularEpisodes() {
                 <div className='flex-1 overflow-y-auto'>
                     <div className='flex flex-col ml-[61px] mt-[71px]'>
                         {/* category title here */}
-                        <p className='text-#FFFFFF text-18px mb-[15px]'>Categories</p>
+                        <p className='text-#FFFFFF text-18px mb-[15px]'> Popular Episodes</p>
                         {/* grid here */}
-                        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-[28px] md:mt-[15px] mt-[30px] mr-[20px]'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-8 gap-[28px] md:mt-[15px] mt-[30px] mr-[20px]'>
                         {popularepisodes.map((item) => (
-                        <PopularEpisode
+                        <PopularEpisodeExpanedListItem
                             key={item.id}
                             episodeImage={item.episodeCover}
                             episodeTitle={item.episodeTitle}
