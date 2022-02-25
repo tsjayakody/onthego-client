@@ -7,8 +7,8 @@ function PopularEpisodeExpanedListItem({
     episodeDuration
 }) {
     return (
-        <div className='bg-#282246 h-[110px] w-[260px]'>
-            <div className='flex items-center justify-around'>
+        <div className='bg-#282246 h-[100px] w-[260px]'>
+            <div className='flex items-center justify-start'>
                 <img src={episodeImage} alt="" className='h-[100px] w-[100px] object-fill' />
                 <div className='flex flex-col pl-[29px] pb-[11px] pt-[14px] justify-evenly'>
                     <p className='text-#FFFFFF text-12px pb-[8px] truncate'>{episodeTitle}</p>

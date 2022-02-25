@@ -15,7 +15,7 @@ function PopularEpisodes() {
                         {/* category title here */}
                         <p className='text-#FFFFFF text-18px mb-[15px]'> Popular Episodes</p>
                         {/* grid here */}
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-8 gap-[28px] md:mt-[15px] mt-[30px] mr-[20px]'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-[28px] md:mt-[15px] mt-[30px] mr-[20px]'>
                         {popularepisodes.map((item) => (
                         <PopularEpisodeExpanedListItem
                             key={item.id}
