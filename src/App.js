@@ -15,6 +15,8 @@ import HostDetailPage from "./components/HostDetailPage";
 import ErrorPage from "./components/ErrorPage";
 import MeetTheHosts from "./components/MeetTheHosts";
 import PopularEpisodes from "./components/episodes/PopularEpisodes";
+import LatestEpisodeExpandedGrid from "./components/home/LatestEpisodeExpandedGrid";
+import FeaturedEpisodesExpanded from "./components/home/FeaturedEpisodesExpanded";
 
 function App() {
 
@@ -38,8 +40,8 @@ function App() {
             <Route path='/404' element={<ErrorPage />} />
             <Route path='/meetthehosts' element={<MeetTheHosts />} />
             <Route path='/popularepisodes' element={<PopularEpisodes />} />
-            <Route path='/latestepisodes' element={<PopularEpisodes />} />
-            <Route path='/featuredepisodes' element={<PopularEpisodes />} />
+            <Route path='/latestepisodes' element={<LatestEpisodeExpandedGrid />} />
+            <Route path='/featuredepisodes' element={<FeaturedEpisodesExpanded />} />
             <Route path='/recentlyupdated' element={<PopularEpisodes />} />
           </Routes>
         </Router>

@@ -10,7 +10,7 @@ function Episodes() {
             <div className='flex flex-col h-screen'>
                 <div className='py-1'>
                     <Topbar />
-                </div>
+                </div> 
                 <div className='flex-1 overflow-y-auto'>
                     <div className='flex flex-col ml-[61px] mt-[71px]'>
                         {/* category title here */}

@@ -29,7 +29,7 @@ function HomeLeftContainer() {
                                 bannerTitle={item.episodeName}
                                 bannerCreator={item.episodeOwner}
                             /> : 
-                            <Link to={'/latestepisode'}>
+                            <Link to={'/latestepisodes'}>
                                 <HomeContainerBlueEpisodeContainer />
                             </Link> 
                             
