@@ -1,6 +1,5 @@
 import React from 'react'
 import episodes from '../../data/Episodes'
-import EpisodeCategoryContainer from '../episodes/EpisodeCategoryContainer'
 import Topbar from '../shared/Topbar'
 import ShowsExpandedGridItem from './ShowsExpandedGridItem'
 
