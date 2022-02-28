@@ -17,6 +17,7 @@ import MeetTheHosts from "./components/MeetTheHosts";
 import PopularEpisodes from "./components/episodes/PopularEpisodes";
 import LatestEpisodeExpandedGrid from "./components/home/LatestEpisodeExpandedGrid";
 import FeaturedEpisodesExpanded from "./components/home/FeaturedEpisodesExpanded";
+import ShowsExpanedGrid from "./components/shows/ShowsExpanedGrid";
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
             <Route path='/latestepisodes' element={<LatestEpisodeExpandedGrid />} />
             <Route path='/featuredepisodes' element={<FeaturedEpisodesExpanded />} />
             <Route path='/recentlyupdated' element={<PopularEpisodes />} />
+            <Route path='/shows/showslist' element={<ShowsExpanedGrid />} />
           </Routes>
         </Router>
       </div>
