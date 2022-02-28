@@ -2,7 +2,6 @@ import React from 'react';
 import ShowsAlphabeticalBannerLetter from './ShowsAlphabeticalBannerLetter';
 import ShowsCategoryBanner from './ShowsCategoryBanner';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
 import HomeContainerBlueEpisodeContainer from '../home/HomeContainerBlueEpisodeContainer';
 
 function ShowsAlphabeticalColumnList({
@@ -20,9 +19,7 @@ function ShowsAlphabeticalColumnList({
                         showName={item.showName}
                         episodeList={item.episodeList}
                     /> :
-                        <Link to={'/shows/showslist'}>
-                            <HomeContainerBlueEpisodeContainer />
-                        </Link>
+                        <HomeContainerBlueEpisodeContainer path={'/shows/showslist'} />
                 ))}
             </div>
         </div>

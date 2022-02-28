@@ -29,9 +29,7 @@ function HomeLeftContainer() {
                                 bannerTitle={item.episodeName}
                                 bannerCreator={item.episodeOwner}
                             /> :
-                                <Link to={'/latestepisodes'}>
-                                    <HomeContainerBlueEpisodeContainer />
-                                </Link>
+                                <HomeContainerBlueEpisodeContainer path={'/latestepisodes'} />
 
                         ))}
                     </div>
@@ -48,9 +46,7 @@ function HomeLeftContainer() {
                                 bannerTitle={item.episodeName}
                                 bannerCreator={item.episodeOwner}
                             /> :
-                                <Link to={'/featuredepisodes'}>
-                                    <HomeContainerBlueEpisodeContainer />
-                                </Link>
+                                <HomeContainerBlueEpisodeContainer path={'/featuredepisodes'} />
                         ))}
                     </div>
                 </div>
@@ -69,9 +65,7 @@ function HomeLeftContainer() {
                                         bannerTitle={item.hostName}
                                         bannerType={item.host}
                                     /> :
-                                    <Link to={'/meetthehosts'}>
-                                        <HomeContainerBlueEpisodeContainer />
-                                    </Link>
+                                    <HomeContainerBlueEpisodeContainer path={'/meetthehosts'} />
                             ))}
                         </div>
                     </div>
