@@ -4,7 +4,7 @@ import episodes from "../data/Episodes";
 
 const EpisodeContext = createContext()
 
-export const EpisodeProvider = ({ children }) => {
+export const EpisodeProvider = ({ children }) => { 
 
     //! state here
     const [episodeList, setEpisodeList] = useState(episodes);

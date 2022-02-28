@@ -7,7 +7,6 @@ import HomeRowContainerTitle from './HomeRowContainerTitle'
 import HomeContainerHostCard from './HomeContainerHostCard';
 import ImageSlider from '../shared/ImageSlider'
 import bannerList from '../../data/TopBannerList'
-import { Link } from 'react-router-dom';
 import HomeContainerBlueEpisodeContainer from './HomeContainerBlueEpisodeContainer'
 
 function HomeLeftContainer() {
@@ -29,7 +28,7 @@ function HomeLeftContainer() {
                                 bannerTitle={item.episodeName}
                                 bannerCreator={item.episodeOwner}
                             /> :
-                                <HomeContainerBlueEpisodeContainer path={'/latestepisodes'} />
+                                <HomeContainerBlueEpisodeContainer key={'latest'} path={'/latestepisodes'} />
 
                         ))}
                     </div>
@@ -46,7 +45,7 @@ function HomeLeftContainer() {
                                 bannerTitle={item.episodeName}
                                 bannerCreator={item.episodeOwner}
                             /> :
-                                <HomeContainerBlueEpisodeContainer path={'/featuredepisodes'} />
+                                <HomeContainerBlueEpisodeContainer key={'featured'} path={'/featuredepisodes'} />
                         ))}
                     </div>
                 </div>
@@ -65,7 +64,7 @@ function HomeLeftContainer() {
                                         bannerTitle={item.hostName}
                                         bannerType={item.host}
                                     /> :
-                                    <HomeContainerBlueEpisodeContainer path={'/meetthehosts'} />
+                                    <HomeContainerBlueEpisodeContainer key={'hosts'} path={'/meetthehosts'} />
                             ))}
                         </div>
                     </div>

@@ -2,8 +2,12 @@ import React from 'react';
 import EpisodeCategoryContainer from './episodes/EpisodeCategoryContainer';
 import episodes from '../data/Episodes';
 import Topbar from './shared/Topbar';
+import {useContext} from 'react';
+import EpisodeContext from '../context/EpisodeContext';
 
 function Episodes() {
+
+    const {episodes} = useContext(EpisodeContext);
 
     return (
         <div className='bg-#110E1F flex-grow h-full w-full overflow-y-auto md:pl-[203px] pb-[150px]'>
