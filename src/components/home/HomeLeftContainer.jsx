@@ -1,15 +1,20 @@
-import React from 'react'
-import featuredepisodes from '../../data/FeaturedEpisodes'
-import hosts from '../../data/Hosts'
-import latestepisodes from '../../data/LatestEpisodes'
-import HomeContainerEpisodes from './HomeContainerEpisodes'
-import HomeRowContainerTitle from './HomeRowContainerTitle'
+import React from 'react';
+import featuredepisodes from '../../data/FeaturedEpisodes';
+import hosts from '../../data/Hosts';
+import latestepisodes from '../../data/LatestEpisodes';
+import HomeContainerEpisodes from './HomeContainerEpisodes';
+import HomeRowContainerTitle from './HomeRowContainerTitle';
 import HomeContainerHostCard from './HomeContainerHostCard';
-import ImageSlider from '../shared/ImageSlider'
-import bannerList from '../../data/TopBannerList'
-import HomeContainerBlueEpisodeContainer from './HomeContainerBlueEpisodeContainer'
+import ImageSlider from '../shared/ImageSlider';
+import bannerList from '../../data/TopBannerList';
+import HomeContainerBlueEpisodeContainer from './HomeContainerBlueEpisodeContainer';
+import {useContext} from 'react';
+import HostsContext from '../../context/HostsContext';
 
 function HomeLeftContainer() {
+
+    const {hosts} = useContext(HostsContext);
+
     return (
         <div className='flex-col ml-[26px] md:ml-[59px]'>
             <div className='mt-[112px] ml-[26px] mr-[26px] mb-[32px] lg:mt-[34px] lg:ml-[59px] lg:mr-[113px] lg:mb-[40px]'>

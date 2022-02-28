@@ -14,7 +14,7 @@ function DarkSocialMediaButton({ icon, link }) {
 }
 
 DarkSocialMediaButton.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.object,
   link: PropTypes.string,
 }
 
