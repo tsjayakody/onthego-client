@@ -28,11 +28,11 @@ function HomeLeftContainer() {
                                 bannerImage={item.episodeCover}
                                 bannerTitle={item.episodeName}
                                 bannerCreator={item.episodeOwner}
-                            /> : 
-                            <Link to={'/latestepisodes'}>
-                                <HomeContainerBlueEpisodeContainer />
-                            </Link> 
-                            
+                            /> :
+                                <Link to={'/latestepisodes'}>
+                                    <HomeContainerBlueEpisodeContainer />
+                                </Link>
+
                         ))}
                     </div>
                 </div>
@@ -43,14 +43,14 @@ function HomeLeftContainer() {
                     <div className='flex space-x-[16px] md:space-x-[31px] w-full overflow-x-auto'>
                         {featuredepisodes.slice(0, 6).map((item, index) => (
                             (index < 5) ? <HomeContainerEpisodes
-                            key={item.id}
-                            bannerImage={item.episodeCover}
-                            bannerTitle={item.episodeName}
-                            bannerCreator={item.episodeOwner}
-                        /> : 
-                        <Link to={'/featuredepisodes'}>
-                            <HomeContainerBlueEpisodeContainer />
-                        </Link>
+                                key={item.id}
+                                bannerImage={item.episodeCover}
+                                bannerTitle={item.episodeName}
+                                bannerCreator={item.episodeOwner}
+                            /> :
+                                <Link to={'/featuredepisodes'}>
+                                    <HomeContainerBlueEpisodeContainer />
+                                </Link>
                         ))}
                     </div>
                 </div>
@@ -60,21 +60,18 @@ function HomeLeftContainer() {
                         <HomeRowContainerTitle rowTitle='Meet The Hosts' />
                     </div>
                     <div className='flex-col'>
-                        <div className='flex justify-end mb-[10px]'>
-                            <div className='flex items-center'>
-                                <Link to={'/meetthehosts'}>
-                                    <p className='text-[#666666] hover:text-[#00D2CB] text-[11px] pt-[7px]'>Browse All{'>'}{'>'}</p>
-                                </Link>
-                            </div>
-                        </div>
                         <div className='flex space-x-[55px] md:space-x-[36px] w-full overflow-x-auto'>
-                            {hosts.map((item) => (
-                                <HomeContainerHostCard
-                                    key={item.id}
-                                    bannerImage={item.hostCover}
-                                    bannerTitle={item.hostName}
-                                    bannerType={item.host}
-                                />
+                            {hosts.slice(0, 6).map((item, index) => (
+                                (index < 5) ?
+                                    <HomeContainerHostCard
+                                        key={item.id}
+                                        bannerImage={item.hostCover}
+                                        bannerTitle={item.hostName}
+                                        bannerType={item.host}
+                                    /> :
+                                    <Link to={'/meetthehosts'}>
+                                        <HomeContainerBlueEpisodeContainer />
+                                    </Link>
                             ))}
                         </div>
                     </div>
