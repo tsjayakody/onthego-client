@@ -1,11 +1,12 @@
 import React from 'react';
-import { EffectCoverflow, Autoplay, Keyboard } from 'swiper';
+import { EffectCoverflow, Autoplay, Keyboard, EffectCreative } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import '../custom/sliderstyles.css';
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import "swiper/css/effect-creative";
 import "swiper/css/autoplay";
 import "swiper/css/keyboard";
 
@@ -17,38 +18,75 @@ import "swiper/css/keyboard";
 
 function ImageSlider({ bannerList }) {
     return (
-        <div className='z-0 w-full h-full'>
-            <Swiper className='swiper swiper-slide swiper-slide-active'
-                modules={[EffectCoverflow, Autoplay]}
-                effect={"coverflow"}
-                coverflowEffect={{
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 2,
-                    slideShadows: true,
-                }}
-                keyboard={{
-                    enabled: true,
-                    onlyInViewport: true,
-                }}
-                centeredSlides={true}
-                loop={true}
-                // autoplay={{
-                //     delay: 5000,
-                //     disableOnInteraction: false,
-                // }}
-                slidesPerView={2}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                {bannerList.map((item) => (
-                    <SwiperSlide className='swiper-slide swiper-slide-active' key={item.id}>
-                        <img src={item.banner} alt="" className='swiper-slide swiper-slide-active' />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </div>
+        <>
+            <div className='z-0 w-full h-full hidden lg:inline'>
+                {/* desktop view */}
+                <Swiper className='swiper swiper-slide swiper-slide-active'
+                    modules={[EffectCoverflow, Autoplay]}
+                    effect={"coverflow"}
+                    coverflowEffect={{
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 2,
+                        slideShadows: true,
+                    }}
+                    keyboard={{
+                        enabled: true,
+                        onlyInViewport: true,
+                    }}
+                    centeredSlides={true}
+                    loop={true}
+                    // autoplay={{
+                    //     delay: 5000,
+                    //     disableOnInteraction: false,
+                    // }}
+                    slidesPerView={2}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
+                    {bannerList.map((item) => (
+                        <SwiperSlide className='swiper-slide swiper-slide-active' key={item.id}>
+                            <img src={item.banner} alt="" className='swiper-slide swiper-slide-active' />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+            {/* mobile view */}
+            <div className='z-0 w-full h-full inline lg:hidden'>
+                {/* desktop view */}
+                <Swiper className='swiper swiper-slide swiper-slide-active'
+                    modules={[EffectCoverflow, Autoplay]}
+                    effect={"coverflow"}
+                    coverflowEffect={{
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 2,
+                        slideShadows: true,
+                    }}
+                    keyboard={{
+                        enabled: true,
+                        onlyInViewport: true,
+                    }}
+                    centeredSlides={true}
+                    loop={true}
+                    // autoplay={{
+                    //     delay: 5000,
+                    //     disableOnInteraction: false,
+                    // }}
+                    slidesPerView={1}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
+                    {bannerList.map((item) => (
+                        <SwiperSlide className='swiper-slide swiper-slide-active' key={item.id}>
+                            <img src={item.banner} alt="" className='swiper-slide swiper-slide-active' />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+        </>
     )
 }
 

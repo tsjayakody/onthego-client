@@ -19,7 +19,7 @@ function ShowsAlphabeticalColumnList({
                         showName={item.showName}
                         episodeList={item.episodeList}
                     /> :
-                        <HomeContainerBlueEpisodeContainer path={'/shows/showslist'} />
+                        <HomeContainerBlueEpisodeContainer key={'alphabetexpand'} path={'/shows/showslist'} />
                 ))}
             </div>
         </div>
