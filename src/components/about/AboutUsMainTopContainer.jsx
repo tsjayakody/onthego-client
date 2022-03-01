@@ -1,6 +1,5 @@
 import React from 'react'
 import bannerList from '../../data/TopBannerList';
-import sampleImgeSlider from '../assets/sample-image-slider.png';
 import ImageSlider from '../shared/ImageSlider';
 
 function AboutUsMainTopContainer() {
