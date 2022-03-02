@@ -22,16 +22,38 @@ function MeetTheHostCardLeft() {
                     <div className='flex items-center'>
                         <p className='text-[#666666] text-[10px] md:text-[11px]'>Follow Us On:</p>
                         <div className='flex space-x-[7px] ml-[18px] items-center'>
-                            {/* social buttons here */}
-                            <DarkSocialMediaButton icon={<BsTwitter/>} link={'https://www.twitter.com'} />
-                            <DarkSocialMediaButton icon={<FaFacebookF/>} link={'https://www.facebook.com'}  />
-                            <DarkSocialMediaButton icon={<AiFillInstagram/>} link={'https://www.instagram.com'}  />
-                            <DarkSocialMediaButton icon={<FaYoutube/>} link={'https://www.youtube.com'}  />
+                           {socialButtonLinkArray.map(({icon, link})=>(
+                               <DarkSocialMediaButton
+                                key={link} 
+                                icon={icon} 
+                                link={link}
+                               />
+                           ))}
                         </div>
                     </div>
                 </div>
             </div>
     )
 }
+
+//* dark social media button array here
+const socialButtonLinkArray = [
+    {
+        icon: <BsTwitter/>,
+        link: "https://www.twitter.com",
+    },
+    {
+        icon: <FaFacebookF/>,
+        link: "https://www.facebook.com",
+    },
+    {
+        icon: <AiFillInstagram/>,
+        link: "https://www.instagram.com",
+    },
+    {
+        icon: <FaYoutube/>,
+        link: "https://www.youtube.com",
+    }
+];
 
 export default MeetTheHostCardLeft

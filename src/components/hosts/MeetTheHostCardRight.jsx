@@ -19,23 +19,14 @@ function MeetTheHostCardRight() {
                     <div className='flex'>
                         <p className='text-[#666666] text-[11px]'>Follow Us On:</p>
                         <div className='flex space-x-[7px] ml-[18px]'>
-                            {/* social buttons here */}
-                            <DarkSocialMediaButton
-                                icon={twitterDarkIcon}
-                                onclick={() => (console.log("Twitter Button Pressed"))}
-                            />
-                            <DarkSocialMediaButton
-                                icon={facebookDarkIcon}
-                                onclick={() => (console.log("Twitter Button Pressed"))}
-                            />
-                            <DarkSocialMediaButton
-                                icon={instagramDarkIcon}
-                                onclick={() => (console.log("Twitter Button Pressed"))}
-                            />
-                            <DarkSocialMediaButton
-                                icon={youtubeDarkIcon}
-                                onclick={() => (console.log("Twitter Button Pressed"))}
-                            />
+                            {/* social media button map function here */}
+                            {darkSocialMediaButtonLinkArray.map(({ icon, onClick }) => (
+                                <DarkSocialMediaButton
+                                    key={icon}
+                                    icon={icon}
+                                    onClick={onClick}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -50,5 +41,25 @@ function MeetTheHostCardRight() {
         </>
     )
 }
+
+//* dark social media button array here
+const darkSocialMediaButtonLinkArray = [
+    {
+        icon: twitterDarkIcon,
+        onClick: () => (console.log("Twitter Button Pressed"))
+    },
+    {
+        icon: facebookDarkIcon,
+        onClick: () => (console.log("facebook button pressed"))
+    },
+    {
+        icon: instagramDarkIcon,
+        onClick: () => (console.log("instagram button pressed"))
+    },
+    {
+        icon: youtubeDarkIcon,
+        onClick: () => (console.log("youtube button pressed"))
+    }
+];
 
 export default MeetTheHostCardRight
