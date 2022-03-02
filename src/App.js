@@ -31,7 +31,7 @@ function App() {
             <Router>
               <Sidebar className="z-10" />
               <Routes>
-                <Route exact path='/' element={<Home />} />
+                <Route exact path='/' element={<Home />} />.
                 <Route path='/episodes' element={<Episodes />} />
                 <Route path='/shows' element={<Shows />} />
                 <Route path='/about' element={<About />} />

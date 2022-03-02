@@ -109,13 +109,13 @@ const linksArray = [
         icon: < BsCheck2Square />,
         name: "Register",
         path: "/register",
-        isActive: true,
+        isActive: false,
     },
     {
         icon: < IoIosSend />,
         name: "Send Episodes",
         path: "/sendepisodes",
-        isActive: true,
+        isActive: false,
     },
 ];
 

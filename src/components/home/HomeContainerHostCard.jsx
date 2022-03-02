@@ -26,23 +26,33 @@ function HomeContainerHostCard({
                 </div>
             </Link>
             <div className='flex justify-around'>
-                {/* twitter button */}
-                <HostSocialButton icon={hostTwitterIcon} link={"https://www.twitter.com"} />
-
-                {/* facebook button */}
-                <HostSocialButton icon={hostFacebookIcon} link={"https://www.facebook.com"} />
-
-                {/* pinterest button */}
-                <HostSocialButton icon={hostPinterestIcon} link={"https://www.pinterest.com"} />
-
-                {/* instagram button */}
-                <HostSocialButton icon={hostInstagramIcon} link={"https://www.instagram.com"} />
-
+                {hostSocialMediaButtonLinkArray.map(({icon, link})=>(
+                    <HostSocialButton key={link} icon={icon} link={link}/>
+                ))}
             </div>
         </div>
 
     );
 }
+
+const hostSocialMediaButtonLinkArray = [
+    {
+        icon: hostTwitterIcon,
+        link: "https://www.twitter.com",
+    },
+    {
+        icon: hostFacebookIcon,
+        link: "https://www.facebook.com",
+    },
+    {
+        icon: hostPinterestIcon,
+        link: "https://www.pinterest.com",
+    },
+    {
+        icon: hostInstagramIcon,
+        link: "https://www.instagram.com"
+    }
+]
 
 HomeContainerHostCard.propTypes = {
     bannerImage: PropTypes.string,
