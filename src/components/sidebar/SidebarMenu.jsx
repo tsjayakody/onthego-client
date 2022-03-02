@@ -41,17 +41,14 @@ function SidebarMenu({ isopen }) {
                         {/* social buttons */}
                         {/* facebook button */}
                         <div className='flex justify-around items-center w-203 md:space-y-[15.84px] md:flex-col'>
-                            <SocialButton
-                                icon={<MdFacebook className='text-[#BFDBFE] h-21 w-23 md:text-[#1E40AF] md:h-30 md:w-30' />}
-                                name={'Facebook'}
-                                link={'https://www.facebook.com'}
-                            />
-                            {/* twitter button */}
-                            <SocialButton
-                                icon={<SiTwitter className='text-[#BFDBFE] h-21 w-23 md:text-[#1E40AF] md:h-30 md:w-30' />}
-                                name={'Twitter'}
-                                link={'https://www.twitter.com'}
-                            />
+                            {socialMediaButtonLinkArray.map(({ icon, name, link }) => (
+                                <SocialButton
+                                    key={name}
+                                    icon={icon}
+                                    name={name}
+                                    link={link}
+                                />
+                            ))}
                         </div>
                         {/* content-rights */}
                         <div className=''>
@@ -63,6 +60,19 @@ function SidebarMenu({ isopen }) {
         </>
     )
 }
+
+const socialMediaButtonLinkArray = [
+    {
+        icon: <MdFacebook className='text-[#BFDBFE] h-21 w-23 md:text-[#1E40AF] md:h-30 md:w-30' />,
+        name: "Facebook",
+        link: "https://www.facebook.com",
+    },
+    {
+        icon: <SiTwitter className='text-[#BFDBFE] h-21 w-23 md:text-[#1E40AF] md:h-30 md:w-30' />,
+        name: "Twitter",
+        link: "https://www.twitter.com",
+    },
+];
 
 const linksArray = [
     {
