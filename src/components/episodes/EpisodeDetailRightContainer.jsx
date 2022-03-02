@@ -1,5 +1,5 @@
 import React from 'react'
-import sampleImage from '../assets/common-sample-image.png';
+import coverplaceholder from '../assets/placeholder-cover-image.svg';
 import PropTypes from 'prop-types';
 
 function EpisodeDetailRightContainer({sampleImage}) {
@@ -11,7 +11,7 @@ function EpisodeDetailRightContainer({sampleImage}) {
 }
 
 EpisodeDetailRightContainer.defaultProps = {
-  sampleImage: sampleImage,
+  sampleImage: coverplaceholder,
 }
 
 EpisodeDetailRightContainer.propTypes = {

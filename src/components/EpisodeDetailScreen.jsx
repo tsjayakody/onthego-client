@@ -1,5 +1,5 @@
 import React from 'react';
-import sampleImage from '../components/assets/common-sample-image.png';
+import coverplaceholder from '../components/assets/placeholder-cover-image.svg';
 import personSample from '../components/assets/person-sample.png';
 import EpisodeDetailRelatedProductsList from './episodes/EpisodeDetailRelatedProductsList';
 import EpisodeDetailUserProfileContainer from './episodes/EpisodeDetailUserProfileContainer';
@@ -28,11 +28,11 @@ function EpisodeDetailScreen() {
                 episodeDate={"OCTOBER 18,2021"}
                 noOfEpisodes={"EPISODE 70"}
               />
-              <EpisodeDetailRightContainer sampleImage={sampleImage} />
+              <EpisodeDetailRightContainer sampleImage={coverplaceholder} />
             </div>
             {/* mobile-view */}
             <div className='inline-table md:inline-table lg:hidden'>
-              <EpisodeDetailRightContainer sampleImage={sampleImage} />
+              <EpisodeDetailRightContainer sampleImage={coverplaceholder} />
               <EpisodeDetailLeftContainer
                 episodeCategory={"SPORTS - BATTLE OF THE BLUES - ROYAL THOMIAN CRICKET ENCOUNTER"}
                 episodeTitle={"142nd “Battle of the Blues” Ends In A Watery Draw"}

@@ -1,10 +1,10 @@
-import coverplaceholder from '../components/assets/placeholder-cover-image.svg';
+import hostImage from '../components/assets/sample-host-image.png';
 
 //! sample hosts list 
 let hosts = [
     {   
         'id': 1,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -14,7 +14,7 @@ let hosts = [
     },
     {   
         'id': 2,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -24,7 +24,7 @@ let hosts = [
     },
     {   
         'id': 3,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -34,7 +34,7 @@ let hosts = [
     },
     {   
         'id': 4,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -44,7 +44,7 @@ let hosts = [
     },
     {   
         'id': 5,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -54,7 +54,7 @@ let hosts = [
     },
     {   
         'id': 6,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -64,7 +64,7 @@ let hosts = [
     },
     {   
         'id': 7,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -74,7 +74,7 @@ let hosts = [
     },
     {   
         'id': 8,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -84,7 +84,7 @@ let hosts = [
     },
     {   
         'id': 9,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
@@ -94,7 +94,7 @@ let hosts = [
     },
     {   
         'id': 10,
-        'hostCover': coverplaceholder,
+        'hostCover': hostImage,
         'hostName': 'Travel With Wife',
         'hostType': 'CONTENT CREATOR',
         'hostFacebookUrl': 'https://www.facebook.com',
