@@ -1,4 +1,5 @@
-import hostImage from '../components/assets/sample-host-image.png';
+// import hostImage from '../components/assets/sample-host-image.png';
+import hostImage from '../components/assets/placeholder-cover-image.svg';
 
 //! sample hosts list 
 let hosts = [

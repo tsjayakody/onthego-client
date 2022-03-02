@@ -18,7 +18,9 @@ function HomeContainerHostCard({
             <Link to="/hostdetail">
                 <div>
                     {/* needds to implement circular background here */}
-                    <img src={bannerImage} alt="" className='rounded-full border border-gray-100 shadow-sm' />
+                    <div className='h-[120px] w-[120px]'>
+                        <img src={bannerImage} alt="" className='inline object-cover rounded-full' />
+                    </div>
                     <div className='flex flex-col items-center'>
                         <p className='text-#FFFFFF text-[13px] md:text-[13px] truncate'>{bannerTitle}</p>
                         <p className='text-#666666 text-[10px] truncate'>{bannerType}</p>
@@ -26,8 +28,8 @@ function HomeContainerHostCard({
                 </div>
             </Link>
             <div className='flex justify-around'>
-                {hostSocialMediaButtonLinkArray.map(({icon, link})=>(
-                    <HostSocialButton key={link} icon={icon} link={link}/>
+                {hostSocialMediaButtonLinkArray.map(({ icon, link }) => (
+                    <HostSocialButton key={link} icon={icon} link={link} />
                 ))}
             </div>
         </div>
