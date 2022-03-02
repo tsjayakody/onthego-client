@@ -1,10 +1,10 @@
-import sampleImage from '../components/assets/common-sample-image.png';
+import coverplaceholder from '../components/assets/placeholder-cover-image.svg';
 
 //! sample episodes list 
 let episodeslist = [
     {   
         'id': 1,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeTitle': '142nd “Battle of the Blues” Ends In A Watery Draw',
         'epsiodeCategory': 'SPORTS - BIG MATCH SEASON 2021',
         // TODO: here date object needs to passed 
@@ -13,7 +13,7 @@ let episodeslist = [
     },
     {   
         'id': 2,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeTitle': '142nd “Battle of the Blues” Ends In A Watery Draw',
         'epsiodeCategory': 'SPORTS - BIG MATCH SEASON 2021',
         // TODO: here date object needs to passed 
@@ -22,7 +22,7 @@ let episodeslist = [
     },
     {   
         'id': 3,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeTitle': '142nd “Battle of the Blues” Ends In A Watery Draw',
         'epsiodeCategory': 'SPORTS - BIG MATCH SEASON 2021',
         // TODO: here date object needs to passed 
@@ -31,7 +31,7 @@ let episodeslist = [
     },
     {   
         'id': 4,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeTitle': '142nd “Battle of the Blues” Ends In A Watery Draw',
         'epsiodeCategory': 'SPORTS - BIG MATCH SEASON 2021',
         // TODO: here date object needs to passed 
@@ -40,7 +40,7 @@ let episodeslist = [
     },
     {   
         'id': 5,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeTitle': '142nd “Battle of the Blues” Ends In A Watery Draw',
         'epsiodeCategory': 'SPORTS - BIG MATCH SEASON 2021',
         // TODO: here date object needs to passed 

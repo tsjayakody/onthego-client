@@ -1,34 +1,34 @@
-import sampleImage from '../components/assets/common-sample-image.png';
+import coverplaceholder from '../components/assets/placeholder-cover-image.svg';
 
 //! sample hosts list 
 let recentlyupdated = [
     {   
         'id': 1,
-        'showsCover': sampleImage,
+        'showsCover': coverplaceholder,
         'showsTitle': 'Travel With Wife',
         'showsDate': '04/11/2021',
     },
     {   
         'id': 2,
-        'showsCover': sampleImage,
+        'showsCover': coverplaceholder,
         'showsTitle': 'Travel With Wife',
         'showsDate': '04/11/2021',
     },
     {   
         'id': 3,
-        'showsCover': sampleImage,
+        'showsCover': coverplaceholder,
         'showsTitle': 'Travel With Wife',
         'showsDate': '04/11/2021',
     },
     {   
         'id': 4,
-        'showsCover': sampleImage,
+        'showsCover': coverplaceholder,
         'showsTitle': 'Travel With Wife',
         'showsDate': '04/11/2021',
     },
     {   
         'id': 5,
-        'showsCover': sampleImage,
+        'showsCover': coverplaceholder,
         'showsTitle': 'Travel With Wife',
         'showsDate': '04/11/2021',
     },

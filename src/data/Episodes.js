@@ -1,40 +1,40 @@
-import sampleImage from '../components/assets/common-sample-image.png';
+import coverplaceholder from '../components/assets/placeholder-cover-image.svg';
 
 //! sample episodes list 
 let episodes = [
     {   
         'id': 1,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeCategory': 'Sport',
         'episodeList': 12,
     },
     {   
         'id': 2,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeCategory': 'Education',
         'episodeList': 11,
     },
     {   
         'id': 3,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeCategory': 'News',
         'episodeList': 9,
     },
     {   
         'id': 4,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeCategory': 'International',
         'episodeList': 15,
     },
     {   
         'id': 5,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeCategory': 'Sport',
         'episodeList': 3,
     },
     {   
         'id': 6,
-        'episodeCover': sampleImage,
+        'episodeCover': coverplaceholder,
         'episodeCategory': 'Sport',
         'episodeList': 5,
     },
