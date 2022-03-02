@@ -20,7 +20,7 @@ function ShowsExpanedGrid() {
                                 <ShowsExpandedGridItem
                                     key={episode.id}
                                     episodeCover={episode.episodeCover}
-                                    episodeName={episode.episodeName}
+                                    episodeName={episode.episodeCategory}
                                 />
                             ))}
                         </div>
