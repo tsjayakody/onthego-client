@@ -1,38 +1,38 @@
-import userImage from '../components/assets/about-review-user-sample.png';
+import coverplaceholder from '../components/assets/placeholder-cover-image.svg';
 
 //! sample hosts list 
 let reviewList = [
     {   
         'id': 1,
-        'userImage': userImage,
+        'userImage': coverplaceholder,
         'userName': 'Client One',
         'userReview': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a ",
         'userType': 'Pocaster',
     },
     {   
         'id': 2,
-        'userImage': userImage,
+        'userImage': coverplaceholder,
         'userName': 'Client One',
         'userReview': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         'userType': 'Pocaster',
     },
     {   
         'id': 3,
-        'userImage': userImage,
+        'userImage': coverplaceholder,
         'userName': 'Client One',
         'userReview': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         'userType': 'Pocaster',
     },
     {   
         'id': 4,
-        'userImage': userImage,
+        'userImage': coverplaceholder,
         'userName': 'Client One',
         'userReview': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         'userType': 'Pocaster',
     },
     {   
         'id': 5,
-        'userImage': userImage,
+        'userImage': coverplaceholder,
         'userName': 'Client One',
         'userReview': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         'userType': 'Pocaster',

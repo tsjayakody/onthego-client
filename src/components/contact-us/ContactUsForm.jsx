@@ -23,35 +23,54 @@ function ContactUsForm() {
 
     const [ripple, event] = useRipple();
 
-    //* button submit validation here
-    const handleButtonSubmit = () => {
-        //? name input validation here
-        if(name === ''){
-            setNameErrorMessage('');
-        }else if(name.length <10){
-            setNameErrorMessage('Name Must be at least 10 Characters long');
-        }else{
-            setNameErrorMessage('');
+    const handleNameChange = (e) => {
+
+        if (name === '') {
+            setBtnDisabled(true);
+            setNameErrorMessage(null);
+        } else if (name !== '' && name.trim().length <= 10) {
+            setBtnDisabled(true);
+            setNameErrorMessage("Name must be at lease 10 characters long !");
+        } else {
+            setNameErrorMessage(null);
+            setBtnDisabled(false);
         }
 
-        //? email validation here
-        if(email === ''){
-            setNameErrorMessage('');
-        }else if(email.length<10){
-            setEmailErrorMessage('Please Enter a valid Email address');
-        }else{
-            setEmailErrorMessage('');
+        setName(e.target.value);
+    }
+
+    const handleEmailChange = (e) => {
+        const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+        if (email === '') {
+            setBtnDisabled(true);
+            setEmailErrorMessage(null);
+        } else if (email !== '' && regex.test(email) === false) {
+            setBtnDisabled(true);
+            setEmailErrorMessage("Enter a valid Email address !");
+        } else {
+            setBtnDisabled(false);
+            setEmailErrorMessage(null);
         }
 
-        //? message validation here
-        if(message === ''){
-            setMessageErrorMessage('');
-        }else if(message.length<10){
-            setMessageErrorMessage('Message must be at least ');
-        }else{
-            setMessageErrorMessage('');
+        setEmail(e.target.value);
+    }
+
+    const handleMessageChange = (e) => {
+
+        if (message === '') {
+            setBtnDisabled(true);
+            setMessageErrorMessage(null);
+        } else if (message !== '' && message.trim().length <= 15) {
+            setBtnDisabled(true);
+            setMessageErrorMessage("Message must be at least 15 characters long !")
+        } else {
+            setBtnDisabled(false);
+            setMessageErrorMessage(null);
         }
-    } 
+
+        setMessage(e.target.value);
+    }
 
     return (
         <div className='pb-[80px] lg:w-[838px] mx-[26px] md:ml-[0px]'>
@@ -63,6 +82,8 @@ function ContactUsForm() {
                             <input
                                 type="text"
                                 id="name"
+                                onChange={handleNameChange}
+                                value={name}
                                 className=" bg-#2F2566 md:bg-#110E1F border border-#453598 text-#FFFFFF placeholder-[#666666] text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full lg:w-[386px] lg:h-[32.52px] h-[40px] p-2.5 "
                                 placeholder={namePlaceHolder}
                             />
@@ -73,6 +94,8 @@ function ContactUsForm() {
                     <div className='flex-col'>
                         <div className="mb-[13px]">
                             <input
+                                onChange={handleEmailChange}
+                                value={email}
                                 type="email"
                                 id="email"
                                 className="bg-#2F2566 md:bg-#110E1F border border-#453598 text-#FFFFFF placeholder-[#666666] text-[14px] rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full lg:w-[386px] lg:h-[32.52px] h-[40px] p-2.5 "
@@ -85,6 +108,8 @@ function ContactUsForm() {
                 <div className='mb-[6px] md:mb-[17px] md:max-w-[792px] '>
                     <div className='mb-[10px]'>
                         <textarea
+                            onChange={handleMessageChange}
+                            value={message}
                             placeholder={messagePlaceHolder}
                             name="message"
                             id="message"
@@ -96,14 +121,14 @@ function ContactUsForm() {
                     {messageErrorMessage && <ContactUsErrorMessage errorMessage={messageErrorMessage} />}
                 </div>
                 <div className='w-full flex justify-end md:pr-[42px]'>
-                    <butt  on
+                    <button
                         disabled={btnDisabled}
                         ref={ripple}
                         onMouseDown={event}
                         type="submit"
                         className="h-[45px] w-[180px] px-[34px] py-[9px] text-#FFFFFF bg-#282246 text-[14px] text-center">
                         Send Episodes
-                    </butt>
+                    </button>
                 </div>
             </form>
         </div>

@@ -20,55 +20,57 @@ function HostDetailPage() {
 
     return (
         <BackgroundContainer>
-            <Topbar />
-            <div className='md:ml-[61px] ml-[26px] mr-[44px] md:mr-[0px] mt-[100px]'>
-                {/* main container */}
-                <div className='flex-col space-y-[79px] md:space-y-[136px]'>
-                    {/* top container */}
-                    <div className="flex">
-                        <div className='inline-table md:hidden '>
-                            {/* shows banner image */}
-                            <HostDetailRightContainer
-                                hostdetialSampleBanner={hostdetialSampleBanner}
-                                twitterDarkIcon={twitterDarkIcon}
-                                facebookDarkIcon={facebookDarkIcon}
-                                instagramDarkIcon={instagramDarkIcon}
-                                youtubeDarkIcon={youtubeDarkIcon}
-                            />
-                            {/* text div col */}
-                            <HostDetailLeftContainer
-                                hostName={hostName}
-                                hostType={hostType}
-                                hostDetails={hostDetails}
-                            />
+            <div className='flex flex-col h-screen'>
+                <div className='py-1'>
+                    <Topbar />
+                </div>
+                <div className='flex-1 overflow-y-auto'>
+                    <div className='md:ml-[61px] ml-[26px] mr-[44px] md:mr-[0px] mt-[50px]'>
+                        {/* main container */}
+                        <div className='flex-col space-y-[79px] md:space-y-[136px]'>
+                            {/* top container */}
+                            <div className="flex">
+                                <div className='inline-table md:hidden '>
+                                    {/* shows banner image */}
+                                    <HostDetailRightContainer
+                                        hostdetialSampleBanner={hostdetialSampleBanner}
+                                    />
+                                    {/* text div col */}
+                                    <HostDetailLeftContainer
+                                        hostName={hostName}
+                                        hostType={hostType}
+                                        hostDetails={hostDetails}
+                                    />
+                                </div>
+                                <div className='hidden md:inline-flex lg:space-x-[206px] md:space-x-[10px]'>
+                                    {/* text div col */}
+                                    <HostDetailLeftContainer
+                                        hostName={hostName}
+                                        hostType={hostType}
+                                        hostDetails={hostDetails}
+                                    />
+                                    {/* shows banner image */}
+                                    <HostDetailRightContainer
+                                        hostdetialSampleBanner={hostdetialSampleBanner}
+                                        twitterDarkIcon={twitterDarkIcon}
+                                        facebookDarkIcon={facebookDarkIcon}
+                                        instagramDarkIcon={instagramDarkIcon}
+                                        youtubeDarkIcon={youtubeDarkIcon}
+                                    />
+                                </div>
+                            </div>
+                            {/* bottom shows grid */}
+                            <div className='w-full xl:max-w-[1000px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[29px]'>
+                                {hostDetailList.map((item) => (
+                                    <ShowsDetailContainer
+                                        key={item.id}
+                                        showsBanner={item.showCover}
+                                        showsTitle={item.showsTitle}
+                                        showsAuthor={item.showAuthor}
+                                    />
+                                ))}
+                            </div>
                         </div>
-                        <div className='hidden md:inline-flex lg:space-x-[206px] md:space-x-[10px]'>
-                            {/* text div col */}
-                            <HostDetailLeftContainer
-                                hostName={hostName}
-                                hostType={hostType}
-                                hostDetails={hostDetails}
-                            />
-                            {/* shows banner image */}
-                            <HostDetailRightContainer
-                                hostdetialSampleBanner={hostdetialSampleBanner}
-                                twitterDarkIcon={twitterDarkIcon}
-                                facebookDarkIcon={facebookDarkIcon}
-                                instagramDarkIcon={instagramDarkIcon}
-                                youtubeDarkIcon={youtubeDarkIcon}
-                            />
-                        </div>
-                    </div>
-                    {/* bottom shows grid */}
-                    <div className='w-full xl:max-w-[1000px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[29px]'>
-                        {hostDetailList.map((item) => (
-                            <ShowsDetailContainer
-                                key={item.id}
-                                showsBanner={item.showCover}
-                                showsTitle={item.showsTitle}
-                                showsAuthor={item.showAuthor}
-                            />
-                        ))}
                     </div>
                 </div>
             </div>

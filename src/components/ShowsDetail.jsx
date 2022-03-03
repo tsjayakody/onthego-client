@@ -16,39 +16,45 @@ function ShowsDetail() {
 
     return (
         <BackgroundContainer>
-            <Topbar/>
-            <div className='flex-col mt-[76px] ml-[59px] space-y-[52px] md:space-y-[85px] lg:space-y-[136px]'>
-                <div className="flex ">
-                    <div className='hidden md:inline-flex'>
-                        <ShowsDetailLeftContainer
-                            showsTitle={showsTitle}
-                            noOfEpisodes={noOfEpisodes}
-                            showsDescription={showsDescription}
-                        />
-                        <ShowsDetailRightContainer
-                            showsSampleBanner={showsSampleBanner}
-                        />
-                    </div>
-                    <div className='inline-table md:hidden'>
-                        <ShowsDetailRightContainer
-                            showsSampleBanner={showsSampleBanner}
-                        />
-                        <ShowsDetailLeftContainer
-                            showsTitle={showsTitle}
-                            noOfEpisodes={noOfEpisodes}
-                            showsDescription={showsDescription}
-                        />
-                    </div>
+            <div className='flex flex-col h-screen'>
+                <div className='py-1'>
+                    <Topbar />
                 </div>
-                <div className='lg:w-[990px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 md:gap-[25px] lg:gap-[43px] gap-[20px] mr-[44px] md:mr-[0px] '>
-                    {showsDetailList.map((item) => (
-                        <ShowsDetailContainer
-                            key={item.id}
-                            showsBanner={item.showCover}
-                            showsTitle={item.showsTitle}
-                            showsAuthor={item.showAuthor}
-                        />
-                    ))}
+                <div className='flex-1 overflow-y-auto'>
+                    <div className='flex-col mt-[76px] ml-[59px] space-y-[52px] md:space-y-[85px] lg:space-y-[136px]'>
+                        <div className="flex ">
+                            <div className='hidden md:inline-flex'>
+                                <ShowsDetailLeftContainer
+                                    showsTitle={showsTitle}
+                                    noOfEpisodes={noOfEpisodes}
+                                    showsDescription={showsDescription}
+                                />
+                                <ShowsDetailRightContainer
+                                    showsSampleBanner={showsSampleBanner}
+                                />
+                            </div>
+                            <div className='inline-table md:hidden'>
+                                <ShowsDetailRightContainer
+                                    showsSampleBanner={showsSampleBanner}
+                                />
+                                <ShowsDetailLeftContainer
+                                    showsTitle={showsTitle}
+                                    noOfEpisodes={noOfEpisodes}
+                                    showsDescription={showsDescription}
+                                />
+                            </div>
+                        </div>
+                        <div className='lg:w-[990px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 md:gap-[25px] lg:gap-[43px] gap-[20px] mr-[44px] md:mr-[0px] '>
+                            {showsDetailList.map((item) => (
+                                <ShowsDetailContainer
+                                    key={item.id}
+                                    showsBanner={item.showCover}
+                                    showsTitle={item.showsTitle}
+                                    showsAuthor={item.showAuthor}
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </BackgroundContainer>

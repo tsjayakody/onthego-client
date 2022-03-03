@@ -15,10 +15,12 @@ function HomeContainerHostCard({
     return (
 
         <div className='bg-transparent md:h-179 md:w-120 h-166 w-120'>
-            <Link to="/meetthehosts">
+            <Link to="/hostdetail">
                 <div>
                     {/* needds to implement circular background here */}
-                    <img src={bannerImage} alt="" className='rounded-full border border-gray-100 shadow-sm' />
+                    <div className='h-[120px] w-[120px]'>
+                        <img src={bannerImage} alt="" className='inline object-cover rounded-full' />
+                    </div>
                     <div className='flex flex-col items-center'>
                         <p className='text-#FFFFFF text-[13px] md:text-[13px] truncate'>{bannerTitle}</p>
                         <p className='text-#666666 text-[10px] truncate'>{bannerType}</p>
@@ -26,23 +28,33 @@ function HomeContainerHostCard({
                 </div>
             </Link>
             <div className='flex justify-around'>
-                {/* twitter button */}
-                <HostSocialButton icon={hostTwitterIcon} link={"https://www.twitter.com"} />
-
-                {/* facebook button */}
-                <HostSocialButton icon={hostFacebookIcon} link={"https://www.facebook.com"} />
-
-                {/* pinterest button */}
-                <HostSocialButton icon={hostPinterestIcon} link={"https://www.pinterest.com"} />
-
-                {/* instagram button */}
-                <HostSocialButton icon={hostInstagramIcon} link={"https://www.instagram.com"} />
-
+                {hostSocialMediaButtonLinkArray.map(({ icon, link }) => (
+                    <HostSocialButton key={link} icon={icon} link={link} />
+                ))}
             </div>
         </div>
 
     );
 }
+
+const hostSocialMediaButtonLinkArray = [
+    {
+        icon: hostTwitterIcon,
+        link: "https://www.twitter.com",
+    },
+    {
+        icon: hostFacebookIcon,
+        link: "https://www.facebook.com",
+    },
+    {
+        icon: hostPinterestIcon,
+        link: "https://www.pinterest.com",
+    },
+    {
+        icon: hostInstagramIcon,
+        link: "https://www.instagram.com"
+    }
+]
 
 HomeContainerHostCard.propTypes = {
     bannerImage: PropTypes.string,

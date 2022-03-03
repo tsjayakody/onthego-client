@@ -1,5 +1,6 @@
 import React from 'react'
-import sampleImgeSlider from '../assets/sample-image-slider.png';
+import bannerList from '../../data/TopBannerList';
+import ImageSlider from '../shared/ImageSlider';
 
 function AboutUsMainTopContainer() {
 
@@ -9,8 +10,8 @@ function AboutUsMainTopContainer() {
         <div className=' items-center'>
             {/* desktop view here */}
             <div className='hidden md:inline mx-auto flex-col space-y-[62px]'>
-                <div className='mx-auto max-h-[269px] max-w-[432px]'>
-                    <img src={sampleImgeSlider} alt="" className='object-fill' />
+                <div className='mx-auto max-h-[269px] max-w-[800px]'>
+                <ImageSlider bannerList={bannerList}/>
                 </div>
                 <div className='h-[205px] w-[632px] mx-auto'>
                     <p className='text-#FFFFFF text-[15px] text-justify'>
@@ -20,7 +21,7 @@ function AboutUsMainTopContainer() {
             </div>
             {/* mobile view here */}
             <div className='md:hidden mx-auto inline-flex h-[464px] w-full'>
-                <img src={sampleImgeSlider} alt="AboutImage" className='object-fill realtive md:w-[423px] md-h-[269px] w-full h-full' />
+                <ImageSlider bannerList={bannerList}/>
                 <p className='absolute top-0 left-0 right-0 text-#FFFFFF text-[17px] text-center h-[286px] w-[282px]'>{sampleAboutText}</p>
             </div>
         </div>

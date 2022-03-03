@@ -5,14 +5,16 @@ function DarkSocialMediaButton({ icon, link }) {
   return (
     <div className='h-[18px] w-[18px]'>
       <a href={link} target="_blank" rel="noopener noreferrer" >
-        <img src={icon} alt="" className='object-fill'/>
+        <div className='text-[#666666] hover:text-[#00D2CB] h-full w-full'>
+          {icon}
+        </div>
       </a>
     </div>
   )
 }
 
 DarkSocialMediaButton.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.object,
   link: PropTypes.string,
 }
 

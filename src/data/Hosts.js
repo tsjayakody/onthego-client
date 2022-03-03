@@ -1,4 +1,5 @@
-import hostImage from '../components/assets/sample-host-image.png';
+// import hostImage from '../components/assets/sample-host-image.png';
+import hostImage from '../components/assets/placeholder-cover-image.svg';
 
 //! sample hosts list 
 let hosts = [
@@ -52,7 +53,56 @@ let hosts = [
         'hostPinterestUrl': 'https://www.pinterest.com',
         'hostInstagram': 'https://www.instagram.com',
     },
-    
+    {   
+        'id': 6,
+        'hostCover': hostImage,
+        'hostName': 'Travel With Wife',
+        'hostType': 'CONTENT CREATOR',
+        'hostFacebookUrl': 'https://www.facebook.com',
+        'hostTwitterUrl': 'https://www.twitter.com',
+        'hostPinterestUrl': 'https://www.pinterest.com',
+        'hostInstagram': 'https://www.instagram.com',
+    },
+    {   
+        'id': 7,
+        'hostCover': hostImage,
+        'hostName': 'Travel With Wife',
+        'hostType': 'CONTENT CREATOR',
+        'hostFacebookUrl': 'https://www.facebook.com',
+        'hostTwitterUrl': 'https://www.twitter.com',
+        'hostPinterestUrl': 'https://www.pinterest.com',
+        'hostInstagram': 'https://www.instagram.com',
+    },
+    {   
+        'id': 8,
+        'hostCover': hostImage,
+        'hostName': 'Travel With Wife',
+        'hostType': 'CONTENT CREATOR',
+        'hostFacebookUrl': 'https://www.facebook.com',
+        'hostTwitterUrl': 'https://www.twitter.com',
+        'hostPinterestUrl': 'https://www.pinterest.com',
+        'hostInstagram': 'https://www.instagram.com',
+    },
+    {   
+        'id': 9,
+        'hostCover': hostImage,
+        'hostName': 'Travel With Wife',
+        'hostType': 'CONTENT CREATOR',
+        'hostFacebookUrl': 'https://www.facebook.com',
+        'hostTwitterUrl': 'https://www.twitter.com',
+        'hostPinterestUrl': 'https://www.pinterest.com',
+        'hostInstagram': 'https://www.instagram.com',
+    },
+    {   
+        'id': 10,
+        'hostCover': hostImage,
+        'hostName': 'Travel With Wife',
+        'hostType': 'CONTENT CREATOR',
+        'hostFacebookUrl': 'https://www.facebook.com',
+        'hostTwitterUrl': 'https://www.twitter.com',
+        'hostPinterestUrl': 'https://www.pinterest.com',
+        'hostInstagram': 'https://www.instagram.com',
+    },
 ]
 
 export default hosts

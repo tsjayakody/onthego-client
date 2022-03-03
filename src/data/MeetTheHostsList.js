@@ -1,10 +1,10 @@
-import sampleImage from '../components/assets/meet-the-host-sample.png';
+import coverplaceholder from '../components/assets/placeholder-cover-image.svg';
 
 //! sample episodes list 
 let meetTheHosts = [
     {   
         'id': 1,
-        'hostImage': sampleImage,
+        'hostImage': coverplaceholder,
         'hostName': 'Marlon Dale Ferreira',
         'episodeName': 'JOURNALIST - PODCASTER (SPORTS/NEWS)',
         'hostFacebookUrl':'https://www.facebook.com',
@@ -14,7 +14,7 @@ let meetTheHosts = [
     },
     {   
         'id': 2,
-        'hostImage': sampleImage,
+        'hostImage': coverplaceholder,
         'hostName': 'Marlon Dale Ferreira',
         'episodeName': 'JOURNALIST - PODCASTER (SPORTS/NEWS)',
         'hostFacebookUrl':'https://www.facebook.com',
@@ -24,7 +24,7 @@ let meetTheHosts = [
     },
     {   
         'id': 3,
-        'hostImage': sampleImage,
+        'hostImage': coverplaceholder,
         'hostName': 'Marlon Dale Ferreira',
         'episodeName': 'JOURNALIST - PODCASTER (SPORTS/NEWS)',
         'hostFacebookUrl':'https://www.facebook.com',
@@ -34,7 +34,7 @@ let meetTheHosts = [
     },
     {   
         'id': 4,
-        'hostImage': sampleImage,
+        'hostImage': coverplaceholder,
         'hostName': 'Marlon Dale Ferreira',
         'episodeName': 'JOURNALIST - PODCASTER (SPORTS/NEWS)',
         'hostFacebookUrl':'https://www.facebook.com',
