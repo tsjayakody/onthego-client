@@ -13,7 +13,6 @@ function HomeContainerHostCard({
     bannerType
 }) {
     return (
-
         <div className='bg-transparent md:h-179 md:w-120 h-166 w-120'>
             <Link to="/hostdetail">
                 <div>
