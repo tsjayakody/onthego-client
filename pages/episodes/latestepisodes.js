@@ -4,6 +4,7 @@ import { latestEpisodeGridState } from '../../atoms/latestEpisodeAtom'
 import useSWR from "swr"
 import EpisodeContainer from '../../components/shared/EpisodeContainer'
 import useSWRInfinite from 'swr/infinite'
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -11,8 +12,25 @@ function Latestepisodes() {
 
   const [episodes, setEpisodes] = useRecoilState(latestEpisodeGridState);
   var total = 0;
+  var pages = 1;
   const [pageIndex, setPageIndex] = useState(1);
   const { data: paginatedEpisodes, error: paginatedError } = useSWR(`http://app.onthego.lk/api/public/v1/episodes?itemsPerPage=30&page=${pageIndex}&term&latest=true`, fetcher);
+  
+  const disablePrevios = ()=>{
+    if(pageIndex<=1){
+      return true
+    } else {
+      return false
+    }
+  }
+
+  const disableNext = ()=>{
+    if(pageIndex >= pages){
+      return true
+    } else {
+      return false
+    }
+  }
 
   // const { data: paginatedEpisodes, error: paginatedError } = useSWR(
   //   `http://app.onthego.lk/api/public/v1/episodes?itemsPerPage=30&page=1&term&latest=true`,
@@ -28,7 +46,9 @@ function Latestepisodes() {
 
   if (paginatedEpisodes) {
     total = paginatedEpisodes.total
+    pages = Math.ceil(total/30)
     setEpisodes(paginatedEpisodes.data)
+    console.log({ pages, pageIndex, total })
   }
 
   return (
@@ -46,12 +66,19 @@ function Latestepisodes() {
         </div>
 
         {total >= 11 ? <div className='flex space-x-5 items-center justify-center'>
-          <button onClick={() => setPageIndex(pageIndex - 1)}><p className='text-white text-[10px]'>Previous</p></button>
+          {/* previous button  */}
+          <div className={`bg-[#282246] px-5 py-3 flex space-x-3 text-white hover:text-[#00D2CB] rounded-lg w-[80px] items-center justify-center hover:cursor-pointer ${pageIndex == 1 ? 'cursor-not-allowed' : 'cursor-pointer' }`}>
+            <GrFormPrevious />
+            <button disabled={false} onClick={() => setPageIndex(pageIndex - 1)}><p className=' text-[10px]' >Previous</p></button>
+          </div>
+          {/* page number */}
           <p className='text-white text-[10px]'>{pageIndex}</p>
-          <button onClick={() => setPageIndex(pageIndex + 1)}><p className='text-white text-[10px]'>Next</p></button>
+          {/* next button  */}
+          <div className='bg-[#282246] px-5 py-3 flex space-x-3 text-white hover:text-[#00D2CB] rounded-lg w-[80px] items-center justify-center hover:cursor-pointer'>
+            <button disabled={false} onClick={() => setPageIndex(pageIndex + 1)}><p className='text-[10px]'>Next</p></button>
+            <GrFormNext />
+          </div>
         </div> : <></>}
-
-
         {/* spacer */}
         <div className="h-[180px]"></div>
       </div>
